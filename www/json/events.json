@@ -1,0 +1,298 @@
+{
+  "myEvents": [
+    {
+      "id": "event-1",
+      "title": "Bourse aux plantes rares",
+      "date": {
+        "day": 4,
+        "month": 10,
+        "year": 2025,
+        "monthName": "Octobre"
+      },
+      "time": "10h00 - 18h00",
+      "location": "Serres du Jardin Botanique de Liège",
+      "address": "Rue Fusch 3, 4000 Liège",
+      "description": "Les Serres du Jardin Botanique de Liège accueillent des exposants passionnés venus partager leurs trésors botaniques.",
+      "highlights": [
+        "Accès libre à la bourse",
+        "Conseils personnalisés",
+        "Visite des Serres possible"
+      ],
+      "calendarData": {
+        "eventName": "Bourse aux plantes rares",
+        "eventDate": "2025-10-04",
+        "eventTime": "10:00-18:00",
+        "eventLocation": "3 Rue Fusch 4000 Liège"
+      }
+    },
+    {
+      "id": "event-2",
+      "title": "Grande Bourse aux Plantes",
+      "date": {
+        "day": 1,
+        "month": 5,
+        "year": 2026,
+        "monthName": "Mai"
+      },
+      "time": "10h00 - 18h00",
+      "location": "Jardin Botanique de Liège",
+      "address": "Rue Fusch 3, 4000 Liège",
+      "description": "Rejoins-moi pour cet événement incontournable! Découvre mon stand et ma collection variée de plantes carnivores.",
+      "highlights": [
+        "Stand Les Gloutonnes",
+        "Collection variée",
+        "Conseils personnalisés"
+      ],
+      "calendarData": {
+        "eventName": "Grande Bourse aux Plantes du Jardin Botanique de Liège",
+        "eventDate": "2026-05-01",
+        "eventTime": "10:00-18:00",
+        "eventLocation": "3 Rue Fusch 4000 Liège"
+      }
+    },
+    {
+      "id": "event-carnevent-2026",
+      "title": "CarnEvent 2026",
+      "date": {
+        "day": "11-12",
+        "month": 7,
+        "year": 2026,
+        "monthName": "Juillet"
+      },
+      "time": "10h00 - 18h00",
+      "location": "Serres du Jardin Botanique de Liège",
+      "address": "Rue Fusch 3, 4000 Liège",
+      "description": "Première édition du CarnEvent : deux journées dédiées aux plantes carnivores au Jardin botanique de Liège. Stands pro, semi-pro et amateurs, conseils, échanges — entrée gratuite. Co-organisé avec Les Gloutonnes.",
+      "highlights": [
+        "Entrée gratuite",
+        "Stands plantes carnivores",
+        "Jardin Botanique de Liège",
+        "Organisation Les Gloutonnes"
+      ],
+      "calendarData": {
+        "eventName": "CarnEvent 2026",
+        "eventDate": "2026-07-11",
+        "eventTime": "10:00-18:00",
+        "eventLocation": "3 Rue Fusch 4000 Liège"
+      }
+    }
+  ],
+  "reminders": {
+    "description": "Un pense-bête des événements à garder à l'œil. Les dates peuvent varier d'une année à l'autre, vérifie toujours les informations officielles.",
+    "categories": [
+      {
+        "title": "Événements Plantes Carnivores",
+        "events": [
+          {
+            "title": "Este in Fiore",
+            "period": "Avril",
+            "location": "Este, Italie",
+            "description": "Manifestation célébrant la beauté de la nature, le florovivaisme et le jardinage.",
+            "link": {
+              "url": "https://esteinfiore.it/",
+              "text": "Site officiel"
+            }
+          },
+          {
+            "title": "Bourse aux Plantes Carnivores du Jardin Botanique de Bonn",
+            "period": "Avril",
+            "location": "Bonn, Allemagne",
+            "description": "Occasion unique de découvrir, échanger et acheter des plantes carnivores exceptionnelles.",
+            "link": {
+              "url": "https://www.botgart.uni-bonn.de/de/ihr-besuch/veranstaltungen",
+              "text": "Site officiel"
+            }
+          },
+          {
+            "title": "Bandus - Journée des plantes carnivores",
+            "period": "Juin",
+            "location": "Hummelo, Pays-Bas",
+            "description": "Découvre des plantes fascinantes, des tourbières magnifiques et un étang.",
+            "link": {
+              "url": "https://www.bandus.nl/",
+              "text": "Site officiel"
+            }
+          },
+          {
+            "title": "EEE - Exposition et échange Européenne",
+            "period": "Juin",
+            "location": "Lieu variable chaque année",
+            "description": "Organisée par l'association italienne des plantes carnivores (AIPC). Le lieu change chaque année, consulte le site officiel pour les informations à jour.",
+            "link": {
+              "url": "https://www.facebook.com/Carnivorousplantexchangeeurope",
+              "text": "Site officiel EEE"
+            }
+          },
+          {
+            "title": "Drosera VZW Voorjaarsbeurs",
+            "period": "Juin",
+            "location": "Plantentuin, Gand, Belgique",
+            "description": "Un événement incontournable mêlant plantes carnivores, orchidées, plantes tropicales et autres raretés botaniques.",
+            "link": {
+              "url": "https://www.facebook.com/groups/393083034069617/",
+              "text": "Page Facebook officielle"
+            }
+          },
+          {
+            "title": "CarnEvent",
+            "period": "Juillet (11-12 juil. 2026 ; édition 2027 à confirmer)",
+            "location": "Jardin botanique de Liège, Belgique",
+            "description": "Deux journées dédiées aux plantes carnivores (stands, conseils, échanges). Entrée gratuite. Édition 2026 : 11 et 12 juillet aux Serres du Jardin botanique. Prochaine édition prévue en juillet 2027 — vérifie carnevent.com.",
+            "link": {
+              "url": "https://www.carnevent.com",
+              "text": "www.carnevent.com"
+            }
+          },
+          {
+            "title": "ICPS",
+            "period": "Variable",
+            "location": "Lieu variable",
+            "description": "Événement international de l'International Carnivorous Plant Society. Les dates et lieux varient chaque année, consulte le site officiel pour les informations à jour.",
+            "link": {
+              "url": "https://www.carnivorousplants.org/",
+              "text": "Site officiel ICPS"
+            }
+          }
+        ]
+      },
+      {
+        "title": "Marchés et bourses aux plantes",
+        "events": [
+          {
+            "title": "Fête des Plantes au Château d'Enghien",
+            "period": "Avril",
+            "location": "Enghien, Belgique",
+            "description": "Parc verdoyant de 4 hectares et château ouverts au public.",
+            "link": {
+              "url": "https://www.facebook.com/Foiredejardin/",
+              "text": "Site officiel"
+            }
+          },
+          {
+            "title": "Le p'tit marché de Crisnée",
+            "period": "Avril",
+            "location": "Odeur, Belgique",
+            "description": "Marché annuel aux plantes avec artisans et producteurs du terroir.",
+            "link": {
+              "url": "https://www.facebook.com/people/Le-ptit-march%C3%A9-de-Crisn%C3%A9e/100063448556870/",
+              "text": "Site officiel"
+            }
+          },
+          {
+            "title": "INSECTOPY - PLANTARIA",
+            "period": "Avril et Septembre",
+            "location": "Belgique",
+            "description": "Bourse-exposition dédiée au monde végétal : plantes rares, exotiques, carnivores, succulentes, orchidées, bonsaïs.",
+            "link": {
+              "url": "https://insectopy.com/",
+              "text": "Site officiel"
+            }
+          },
+          {
+            "title": "Liège au Jardin",
+            "period": "Mai",
+            "location": "Liège, Belgique",
+            "description": "Journée dédiée à la nature, au jardinage et à l'écologie au Jardin Botanique de Liège.",
+            "link": {
+              "url": "https://botaniqueliege.be/",
+              "text": "Site officiel"
+            }
+          },
+          {
+            "title": "Les Jardins d'Aywiers",
+            "period": "Mai et Octobre",
+            "location": "Lasne, Belgique",
+            "description": "Rencontre de 200 professionnels du monde des jardins dans l'ancienne abbaye cistercienne d'Aywiers.",
+            "link": {
+              "url": "https://www.aywiers.be/",
+              "text": "Site officiel"
+            }
+          },
+          {
+            "title": "Jardins de Printemps",
+            "period": "Mai",
+            "location": "Jehay, Belgique",
+            "description": "Au Château provincial de Jehay : parc, jardins et potager.",
+            "link": {
+              "url": "https://www.facebook.com/chateau.dejehay",
+              "text": "Site officiel"
+            }
+          },
+          {
+            "title": "La Journée des Plantes",
+            "period": "Mai",
+            "location": "Bergères, France",
+            "description": "Rendez-vous pour les passionnés de jardinage, plantes rares et produits artisanaux.",
+            "link": {
+              "url": "https://journeedesplantes.wordpress.com/",
+              "text": "Site officiel"
+            }
+          },
+          {
+            "title": "La Feuillerie",
+            "period": "Septembre",
+            "location": "Celles, Belgique",
+            "description": "Sélection des meilleurs pépiniéristes belges et étrangers dans un parc romantique du 19è siècle.",
+            "link": {
+              "url": "https://www.lafeuillerie.be/",
+              "text": "Site officiel"
+            }
+          },
+          {
+            "title": "CEDEVIT",
+            "period": "Avril et Octobre",
+            "location": "Liège, Belgique",
+            "description": "Vente de plantes à la serre, plantes d'intérieur et carnivores à l'honneur.",
+            "link": {
+              "url": "https://www.cedevit.uliege.be/",
+              "text": "Site officiel"
+            }
+          }
+        ]
+      },
+      {
+        "title": "Visites et Portes ouvertes",
+        "events": [
+          {
+            "title": "Carniflora",
+            "period": "Avril",
+            "location": "Aalsmeer, Pays-Bas",
+            "description": "Journée portes ouvertes organisée par Carniflora, grossiste en plantes carnivores.",
+            "link": {
+              "url": "https://www.facebook.com/CarniFloraNL/",
+              "text": "Site officiel"
+            }
+          },
+          {
+            "title": "Les Dents de la Terre",
+            "period": "Avril et juillet",
+            "location": "La Planche, France",
+            "description": "Journées portes ouvertes de la pépinière Les Dents de la Terre.",
+            "link": {
+              "url": "https://lesdentsdelaterre.com/",
+              "text": "Site officiel"
+            }
+          },
+          {
+            "title": "Phytesia",
+            "period": "Avril",
+            "location": "Scry, Belgique",
+            "description": "Week-end portes ouvertes pour découvrir orchidées de jardin et plantes de tourbière.",
+            "link": {
+              "url": "https://www.phytesia-orchids.com/",
+              "text": "Site officiel"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "partners": [
+    {
+      "name": "Jardin Botanique de Liège",
+      "logo": "/images/events/liege.jpg",
+      "description": "Partenaire principal depuis 2023, le Jardin Botanique de Liège m'accueille chaque année pour la grande bourse aux plantes du 1er mai. Cette collaboration me permet de partager ma passion avec un public plus large.",
+      "website": "http://www.botaniqueliege.be/"
+    }
+  ]
+}

@@ -1,0 +1,1080 @@
+[
+  {
+    "id": "bletilla-striata-alba",
+    "name": "Bletilla striata 'Alba'",
+    "commonName": "Orchidée terrestre japonaise blanche",
+    "category": "orchidees",
+    "difficulty": "moyen",
+    "featured": false,
+    "images": {
+      "main": "../images/tourbiere/bletilla-striata-alba.jpg"
+    },
+    "specs": {
+      "rusticite": "-10 à -15°C",
+      "exposition": "Soleil à mi-ombre",
+      "hauteur": "30-40 cm",
+      "floraison": "Blanc pur"
+    },
+    "description": "La forme alba de cette orchidée terrestre offre une floraison d'un blanc pur, contrastant avec son feuillage vert plissé. Élégante en bordure de tourbière artificielle ou massif acide frais et drainant — pas dans l'eau stagnante. Floraison en été (souvent juin-juillet).",
+    "cultureNotes": [
+      "Sol: Humifère, légèrement acide, frais et drainant ; pailler en hiver si gel intense",
+      "Arrosage: Eau de pluie, maintenir humide sans excès l’été, réduire en hiver",
+      "Multiplication: Division des pseudobulbes en dormance",
+      "Particularité: Floraison blanche pure en juin-juillet, feuillage plissé caduc"
+    ]
+  },
+  {
+    "id": "bletilla-striata-purple",
+    "name": "Bletilla striata 'Purple'",
+    "commonName": "Orchidée terrestre japonaise pourpre",
+    "category": "orchidees",
+    "difficulty": "moyen",
+    "featured": true,
+    "images": {
+      "main": "../images/tourbiere/bletilla-striata.jpg"
+    },
+    "specs": {
+      "rusticite": "-15°C",
+      "exposition": "Mi-ombre",
+      "hauteur": "35-45 cm",
+      "floraison": "Pourpre intense"
+    },
+    "description": "Cette forme sélectionnée présente des fleurs d'un pourpre profond et intense, plus sombre que la forme type. C'est un véritable joyau pour les collectionneurs ! Ses fleurs aux pétales veloutés offrent une richesse de couleur exceptionnelle. Plus vigoureuse que les autres variétés, elle forme rapidement de belles touffes fleuries.",
+    "cultureNotes": [
+      "Sol: Acide à neutre, humifère, frais et drainant",
+      "Arrosage: Eau de pluie, régulier sans excès",
+      "Multiplication: Division des pseudobulbes en dormance",
+      "Particularité: Floraison pourpre intense, plante vigoureuse"
+    ]
+  },
+  {
+    "id": "bletilla-striata-blue",
+    "name": "Bletilla striata 'Blue'",
+    "commonName": "Orchidée terrestre japonaise (teinte lavande)",
+    "category": "orchidees",
+    "difficulty": "moyen",
+    "featured": true,
+    "images": {
+      "main": "../images/tourbiere/bletilla-striata-blue.jpg"
+    },
+    "specs": {
+      "rusticite": "-15°C",
+      "exposition": "Mi-ombre",
+      "hauteur": "30-35 cm",
+      "floraison": "Violet lavande (jamais bleu pur)"
+    },
+    "description": "Malgré son nom commercial « Blue », il n'existe pas de Bletilla vraiment bleue : les fleurs sont d'un violet lavande qui peut paraître bleuté selon la lumière. Forme recherchée pour cette teinte froide, plus claire que le pourpre classique. Comme les autres Bletilla, elle apprécie un sol acide, frais et drainant plutôt qu'une tourbière détrempée en permanence.",
+    "cultureNotes": [
+      "Sol: Acide, humifère, frais et bien drainé (éviter l'eau stagnante)",
+      "Arrosage: Eau de pluie, maintenir humide sans excès",
+      "Multiplication: Division des pseudobulbes au printemps",
+      "Particularité: Nom horticole « Blue » = lavande/violet, pas un bleu pigmentaire"
+    ]
+  },
+  {
+    "id": "bletilla-striata-kuchibeni",
+    "name": "Bletilla striata 'Kuchibeni'",
+    "commonName": "Orchidée terrestre japonaise bicolore",
+    "category": "orchidees",
+    "difficulty": "moyen",
+    "featured": true,
+    "images": {
+      "main": "../images/tourbiere/bletilla-striata-kuchibeni.jpg"
+    },
+    "specs": {
+      "rusticite": "-15°C",
+      "exposition": "Mi-ombre",
+      "hauteur": "30-40 cm",
+      "floraison": "Blanc à extrémité rose-mauve"
+    },
+    "description": "La plus spectaculaire des Bletilla ! 'Kuchibeni' signifie 'rouge à lèvres' en japonais, et tu comprendras pourquoi en voyant ses fleurs blanches délicatement bordées de rose-pourpre. Cette variété bicolore d'une élégance rare est le Saint Graal des collectionneurs d'orchidées terrestres. Chaque fleur est une petite œuvre d'art naturelle !",
+    "cultureNotes": [
+      "Sol: Acide, humifère, frais et bien drainé",
+      "Arrosage: Eau de pluie, maintenir le sol frais en été",
+      "Multiplication: Division des pseudobulbes au printemps",
+      "Particularité: Floraison bicolore remarquable, nom japonais signifiant 'rouge à lèvres'"
+    ]
+  },
+  {
+    "id": "pogonia-ophioglossoides",
+    "name": "Pogonia ophioglossoides",
+    "commonName": "Orchidée à feuille de serpent",
+    "category": "orchidees",
+    "difficulty": "difficile",
+    "featured": false,
+    "images": {
+      "main": "../images/tourbiere/pogonia-ophioglossoides.jpg"
+    },
+    "specs": {
+      "rusticite": "-30°C",
+      "exposition": "Plein soleil",
+      "hauteur": "15-30 cm",
+      "floraison": "Rose pâle"
+    },
+    "description": "Cette orchidée rare est une véritable joyau des tourbières nord-américaines. Chaque tige ne porte qu'une seule fleur rose délicate avec un labelle frangé et parfumé. Son nom vient de sa feuille unique qui rappelle la langue d'un serpent. En compagnie des Sarracenia et des Dionaea, la Pogonia recrée une authentique communauté végétale de tourbière. Sa culture est exigeante mais extrêmement gratifiante pour les amateurs avertis.",
+    "cultureNotes": [
+      "Sol: 100% tourbe ou sphaigne vivante, détrempé en permanence",
+      "Arrosage: Eau de pluie uniquement, maintenir saturé",
+      "Particularité: Requiert mycorhizes spécifiques, disparaît en hiver"
+    ]
+  },
+  {
+    "id": "tricyrtis-hirta",
+    "name": "Tricyrtis hirta",
+    "commonName": "Lis crapaud japonais",
+    "category": "vivaces",
+    "difficulty": "facile",
+    "featured": false,
+    "images": {
+      "main": "../images/tourbiere/tricyrtis-hirta.jpg"
+    },
+    "specs": {
+      "rusticite": "-20°C",
+      "exposition": "Mi-ombre à ombre",
+      "hauteur": "60-80 cm",
+      "floraison": "Blanc tacheté pourpre"
+    },
+    "description": "Le lis crapaud japonais est une plante vivace fascinante qui fleurit à l'automne quand tout se calme au jardin ! Ses fleurs exotiques, blanches ponctuées de taches pourpres, ressemblent à de petites orchidées. Cette plante robuste et rustique forme de belles touffes dans les zones ombragées de ta tourbière, apportant une touche d'originalité en fin de saison.",
+    "cultureNotes": [
+      "Sol: Frais, humifère et bien drainé, supporte les sols acides",
+      "Arrosage: Régulier mais sans excès, éviter la sécheresse",
+      "Multiplication: Division au printemps ou semis",
+      "Particularité: Floraison automnale très décorative"
+    ]
+  },
+  {
+    "id": "tricyrtis-hirta-taiwan-adbane",
+    "name": "Tricyrtis hirta 'Taiwan Adbane'",
+    "commonName": "Lis crapaud de Taiwan",
+    "category": "vivaces",
+    "difficulty": "facile",
+    "featured": true,
+    "images": {
+      "main": "../images/tourbiere/tricyrtis-hirta-taiwan-adbane.jpg"
+    },
+    "specs": {
+      "rusticite": "-18°C",
+      "exposition": "Mi-ombre à ombre",
+      "hauteur": "70-90 cm",
+      "floraison": "Blanc rosé tacheté"
+    },
+    "description": "Une variété exceptionnelle venue de Taiwan ! Cette forme présente des fleurs plus grandes aux nuances blanc-rosé délicatement tachetées de pourpre foncé. Son port est plus élancé que l'espèce type et sa floraison plus précoce. C'est une véritable merveille pour les collectionneurs de plantes rares qui apprécient les floraisons automnales originales.",
+    "cultureNotes": [
+      "Sol: Frais, humifère et bien drainé, supporte les sols acides",
+      "Arrosage: Régulier mais sans excès, éviter la sécheresse",
+      "Multiplication: Division au printemps, croissance plus lente",
+      "Particularité: Floraison plus précoce et plus grande que le type"
+    ]
+  },
+  {
+    "id": "tricyrtis-formosana",
+    "name": "Tricyrtis formosana",
+    "commonName": "Lis crapaud de Formose",
+    "category": "vivaces",
+    "difficulty": "facile",
+    "featured": false,
+    "images": {
+      "main": "../images/tourbiere/tricyrtis-formosana.jpg"
+    },
+    "specs": {
+      "rusticite": "-15°C",
+      "exposition": "Mi-ombre à ombre",
+      "hauteur": "80-100 cm",
+      "floraison": "Mauve rosé tacheté"
+    },
+    "description": "Le lis crapaud de Formose est plus grand et plus spectaculaire que son cousin japonais ! Ses tiges arquées portent de nombreuses fleurs aux tons mauve-rosé ponctuées de taches pourpres. Cette espèce vigoureuse forme rapidement de belles colonies dans les zones fraîches et ombragées. Sa floraison automnale prolongée en fait un atout précieux pour ta tourbière.",
+    "cultureNotes": [
+      "Sol: Frais, humifère et bien drainé, supporte les sols acides",
+      "Arrosage: Régulier, apprécie l'humidité constante",
+      "Multiplication: Division au printemps ou stolons naturels",
+      "Particularité: Croissance vigoureuse, tiges arquées décoratives"
+    ]
+  },
+  {
+    "id": "tricyrtis-formosana-samourai",
+    "name": "Tricyrtis formosana 'Samouraï'",
+    "commonName": "Lis crapaud Samouraï",
+    "category": "vivaces",
+    "difficulty": "facile",
+    "featured": true,
+    "images": {
+      "main": "../images/tourbiere/tricyrtis-formosana-samourai.jpg"
+    },
+    "specs": {
+      "rusticite": "-15°C",
+      "exposition": "Mi-ombre à ombre",
+      "hauteur": "60-80 cm",
+      "floraison": "Blanc pur tacheté violet"
+    },
+    "description": "Le cultivar 'Samouraï' est un véritable coup de cœur ! Ses fleurs d'un blanc pur sont élégamment ponctuées de taches violet foncé, créant un contraste saisissant. Son port plus compact et sa floraison particulièrement abondante en font une plante de choix. Le nom 'Samouraï' évoque la noblesse et l'élégance de cette variété d'exception qui ne laisse personne indifférent.",
+    "cultureNotes": [
+      "Sol: Frais, humifère et bien drainé, supporte les sols acides",
+      "Arrosage: Régulier, apprécie l'humidité constante",
+      "Multiplication: Division au printemps, plus lente que le type",
+      "Particularité: Port compact, floraison très abondante et contrastée"
+    ]
+  },
+  {
+    "id": "fragaria-vesca",
+    "name": "Fragaria vesca",
+    "commonName": "Fraisier des bois",
+    "category": "vivaces",
+    "difficulty": "facile",
+    "featured": false,
+    "images": {
+      "main": "../images/tourbiere/fragaria-vesca.jpg"
+    },
+    "specs": {
+      "rusticite": "-30°C",
+      "exposition": "Mi-ombre",
+      "hauteur": "10-15 cm",
+      "fruits": "Rouge"
+    },
+    "description": "Le fraisier des bois est une plante tapissante indigène des lisières et sous-bois frais. Il tolère un sol acide à neutre, humide mais non saturé — utile en bordure de tourbière artificielle, moins au cœur gorgé d'eau. Fleurs blanches au printemps, petites fraises aromatiques en été ; stolons à surveiller pour qu'il n'envahisse pas les carnivores basses.",
+    "cultureNotes": [
+      "Sol: Acide à neutre (pH 5-7), humide mais bien drainé — éviter l'eau stagnante",
+      "Arrosage: Eau de pluie, maintenir frais sans détremper",
+      "Propagation: Stolons qui s'enracinent facilement (contrôler si nécessaire)"
+    ]
+  },
+  {
+    "id": "vaccinium-myrtillus",
+    "name": "Vaccinium myrtillus",
+    "commonName": "Myrtillier sauvage",
+    "category": "arbustes",
+    "difficulty": "facile",
+    "featured": false,
+    "images": {
+      "main": "../images/tourbiere/vaccinium-myrtillus.jpg"
+    },
+    "specs": {
+      "rusticite": "-30°C",
+      "exposition": "Mi-ombre",
+      "hauteur": "30-60 cm",
+      "fruits": "Bleu-noir"
+    },
+    "description": "Le myrtillier sauvage est un petit arbuste indigène qui peuple naturellement les sous-bois et tourbières d'Europe. Son port buissonnant et son feuillage caduc vert tendre en font un excellent élément structurant pour une tourbière artificielle. En plus de créer un arrière-plan harmonieux pour vos plantes carnivores, il vous récompensera chaque été avec de délicieuses myrtilles riches en antioxydants et vitamines.",
+    "cultureNotes": [
+      "Sol: Acide (pH 4-5,5), riche en matière organique",
+      "Arrosage: Eau de pluie, maintenir frais sans excès d'humidité",
+      "Taille: Légère taille de rajeunissement tous les 2-3 ans"
+    ]
+  },
+  {
+    "id": "vaccinium-macrocarpon",
+    "name": "Vaccinium macrocarpon",
+    "commonName": "Canneberge, Cranberry",
+    "category": "arbustes",
+    "difficulty": "facile",
+    "featured": false,
+    "images": {
+      "main": "../images/tourbiere/vaccinium-macrocarpon.jpg"
+    },
+    "specs": {
+      "rusticite": "-25°C",
+      "exposition": "Soleil/Mi-ombre",
+      "hauteur": "10-15 cm",
+      "fruits": "Rouge"
+    },
+    "description": "La canneberge est un petit arbuste rampant originaire d'Amérique du Nord, qui produit les célèbres baies rouges riches en antioxydants. Son feuillage persistant de petites feuilles ovales prend des teintes pourpres en hiver. Plante idéale pour couvrir le sol dans une tourbière artificielle, elle s'entrelace harmonieusement avec les Drosera et autres plantes carnivores basses, tout en offrant une production de fruits comestibles.",
+    "cultureNotes": [
+      "Sol: Tourbeux et acide (pH 4-5)",
+      "Arrosage: Eau de pluie abondante, sol constamment humide",
+      "Particularité: Autofertile, produit des baies sans autre plant à proximité"
+    ]
+  },
+  {
+    "id": "vaccinium-oxycoccos",
+    "name": "Vaccinium oxycoccos",
+    "commonName": "Canneberge sauvage d'Europe",
+    "category": "arbustes",
+    "difficulty": "moyen",
+    "featured": false,
+    "images": {
+      "main": "../images/tourbiere/vaccinium-oxycoccos.jpg"
+    },
+    "specs": {
+      "rusticite": "-30°C",
+      "exposition": "Soleil/Mi-ombre",
+      "hauteur": "5-10 cm",
+      "fruits": "Rouge vif"
+    },
+    "description": "La canneberge sauvage européenne est un minuscule arbuste rampant aux tiges filiformes et aux petites feuilles persistantes. Ses fleurs rose vif apparaissent en été et sont suivies de petites baies rouges qui persistent jusqu'en hiver. Espèce emblématique des tourbières naturelles d'Europe, elle tapisse le sol entre les sphaignes et s'associe parfaitement avec les Drosera. Contrairement à V. macrocarpon, le V. oxycoccos est généralement auto-incompatible : il lui faut au moins deux clones distincts pour une fructification optimale.",
+    "cultureNotes": [
+      "Sol: Très acide (pH 3.5-5), 100% tourbe ou sphaigne vivante",
+      "Arrosage: Eau de pluie uniquement, sol constamment humide",
+      "Particularité: Préfère les zones gorgées d'eau mais non stagnantes"
+    ]
+  },
+  {
+    "id": "dactylorhiza-maculata",
+    "name": "Dactylorhiza maculata",
+    "commonName": "Orchis tacheté",
+    "category": "orchidees",
+    "difficulty": "moyen",
+    "featured": false,
+    "images": {
+      "main": "../images/tourbiere/dactylorhiza-maculata.jpg"
+    },
+    "specs": {
+      "rusticite": "-25°C",
+      "exposition": "Soleil à mi-ombre",
+      "hauteur": "30-50 cm",
+      "floraison": "Rose-pourpre"
+    },
+    "description": "L'orchis tacheté est une orchidée terrestre indigène des zones humides d'Europe. Son nom vient de ses feuilles allongées parsemées de taches brunes caractéristiques. En mai-juin, elle développe une hampe florale dense portant de nombreuses petites fleurs rose-pourpre. Cette orchidée rustique s'intègre parfaitement dans une tourbière artificielle aux côtés des Sarracenia et constitue un excellent choix pour débuter avec les orchidées de pleine terre, moins exigeante que d'autres espèces similaires.",
+    "cultureNotes": [
+      "Sol: Acide, tourbeux, humide à détrempé, supporte la sphaigne vivante",
+      "Arrosage: Eau de pluie, sol toujours frais à humide",
+      "Mycorhizes: Dépendante d’associations fongiques spécifiques",
+      "Multiplication: Semis difficile, division de touffes possible après floraison",
+      "Particularité: Taches sombres sur feuilles, floraison rose tachetée en juin"
+    ]
+  },
+  {
+    "id": "dactylorhiza-pardalina",
+    "name": "Dactylorhiza praetermissa",
+    "commonName": "Orchis négligé (forme tachetée « panthère »)",
+    "category": "orchidees",
+    "difficulty": "très difficile",
+    "featured": true,
+    "images": {
+      "main": "../images/tourbiere/dactylorhiza-pardalina.jpg"
+    },
+    "specs": {
+      "rusticite": "-25°C",
+      "exposition": "Soleil à mi-ombre",
+      "hauteur": "30-80 cm",
+      "floraison": "Rose-pourpre tacheté"
+    },
+    "description": "Les formes très tachetées autrefois appelées Dactylorhiza pardalina correspondent surtout à D. praetermissa (souvent var. junialis / complexe D. majalis s.l.). Fleurs rose-pourpre mouchetées, épis denses d'avril à juillet, puis dormance du feuillage. Plutôt prairies humides et bas-marais que tourbière ombrotrophe pure ; culture exigeante (mycorhizes).",
+    "cultureNotes": [
+      "Sol: Humide à détrempé, souvent légèrement minéral / moins acide qu'un haut-marais",
+      "Arrosage: Eau de pluie, sol maintenu constamment humide",
+      "Mycorhizes: Dépendance élevée, comme toutes les Dactylorhiza",
+      "Multiplication: Division au repos, semis difficile",
+      "Particularité: Nom « pardalina » = synonyme / forme tachetée de D. praetermissa"
+    ]
+  },
+  {
+    "id": "dactylorhiza-majalis",
+    "name": "Dactylorhiza majalis",
+    "commonName": "Orchis de mai",
+    "category": "orchidees",
+    "difficulty": "très difficile",
+    "featured": false,
+    "images": {
+      "main": "../images/tourbiere/dactylorhiza-majalis.jpg"
+    },
+    "specs": {
+      "rusticite": "-25°C",
+      "exposition": "Soleil à mi-ombre",
+      "hauteur": "15-60 cm",
+      "floraison": "Rose-pourpre"
+    },
+    "description": "L'orchis de mai est une orchidée rustique aux racines tubéreuses qui fleurit entre avril et juillet. Ses épis cylindriques rose-pourpre et son feuillage souvent tacheté la rendent assez reconnaissable. Après la floraison, elle entre en dormance hivernale. Typique des prairies humides et bas-marais (souvent neutres à peu acides), plus que des tourbières ombrotrophes très acides.",
+    "cultureNotes": [
+      "Sol: Humide à détrempé, riche en matière organique, souvent neutre à légèrement acide",
+      "Arrosage: Eau de pluie, conserver humide surtout au printemps",
+      "Mycorhizes: Forte dépendance aux champignons symbiotiques",
+      "Multiplication: Division des touffes après floraison",
+      "Particularité: Floraison dense pourpre-violacée, grande robustesse"
+    ]
+  },
+  {
+    "id": "dactylorhiza-fuchsii-alba",
+    "name": "Dactylorhiza fuchsii 'Alba'",
+    "commonName": "Orchis de Fuchs blanc",
+    "category": "orchidees",
+    "difficulty": "très difficile",
+    "featured": true,
+    "images": {
+      "main": "../images/tourbiere/dactylorhiza-fuchsii-alba.jpg"
+    },
+    "specs": {
+      "rusticite": "-25°C",
+      "exposition": "Soleil à mi-ombre",
+      "hauteur": "20-70 cm",
+      "floraison": "Blanc pur"
+    },
+    "description": "Voici le Saint Graal des orchidées ! La forme alba de l'orchis de Fuchs présente des fleurs d'un blanc pur absolument éblouissant. Cette orchidée rustique aux racines tubéreuses fleurit entre avril et juillet avec ses épis blanc immaculé. Attention : Après la floraison, elle entre en dormance hivernale. Une rareté absolue pour les collectionneurs !",
+    "cultureNotes": [
+      "Sol: Acide, humifère à tourbeux, frais à humide",
+      "Arrosage: Arrosages réguliers à l’eau de pluie",
+      "Mycorhizes: Indispensables pour le développement des plantules",
+      "Multiplication: Par division après dormance",
+      "Particularité: Forme rare à fleurs blanches pures"
+    ]
+  },
+  {
+    "id": "calopogon-tuberosus",
+    "name": "Calopogon tuberosus",
+    "commonName": "Orchidée à barbe rose",
+    "category": "orchidees",
+    "difficulty": "difficile",
+    "featured": false,
+    "images": {
+      "main": "../images/tourbiere/calopogon-tuberosus.jpg"
+    },
+    "specs": {
+      "rusticite": "-20°C",
+      "exposition": "Soleil",
+      "hauteur": "30-45 cm",
+      "floraison": "Rose magenta"
+    },
+    "description": "Cette orchidée nord-américaine fascine par ses fleurs roses exceptionnelles dont le labelle est positionné vers le haut (et non vers le bas comme chez la plupart des orchidées). Ce labelle est orné de poils jaunes qui attirent les pollinisateurs en imitant des étamines. Le Calopogon est une véritable star des tourbières américaines, souvent associé aux Sarracenia dans la nature. Sa culture est exigeante mais offre une floraison spectaculaire pour les amateurs patients qui maîtrisent déjà les bases des plantes de tourbière.",
+    "cultureNotes": [
+      "Sol: Tourbe pure ou sphaigne vivante, détrempé en été, sec en hiver",
+      "Arrosage: Eau de pluie uniquement, très humide en été",
+      "Mycorhizes: Présence bénéfique mais non indispensable à maturité",
+      "Multiplication: Par division des pseudobulbes en hiver",
+      "Particularité: Fleur rose à labelle barbu, floraison estivale spectaculaire"
+    ]
+  },
+  {
+    "id": "spiranthes-cernua",
+    "name": "Spiranthes cernua",
+    "commonName": "Spiranthe d'automne",
+    "category": "orchidees",
+    "difficulty": "difficile",
+    "featured": true,
+    "images": {
+      "main": "../images/tourbiere/spiranthes-cernua.jpg"
+    },
+    "specs": {
+      "rusticite": "-25°C",
+      "exposition": "Soleil",
+      "hauteur": "15-40 cm",
+      "floraison": "Blanc crème en spirale"
+    },
+    "description": "Voici une petite merveille ! La spiranthe d'automne est une orchidée terrestre indigène d'Amérique du Nord qui fleurit en septembre-octobre. Ses minuscules fleurs blanc crème sont disposées en spirale autour de la tige, d'où son nom. Cette orchidée discrète mais fascinante pousse naturellement dans les tourbières et prairies humides. Un véritable défi pour les passionnés qui veulent tenter l'aventure des orchidées sauvages !",
+    "cultureNotes": [
+      "Sol: Acide, tourbeux, humide à détrempé",
+      "Arrosage: Maintenir le substrat humide, eau de pluie",
+      "Mycorhizes: Bénéfiques mais certaines formes cultivées sont moins dépendantes",
+      "Multiplication: Division des rosettes à l’automne",
+      "Particularité: Floraison en spirale blanche, parfumée"
+    ]
+  },
+  {
+    "id": "platanthera-chlorantha",
+    "name": "Platanthera chlorantha",
+    "commonName": "Orchis vert ou Platanthère à fleurs verdâtres",
+    "category": "orchidees",
+    "difficulty": "très difficile",
+    "featured": true,
+    "images": {
+      "main": "../images/tourbiere/platanthera-chlorantha.jpg"
+    },
+    "specs": {
+      "rusticite": "-25°C",
+      "exposition": "Mi-ombre",
+      "hauteur": "20-60 cm",
+      "floraison": "Vert-blanc parfumé"
+    },
+    "description": "La platanthère à fleurs verdâtres (souvent appelée « orchis vert ») est une orchidée indigène discrète et parfumée le soir, pour attirer les papillons nocturnes. Elle pousse surtout en prairies, lisières et sous-bois frais — pas typiquement en haut-marais à sphaignes. Culture très difficile hors conditions proches du milieu naturel (mycorhizes).",
+    "cultureNotes": [
+      "Sol: Humifère, acide à neutre, frais à humide",
+      "Arrosage: Arrosages réguliers à l’eau douce",
+      "Mycorhizes: Fortement dépendante à l’état sauvage",
+      "Multiplication: Semis très lent, division de tubercules possible",
+      "Particularité: Floraison vert pâle au parfum subtil, longue éperon nectarifère"
+    ]
+  },
+  {
+    "id": "erica-carnea",
+    "name": "Erica carnea",
+    "commonName": "Bruyère d'hiver",
+    "category": "arbustes",
+    "difficulty": "facile",
+    "featured": false,
+    "images": {
+      "main": "../images/tourbiere/erica-carnea.jpg"
+    },
+    "specs": {
+      "rusticite": "-25°C",
+      "exposition": "Soleil/Mi-ombre",
+      "hauteur": "20-30 cm",
+      "floraison": "Rose à blanc"
+    },
+    "description": "La bruyère d'hiver est un petit arbuste compact au feuillage persistant. Elle fleurit de décembre à avril (roses, rouges ou blancs selon cultivars). Rustique et facile, elle colore la saison froide quand beaucoup de carnivores sont en dormance. Attention : ce n'est pas une plante de tourbière détrempée — elle préfère un sol acide bien drainé (bordures, buttes, massifs acidophiles) plutôt que l'eau stagnante du cœur de tourbière.",
+    "cultureNotes": [
+      "Sol: Acide (pH 4,5-6), bien drainé, riche en matière organique — éviter l'engorgement permanent",
+      "Arrosage: Eau de pluie, maintenir frais sans excès d'humidité",
+      "Taille: Légère taille après floraison pour maintenir un port compact"
+    ]
+  },
+  {
+    "id": "calluna-vulgaris",
+    "name": "Calluna vulgaris",
+    "commonName": "Bruyère commune, Callune",
+    "category": "arbustes",
+    "difficulty": "facile",
+    "featured": false,
+    "images": {
+      "main": "../images/tourbiere/calluna-vulgaris.jpg"
+    },
+    "specs": {
+      "rusticite": "-30°C",
+      "exposition": "Plein soleil",
+      "hauteur": "30-60 cm",
+      "floraison": "Rose-violet"
+    },
+    "description": "La bruyère commune est une espèce indigène qui tapisse naturellement les landes et tourbières d'Europe. Son port buissonnant et son feuillage persistant vert à bronze créent une structure permanente dans votre aménagement de tourbière. Contrairement à la bruyère d'hiver, elle fleurit en été et au début de l'automne (août-octobre), formant de longues grappes de petites fleurs rose-violet qui attirent de nombreux pollinisateurs. Il existe de nombreux cultivars aux coloris variés, du blanc au rouge foncé, ainsi que des variétés au feuillage doré ou panaché.",
+    "cultureNotes": [
+      "Sol: Très acide (pH 4-5,5), léger et bien drainé",
+      "Arrosage: Eau de pluie ; une fois installée, tolère un sol moins constamment détrempé que les sphaignes, mais pas une sécheresse prolongée en tourbière",
+      "Entretien: Taille après floraison pour éviter que la plante ne devienne trop ligneuse"
+    ]
+  },
+  {
+    "id": "iris-sibirica",
+    "name": "Iris sibirica",
+    "commonName": "Iris de Sibérie",
+    "category": "vivaces",
+    "difficulty": "facile",
+    "featured": false,
+    "images": {
+      "main": "../images/tourbiere/iris-sibirica.jpg"
+    },
+    "specs": {
+      "rusticite": "-35°C",
+      "exposition": "Soleil/Mi-ombre",
+      "hauteur": "60-90 cm",
+      "floraison": "Violet bleuté"
+    },
+    "description": "L'iris de Sibérie est une vivace élégante qui forme des touffes dressées de feuilles étroites vert foncé. En mai-juin, il produit des fleurs délicates violet bleuté sur de hautes tiges. Il tolère bien les sols frais à humides, souvent acides à neutres, et apporte une verticale utile en bordure de tourbière artificielle — plutôt en zone humide non saturée en permanence qu'au cœur d'une mare acide. Cultivars blancs ou roses disponibles.",
+    "cultureNotes": [
+      "Sol: Acide à neutre (pH 5-7), humide mais non détrempé en permanence",
+      "Arrosage: Eau de pluie, maintenir le sol constamment frais",
+      "Entretien: Division des touffes tous les 3-4 ans pour maintenir la vigueur"
+    ]
+  },
+  {
+    "id": "andromeda-polifolia",
+    "name": "Andromeda polifolia",
+    "commonName": "Andromède des marais",
+    "category": "arbustes",
+    "difficulty": "moyen",
+    "featured": false,
+    "images": {
+      "main": "../images/tourbiere/andromeda-polifolia.jpg"
+    },
+    "specs": {
+      "rusticite": "-35°C",
+      "exposition": "Mi-ombre/Soleil",
+      "hauteur": "20-40 cm",
+      "floraison": "Rose pâle"
+    },
+    "description": "L'Andromède des marais est un petit arbuste aux tiges rougeâtres et au feuillage persistant étroit d'un vert bleuté, qui prend des teintes pourprées en hiver. Ses fleurs roses en forme de petites clochettes, regroupées en ombelles, apparaissent au printemps et ressemblent à celles des bruyères. Native des tourbières et marais acides d'Europe et d'Amérique du Nord, cette plante délicate crée un contraste saisissant avec les rouges flamboyants des Sarracenia et forme un écrin parfait pour les petites plantes carnivores comme les Drosera.",
+    "cultureNotes": [
+      "Sol: Très acide (pH 3,5-5), tourbe pure ou mélange tourbe-sable",
+      "Arrosage: Eau de pluie, maintenir constamment humide mais non détrempé",
+      "Particularité: Plante de la famille des Ericacées qui peut être toxique si ingérée"
+    ]
+  },
+  {
+    "id": "carex-pauciflora",
+    "name": "Carex pauciflora",
+    "commonName": "Laiche pauciflore",
+    "category": "vivaces",
+    "difficulty": "moyen",
+    "featured": false,
+    "images": {
+      "main": "../images/tourbiere/carex-pauciflora.jpg"
+    },
+    "specs": {
+      "rusticite": "-30°C",
+      "exposition": "Plein soleil",
+      "hauteur": "10-20 cm",
+      "epis": "Brun doré"
+    },
+    "description": "La Laiche pauciflore est une petite cypéracée discrète des tourbières acides de montagne. Cette plante forme de petites touffes denses de feuilles fines vert clair et produit des épis caractéristiques avec quelques utricules allongés et recourbés qui lui donnent son aspect distinctif. Plante caractéristique des hauts-marais, elle accompagne naturellement les Drosera et crée un tapis de fond texturé qui met en valeur les plantes carnivores plus spectaculaires tout en maintenant l'humidité du sol et en protégeant les plantes plus délicates.",
+    "cultureNotes": [
+      "Sol: Très acide (pH 3,5-5), tourbe pure ou mélange tourbe-sphaigne",
+      "Arrosage: Eau de pluie uniquement, sol constamment humide",
+      "Multiplication: Division des touffes au printemps"
+    ]
+  },
+  {
+    "id": "carex-rostrata",
+    "name": "Carex rostrata",
+    "commonName": "Laiche à bec",
+    "category": "vivaces",
+    "difficulty": "facile",
+    "featured": false,
+    "images": {
+      "main": "../images/tourbiere/carex-rostrata.jpg"
+    },
+    "specs": {
+      "rusticite": "-30°C",
+      "exposition": "Soleil/Mi-ombre",
+      "hauteur": "40-80 cm",
+      "epis": "Brun-vert"
+    },
+    "description": "La Laiche à bec est une plante élégante des zones marécageuses qui forme des colonies étendues grâce à ses rhizomes traçants. Ses feuilles bleutées et ses tiges triangulaires caractéristiques portent des épis mâles brun-rougeâtre et des épis femelles verdâtres avec des utricules en forme de bec qui lui ont donné son nom. Cette espèce robuste crée une transition parfaite entre les zones humides et aquatiques de votre tourbière artificielle. Elle offre une structure verticale qui contraste harmonieusement avec les formes plus basses des plantes carnivores et des petits arbustes.",
+    "cultureNotes": [
+      "Sol: Acide à neutre (pH 4-6,5), tolérant de substrats variés tant qu'ils restent humides",
+      "Arrosage: Eau de pluie, substrat constamment humide à détrempé, supporte une immersion partielle",
+      "Entretien: Peut devenir envahissante, prévoir un espace suffisant ou la contenir"
+    ]
+  },
+  {
+    "id": "eriophorum-angustifolium",
+    "name": "Eriophorum angustifolium",
+    "commonName": "Linaigrette à feuilles étroites",
+    "category": "vivaces",
+    "difficulty": "facile",
+    "featured": false,
+    "images": {
+      "main": "../images/tourbiere/eriophorum-angustifolium.jpg"
+    },
+    "specs": {
+      "rusticite": "-40°C",
+      "exposition": "Plein soleil",
+      "hauteur": "30-60 cm",
+      "inflorescence": "Blanc cotonneux"
+    },
+    "description": "La Linaigrette à feuilles étroites est une plante emblématique des tourbières qui se caractérise par ses inflorescences blanches cotonneuses qui ondulent gracieusement au vent. Ces pompons blancs spectaculaires apparaissent en été et peuvent persister pendant des semaines, créant un effet visuel saisissant. Cette plante indigène des zones humides d'Europe et d'Amérique du Nord s'associe parfaitement avec les Sarracenia et autres plantes carnivores. Elle offre non seulement un contraste visuel spectaculaire, mais attire également l'attention sur la tourbière quand les plantes carnivores sont en dormance.",
+    "cultureNotes": [
+      "Sol: Très acide (pH 3,5-5,5), tourbe pure ou mélange tourbe-sphaigne constamment humide",
+      "Arrosage: Eau de pluie uniquement, sol constamment détrempé, supporte l'immersion partielle",
+      "Multiplication: Division des touffes au printemps ou semis en automne"
+    ]
+  },
+  {
+    "id": "eriophorum-vaginatum",
+    "name": "Eriophorum vaginatum",
+    "commonName": "Linaigrette vaginée",
+    "category": "vivaces",
+    "difficulty": "moyen",
+    "featured": true,
+    "images": {
+      "main": "../images/tourbiere/eriophorum-vaginatum.jpg"
+    },
+    "specs": {
+      "rusticite": "-30°C",
+      "exposition": "Soleil",
+      "hauteur": "20-60 cm",
+      "floraison": "Blanc cotonneux"
+    },
+    "description": "Emblème des hauts-marais : cette cypéracée (famille des carex, pas une vraie graminée) forme des touffes denses qui se parent au printemps d'épis cotonneux blancs. Indispensable pour l'ambiance d'une tourbière à sphaignes ; ses « queues de lièvre » ondulent au vent.",
+    "cultureNotes": [
+      "Sol: Tourbeux très acide (pH 3,5-4,5), sphaigne pure idéale",
+      "Arrosage: Eau de pluie exclusivement, maintenir détrempé en permanence",
+      "Multiplication: Division des touffes au printemps ou semis sur sphaigne humide",
+      "Particularité: Cypéracée cespiteuse des buttes ombrotrophes ; inflorescences très décoratives"
+    ]
+  },
+  {
+    "id": "osmunda-regalis",
+    "name": "Osmunda regalis",
+    "commonName": "Osmonde royale",
+    "category": "fougeres",
+    "difficulty": "facile",
+    "featured": true,
+    "images": {
+      "main": "../images/tourbiere/osmunda-regalis.jpg"
+    },
+    "specs": {
+      "rusticite": "-25°C",
+      "exposition": "Mi-ombre à soleil",
+      "hauteur": "100-150 cm",
+      "feuillage": "Vert doré en automne"
+    },
+    "description": "La reine des fougères ! L'osmonde royale est une fougère majestueuse qui forme de magnifiques touffes aux frondes bipennées d'un vert tendre. En automne, son feuillage se pare d'un or éclatant avant de disparaître. Ses spores apparaissent sur des frondes spécialisées brun-rouille au centre de la plante. Native des tourbières et zones humides, elle crée un arrière-plan spectaculaire pour tes carnivores et apporte une dimension architecturale à ta tourbière !",
+    "cultureNotes": [
+      "Sol: Acide à neutre (pH 4,5-6,5), riche en matière organique, constamment humide",
+      "Arrosage: Eau de pluie, maintenir le sol détrempé, supporte l'immersion partielle",
+      "Multiplication: Division des touffes au printemps ou spores",
+      "Particularité: Feuillage caduc, coloration automnale spectaculaire"
+    ]
+  },
+  {
+    "id": "blechnum-spicant",
+    "name": "Blechnum spicant",
+    "commonName": "Blechne en épi",
+    "category": "fougeres",
+    "difficulty": "facile",
+    "featured": false,
+    "images": {
+      "main": "../images/tourbiere/blechnum-spicant.jpg"
+    },
+    "specs": {
+      "rusticite": "-25°C",
+      "exposition": "Ombre à mi-ombre",
+      "hauteur": "30-60 cm",
+      "feuillage": "Vert foncé persistant"
+    },
+    "description": "Une fougère indigène robuste qui forme de belles touffes persistantes ! Le blechne en épi produit deux types de frondes : des frondes stériles étalées et des frondes fertiles dressées au centre, plus étroites et portant les spores. Son feuillage vert foncé luisant reste décoratif toute l'année. Parfaite pour créer une structure permanente dans ta tourbière, elle s'associe merveilleusement avec les mousses et les petites carnivores.",
+    "cultureNotes": [
+      "Sol: Acide (pH 4-6), humifère et bien drainé, supporte la tourbe",
+      "Arrosage: Eau de pluie, maintenir frais sans excès d'humidité",
+      "Multiplication: Division au printemps ou spores",
+      "Particularité: Feuillage persistant, dimorphisme des frondes très décoratif"
+    ]
+  },
+  {
+    "id": "dryopteris-carthusiana",
+    "name": "Dryopteris carthusiana",
+    "commonName": "Dryoptère des chartreux",
+    "category": "fougeres",
+    "difficulty": "facile",
+    "featured": false,
+    "images": {
+      "main": "../images/tourbiere/dryopteris-carthusiana.jpg"
+    },
+    "specs": {
+      "rusticite": "-30°C",
+      "exposition": "Ombre à mi-ombre",
+      "hauteur": "40-80 cm",
+      "feuillage": "Vert clair délicat"
+    },
+    "description": "Une fougère gracieuse aux frondes finement découpées d'un vert tendre lumineux ! Le dryoptère des chartreux forme de belles touffes aérées qui apportent légèreté et finesse à ta tourbière. Ses frondes triangulaires tripennées créent un feuillage très délicat qui contraste magnifiquement avec les formes plus graphiques des carnivores. Native des forêts acides d'Europe, elle s'adapte parfaitement aux conditions de tourbière.",
+    "cultureNotes": [
+      "Sol: Acide (pH 4,5-6), humifère et frais, riche en matière organique",
+      "Arrosage: Eau de pluie, maintenir constamment frais",
+      "Multiplication: Division des touffes au printemps ou spores",
+      "Particularité: Feuillage caduc, croissance rapide, très rustique"
+    ]
+  },
+  {
+    "id": "thelypteris-palustris",
+    "name": "Thelypteris palustris",
+    "commonName": "Thélyptère des marais",
+    "category": "fougeres",
+    "difficulty": "facile",
+    "featured": false,
+    "images": {
+      "main": "../images/tourbiere/thelypteris-palustris.jpg"
+    },
+    "specs": {
+      "rusticite": "-30°C",
+      "exposition": "Soleil à mi-ombre",
+      "hauteur": "40-70 cm",
+      "feuillage": "Vert clair"
+    },
+    "description": "La fougère des marais par excellence ! Cette espèce indigène forme des colonies étendues grâce à ses rhizomes traçants. Ses frondes lancéolées d'un vert clair émergent directement du sol et se balancent gracieusement au vent. Parfaitement adaptée aux sols détrempés et acides, elle crée un tapis de fond idéal pour tes carnivores tout en maintenant l'humidité du substrat. Une vraie plante de tourbière !",
+    "cultureNotes": [
+      "Sol: Acide à neutre (pH 4-7), détrempé à immergé, supporte l'eau stagnante",
+      "Arrosage: Eau de pluie, maintenir constamment détrempé",
+      "Multiplication: Division des rhizomes au printemps",
+      "Particularité: Colonisatrice, peut devenir envahissante, supporte l'immersion"
+    ]
+  },
+  {
+    "id": "polypodium-vulgare",
+    "name": "Polypodium vulgare",
+    "commonName": "Polypode commun",
+    "category": "fougeres",
+    "difficulty": "facile",
+    "featured": false,
+    "images": {
+      "main": "../images/tourbiere/polypodium-vulgare.jpg"
+    },
+    "specs": {
+      "rusticite": "-30°C",
+      "exposition": "Ombre à mi-ombre",
+      "hauteur": "15-40 cm",
+      "feuillage": "Vert persistant"
+    },
+    "description": "Une petite fougère charmante aux frondes persistantes profondément découpées ! Le polypode commun forme des touffes compactes qui tapissent naturellement les rochers et souches en décomposition dans les forêts acides. Ses frondes coriaces d'un vert soutenu restent décoratives toute l'année. Parfait pour créer des accents dans ta tourbière, notamment sur les bordures ou en association avec les mousses et petites carnivores.",
+    "cultureNotes": [
+      "Sol: Acide (pH 4,5-6), bien drainé, supporte les substrats pauvres",
+      "Arrosage: Eau de pluie, maintenir frais sans excès",
+      "Multiplication: Division des rhizomes ou spores",
+      "Particularité: Feuillage persistant, très rustique, croissance lente"
+    ]
+  },
+  {
+    "id": "pleione-formosana",
+    "name": "Pleione formosana",
+    "commonName": "Orchidée de Taiwan",
+    "category": "orchidees",
+    "difficulty": "moyen",
+    "featured": false,
+    "images": {
+      "main": "../images/tourbiere/pleione-formosana.jpg"
+    },
+    "specs": {
+      "rusticite": "-10°C",
+      "exposition": "Mi-ombre",
+      "hauteur": "15 cm",
+      "floraison": "Rose violacé"
+    },
+    "description": "L'une des Pleione les plus cultivées : floraison rose violacé au tout début du printemps, souvent avant le feuillage. Ce n'est pas une orchidée de tourbière détrempée, mais une espèce de climat frais (souvent en pot ou en bordure très drainante) qui apprécie un été humide et un hiver sec et frais. Idéale pour débuter les orchidées « alpine » / pseudobulbes.",
+    "cultureNotes": [
+      "Sol: Humifère, acide, très drainant (tourbe blonde, écorce fine, perlite, sphaigne) — pas d'eau stagnante",
+      "Arrosage: Eau de pluie, humide au printemps-été, quasi sec en hiver (dormance)",
+      "Multiplication: Division de pseudobulbes après la floraison",
+      "Particularité: Compagne de massif acide / pot, pas du cœur gorgé d'eau de la tourbière"
+    ]
+  },
+
+  {
+    "id": "pleione-tongariro",
+    "name": "Pleione 'Tongariro'",
+    "commonName": "Orchidée Tongariro",
+    "category": "orchidees",
+    "difficulty": "moyen",
+    "featured": true,
+    "images": {
+      "main": "../images/tourbiere/pleione-tongariro.jpg"
+    },
+    "specs": {
+      "rusticite": "-8°C",
+      "exposition": "Mi-ombre",
+      "hauteur": "15 cm",
+      "floraison": "Rose intense à gorge blanche"
+    },
+    "description": "Hybride rustique très prisé pour ses grandes fleurs rose intense à gorge blanche. Comme les autres Pleione, il demande un substrat acide très drainant et une dormance sèche en hiver — plutôt pot ou butte drainante qu'une tourbière saturée.",
+    "cultureNotes": [
+      "Sol: Tourbe acide bien drainée, substrat aéré (tourbe, écorce, sphaigne, pouzzolane)",
+      "Arrosage: Régulier en période de croissance, sec en hiver",
+      "Multiplication: Division de pseudobulbes en automne",
+      "Particularité: Idéal en pot à abriter l'hiver ou zone très drainante"
+    ]
+  },
+
+  {
+    "id": "pleione-tibesti",
+    "name": "Pleione 'Tibesti'",
+    "commonName": "Orchidée Tibesti",
+    "category": "orchidees",
+    "difficulty": "moyen",
+    "featured": true,
+    "images": {
+      "main": "../images/tourbiere/pleione-tibesti.jpg"
+    },
+    "specs": {
+      "rusticite": "-8°C",
+      "exposition": "Mi-ombre à lumière tamisée",
+      "hauteur": "12-15 cm",
+      "floraison": "Violet à labelle texturé"
+    },
+    "description": "Hybride compact aux fleurs violacées et labelle texturé, pour conditions fraîches et très drainantes. Floraison très précoce ; culture en pot souvent plus fiable qu'en pleine tourbière gorgée d'eau.",
+    "cultureNotes": [
+      "Sol: Tourbe légère, drainant, humifère (tourbe, perlite, écorces fines)",
+      "Arrosage: Eau de pluie, modéré au printemps, stopper en hiver",
+      "Multiplication: Division des pseudobulbes à la chute des feuilles",
+      "Particularité: Floraison précoce ; culture en pot recommandée"
+    ]
+  },
+
+  {
+    "id": "fritillaria-meleagris",
+    "name": "Fritillaria meleagris",
+    "commonName": "Fritillaire pintade, Œuf de vanneau",
+    "category": "bulbeuses",
+    "difficulty": "facile",
+    "featured": true,
+    "images": {
+      "main": "../images/tourbiere/fritillaria-meleagris.jpg"
+    },
+    "specs": {
+      "rusticite": "-25°C",
+      "exposition": "Soleil à mi-ombre",
+      "hauteur": "20-40 cm",
+      "floraison": "Violet quadrillé ou blanc"
+    },
+    "description": "La fritillaire pintade est un petit bulbe printanier absolument magique ! Ses fleurs en clochettes pendantes arborent un motif quadrillé violet et blanc unique, comme un damier naturel qui lui a valu son nom de 'pintade'. Cette plante indigène des prairies humides d'Europe se naturalise facilement dans les zones fraîches et humides de ta tourbière. Ses fleurs délicates et sa naturalisation spontanée en font une vedette du printemps qui revient fidèlement chaque année !",
+    "cultureNotes": [
+      "Sol: Frais à humide, légèrement acide à neutre (pH 6-7), riche en matière organique",
+      "Arrosage: Eau de pluie, maintenir humide au printemps, plus sec en été après flétrissement du feuillage",
+      "Multiplication: Division des bulbilles ou semis naturel (patience requise, 4-5 ans pour la floraison)",
+      "Particularité: Floraison avril-mai, feuillage caduc, naturalisation spontanée en conditions favorables"
+    ]
+  },
+  {
+    "id": "equisetum-japonicum",
+    "name": "Equisetum hyemale (cv. « japonicum »)",
+    "commonName": "Prêle d'hiver / « prêle du Japon » (nom commercial)",
+    "category": "vivaces",
+    "difficulty": "facile",
+    "featured": false,
+    "images": {
+      "main": "../images/tourbiere/equisetum-japonicum.jpg"
+    },
+    "specs": {
+      "rusticite": "-20°C",
+      "exposition": "Mi-ombre à soleil",
+      "hauteur": "60-100 cm",
+      "feuillage": "Vert segmenté persistant"
+    },
+    "description": "Vendue souvent sous le nom invalide « Equisetum japonicum », cette prêle architecturale correspond en culture à des formes d'Equisetum hyemale (prêle d'hiver). Hautes tiges droites segmentées, effet graphique type bambou miniature. Très à l'aise en sol humide ; rhizomes traçants — à contenir.",
+    "cultureNotes": [
+      "Sol: Humide à détrempé, acide à neutre (pH 5-7)",
+      "Arrosage: Eau de pluie, maintenir constamment humide, immersion partielle possible",
+      "Multiplication: Division des rhizomes au printemps (peut être envahissante)",
+      "Particularité: Nom « japonicum » = usage horticole ; taxon accepté = E. hyemale"
+    ]
+  },
+  {
+    "id": "equisetum-fluviatile",
+    "name": "Equisetum fluviatile",
+    "commonName": "Prêle des rivières",
+    "category": "vivaces",
+    "difficulty": "facile",
+    "featured": true,
+    "images": {
+      "main": "../images/tourbiere/equisetum-fluviatile.jpg"
+    },
+    "specs": {
+      "rusticite": "-30°C",
+      "exposition": "Soleil à mi-ombre",
+      "hauteur": "80-150 cm",
+      "feuillage": "Vert intense segmenté"
+    },
+    "description": "La prêle aquatique par excellence ! Cette espèce indigène d'Europe forme de magnifiques colonies de tiges droites et creuses qui peuvent même pousser complètement immergées. Ses tiges robustes d'un vert intense créent de véritables rideaux végétaux dans les zones les plus humides de ta tourbière. Parfaite pour les bordures d'étangs ou les zones de transition entre l'eau et la terre, elle offre un habitat idéal pour la faune aquatique tout en structurant l'espace avec élégance.",
+    "cultureNotes": [
+      "Sol: Détrempé à immergé, supporte l'eau stagnante, pH 5-8",
+      "Arrosage: Eau de pluie, nécessite une immersion partielle ou totale",
+      "Multiplication: Rhizomes très traçants, division au printemps (très envahissante !)",
+      "Particularité: Parmi les prêles les mieux adaptées à l'immersion ; tiges très robustes"
+    ]
+  },
+  {
+    "id": "equisetum-palustre",
+    "name": "Equisetum palustre",
+    "commonName": "Prêle des marais",
+    "category": "vivaces",
+    "difficulty": "facile",
+    "featured": false,
+    "images": {
+      "main": "../images/tourbiere/equisetum-palustre.jpg"
+    },
+    "specs": {
+      "rusticite": "-35°C",
+      "exposition": "Soleil à mi-ombre",
+      "hauteur": "30-60 cm",
+      "feuillage": "Vert ramifié"
+    },
+    "description": "Une prêle indigène délicate aux tiges finement ramifiées ! L'Equisetum palustre se distingue par ses nombreuses ramifications latérales qui lui donnent un aspect plus touffu et aéré que ses cousines. Cette espèce européenne colonise naturellement les marais et tourbières acides. Son port plus compact et ses ramifications élégantes en font une excellente plante de structure pour les zones intermédiaires de ta tourbière, entre les carnivores basses et les grandes fougères.",
+    "cultureNotes": [
+      "Sol: Acide à neutre (pH 4,5-7), humide à détrempé, tolérant",
+      "Arrosage: Eau de pluie, maintenir humide sans immersion obligatoire",
+      "Multiplication: Division des rhizomes au printemps (modérément envahissante)",
+      "Particularité: Tiges ramifiées caractéristiques, croissance en colonies denses"
+    ]
+  },
+  {
+    "id": "equisetum-telmateia",
+    "name": "Equisetum telmateia",
+    "commonName": "Grande prêle, Prêle géante",
+    "category": "vivaces",
+    "difficulty": "moyen",
+    "featured": true,
+    "images": {
+      "main": "../images/tourbiere/equisetum-telmateia.jpg"
+    },
+    "specs": {
+      "rusticite": "-25°C",
+      "exposition": "Mi-ombre à ombre",
+      "hauteur": "100-200 cm",
+      "feuillage": "Vert clair massif"
+    },
+    "description": "La géante de la famille ! Cette prêle spectaculaire peut atteindre 2 mètres de hauteur avec des tiges robustes et des ramifications denses qui créent un véritable mur végétal. Ses tiges fertiles apparaissent au printemps, beiges et non ramifiées, suivies des tiges stériles vertes et majestueuses. ATTENTION : cette prêle est extrêmement envahissante ! Réserve-la aux grands espaces ou contiens-la impérativement. Son effet visuel est saisissant mais elle peut rapidement coloniser toute ta tourbière !",
+    "cultureNotes": [
+      "Sol: Humide, calcaire à légèrement acide, riche en matière organique",
+      "Arrosage: Eau de pluie, maintenir constamment humide",
+      "Multiplication: Rhizomes très agressifs - OBLIGATOIRE de contenir avec barrière anti-rhizomes !",
+      "Particularité: Plus grande prêle d'Europe, dimorphisme printanier, TRÈS envahissante"
+    ]
+  },
+  {
+    "id": "schizostylis-coccinea-alba",
+    "name": "Hesperantha coccinea 'Alba'",
+    "commonName": "Hespéranthe blanche (syn. Schizostylis)",
+    "category": "bulbeuses",
+    "difficulty": "moyen",
+    "featured": true,
+    "images": {
+      "main": "../images/tourbiere/schizostylis-coccinea-alba.jpg"
+    },
+    "specs": {
+      "rusticite": "-10 à -12°C",
+      "exposition": "Soleil à mi-ombre",
+      "hauteur": "60-80 cm",
+      "floraison": "Blanc pur"
+    },
+    "description": "Joyau d'automne : forme blanche d'Hesperantha coccinea (anciennement Schizostylis coccinea). Fleurs en étoiles en septembre-octobre, feuillage étroit type iris/glaïeul. Originaire d'Afrique australe ; apprécie un sol frais à humide mais drainant — plutôt bordure de tourbière artificielle qu'eau stagnante. Paillage utile sous les −10 °C.",
+    "cultureNotes": [
+      "Sol: Frais à humide, légèrement acide à neutre (pH 6-7), riche et bien drainé",
+      "Arrosage: Eau de pluie, humide en été, réduire en hiver",
+      "Multiplication: Division des rhizomes au printemps tous les 2-3 ans",
+      "Particularité: Nom accepté Hesperantha ; floraison automnale tardive"
+    ]
+  },
+  {
+    "id": "schizostylis-coccinea-mrs-hegarty",
+    "name": "Hesperantha coccinea 'Mrs Hegarty'",
+    "commonName": "Hespéranthe rose 'Mrs Hegarty'",
+    "category": "bulbeuses",
+    "difficulty": "moyen",
+    "featured": true,
+    "images": {
+      "main": "../images/tourbiere/schizostylis-coccinea-mrs-hegarty.jpg"
+    },
+    "specs": {
+      "rusticite": "-8 à -10°C",
+      "exposition": "Soleil à mi-ombre",
+      "hauteur": "50-70 cm",
+      "floraison": "Rose tendre"
+    },
+    "description": "Cultivar compact et florifère aux fleurs rose tendre, souvent d'octobre à novembre. Même espèce que ci-dessus (H. coccinea) : sol frais, humide mais drainant, protection hivernale en climat froid.",
+    "cultureNotes": [
+      "Sol: Humide mais bien drainé, légèrement acide à neutre",
+      "Arrosage: Régulier à l'eau de pluie, éviter la sécheresse estivale",
+      "Multiplication: Division des touffes au printemps",
+      "Particularité: Floraison rose prolongée, port compact"
+    ]
+  },
+  {
+    "id": "schizostylis-coccinea-major",
+    "name": "Hesperantha coccinea 'Major'",
+    "commonName": "Hespéranthe rouge 'Major'",
+    "category": "bulbeuses",
+    "difficulty": "moyen",
+    "featured": true,
+    "images": {
+      "main": "../images/tourbiere/schizostylis-coccinea-major.jpg"
+    },
+    "specs": {
+      "rusticite": "-10°C",
+      "exposition": "Soleil à mi-ombre",
+      "hauteur": "80-100 cm",
+      "floraison": "Rouge vif éclatant"
+    },
+    "description": "Forme vigoureuse à grandes fleurs rouge vif et tiges hautes. Spectaculaire en automne en sol frais ; contenir les touffes qui s'étalent. Toujours Hesperantha coccinea (syn. Schizostylis).",
+    "cultureNotes": [
+      "Sol: Riche, humide mais drainé, légèrement acide à neutre (pH 6-7)",
+      "Arrosage: Eau de pluie abondante en été, maintenir frais sans excès",
+      "Multiplication: Division des rhizomes vigoureux au printemps",
+      "Particularité: Grande stature, croissance rapide"
+    ]
+  },
+  {
+    "id": "schizostylis-coccinea-sunrise",
+    "name": "Hesperantha coccinea 'Sunrise'",
+    "commonName": "Hespéranthe saumon 'Sunrise'",
+    "category": "bulbeuses",
+    "difficulty": "moyen",
+    "featured": true,
+    "images": {
+      "main": "../images/tourbiere/schizostylis-coccinea-sunrise.jpg"
+    },
+    "specs": {
+      "rusticite": "-8°C",
+      "exposition": "Soleil à mi-ombre",
+      "hauteur": "60-75 cm",
+      "floraison": "Saumon-orange lumineux"
+    },
+    "description": "Cultivar aux fleurs saumon-orange, recherché pour cette teinte chaude rare chez H. coccinea. Mêmes exigences : frais, humide mais drainant, rusticité limitée.",
+    "cultureNotes": [
+      "Sol: Humifère, frais à humide, bien drainé, légèrement acide",
+      "Arrosage: Régulier à l'eau de pluie, éviter le stress hydrique",
+      "Multiplication: Division des touffes au printemps",
+      "Particularité: Couleur saumon-orange ; pailler ou abriter sous −8 °C"
+    ]
+  }
+]

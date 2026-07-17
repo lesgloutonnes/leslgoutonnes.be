@@ -1,0 +1,492 @@
+[
+    {
+        "id":  "magellanicum",
+        "type":  "rouge",
+        "habitat":  "tourbiere",
+        "name":  "Sphagnum medium / S. divinum",
+        "commonName":  "Complexe de la sphaigne « magellanique »",
+        "image":  "../images/sphaignes/sphagnum-magellanicum.jpg",
+        "specs":  [
+                      {
+                          "icon":  "🎨",
+                          "label":  "Coloration",
+                          "value":  "Rouge à pourpre"
+                      },
+                      {
+                          "icon":  "🏠",
+                          "label":  "Habitat",
+                          "value":  "Tourbière haute"
+                      },
+                      {
+                          "icon":  "📏",
+                          "label":  "Hauteur",
+                          "value":  "10-20 cm"
+                      },
+                      {
+                          "icon":  "💎",
+                          "label":  "Présence",
+                          "value":  "Peu commune"
+                      }
+                  ],
+        "description":  [
+                            "Les grandes sphaignes rouges des Hautes Fagnes ont longtemps été appelées Sphagnum magellanicum. Depuis 2018, ce nom est réservé aux populations d\u0027Amérique du Sud : en Europe, on distingue surtout Sphagnum medium (buttes ombrotrophes) et Sphagnum divinum (niche plus large, y compris lisières).",
+                            "Leur coloration rouge à pourpre, accentuée au soleil, vient de pigments phénoliques (sphagnorubines) qui filtrent les UV. Elles forment des coussins denses sur les buttes et restent parmi les principales formatrices de tourbe dans les fagnes."
+                        ],
+        "observation":  "Bien visibles le long du sentier de la Polleur et dans les zones ouvertes de la Fagne Wallonne. La teinte rouge s\u0027intensifie souvent en fin d\u0027été. Sans loupe et critères fins, S. medium et S. divinum se confondent facilement sur le terrain."
+    },
+    {
+        "id":  "palustre",
+        "type":  "vert",
+        "habitat":  "bord-eau",
+        "name":  "Sphagnum palustre",
+        "commonName":  "Sphaigne des marais",
+        "image":  "../images/sphaignes/sphagnum-palustre.jpg",
+        "specs":  [
+                      {
+                          "icon":  "🎨",
+                          "label":  "Coloration",
+                          "value":  "Vert pâle"
+                      },
+                      {
+                          "icon":  "🏠",
+                          "label":  "Habitat",
+                          "value":  "Bord de l\u0027eau"
+                      },
+                      {
+                          "icon":  "📏",
+                          "label":  "Hauteur",
+                          "value":  "15-35 cm"
+                      },
+                      {
+                          "icon":  "💎",
+                          "label":  "Présence",
+                          "value":  "Très commune"
+                      }
+                  ],
+        "description":  [
+                            "Sphagnum palustre est une espèce robuste à la couleur vert pâle, facilement reconnaissable à ses capitules (têtes) étoilés et volumineux. C\u0027est l\u0027une des sphaignes les plus communes des Hautes Fagnes, particulièrement adaptée aux zones de transition entre tourbière et milieux forestiers.",
+                            "Cette espèce est souvent la première à coloniser les zones perturbées en cours de restauration, jouant ainsi un rôle pionnier crucial dans la régénération des tourbières endommagées par l\u0027activité humaine."
+                        ],
+        "observation":  "Particulièrement abondante le long des berges de la Hoëgne, cette sphaigne forme des tapis verts clairs sur les zones humides à proximité du cours d\u0027eau. Elle est également présente dans la Fagne des Deux-Séries, dans les dépressions humides entre les buttes de sphaignes rouges."
+    },
+    {
+        "id":  "capillifolium",
+        "type":  "rouge",
+        "habitat":  "tourbiere",
+        "name":  "Sphagnum capillifolium",
+        "commonName":  "Sphaigne à feuilles capillaires",
+        "image":  "../images/sphaignes/sphagnum-capillifolium.jpg",
+        "specs":  [
+                      {
+                          "icon":  "🎨",
+                          "label":  "Coloration",
+                          "value":  "Rouge-rosé"
+                      },
+                      {
+                          "icon":  "🏠",
+                          "label":  "Habitat",
+                          "value":  "Tourbière haute"
+                      },
+                      {
+                          "icon":  "📏",
+                          "label":  "Hauteur",
+                          "value":  "5-10 cm"
+                      },
+                      {
+                          "icon":  "💎",
+                          "label":  "Présence",
+                          "value":  "Commune"
+                      }
+                  ],
+        "description":  [
+                            "Sphagnum capillifolium forme des touffes compactes d\u0027un rouge-rosé caractéristique. Plus petite que les grosses sphaignes rouges du complexe medium/divinum, elle a des tiges fines et des feuilles étroites (aspect « capillaire »), avec un capitulum souvent pointu et rouge vif.",
+                            "Relativement tolérante à un assèchement superficiel pour une sphaigne, elle occupe souvent le sommet des buttes, créant des microhabitats favorables à certaines plantes carnivores comme les Drosera."
+                        ],
+        "observation":  "Bien présente dans la Grande Fagne et d\u0027autres fagnes ouvertes ; aussi sur des plateaux tourbeux proches comme celui des Tailles. Souvent associée aux éricacées (bruyères, myrtilles) sur les buttes légèrement surélevées."
+    },
+    {
+        "id":  "cuspidatum",
+        "type":  "vert",
+        "habitat":  "bord-eau",
+        "name":  "Sphagnum cuspidatum",
+        "commonName":  "Sphaigne des dépressions",
+        "image":  "../images/sphaignes/sphagnum-cuspidatum.jpg",
+        "specs":  [
+                      {
+                          "icon":  "🎨",
+                          "label":  "Coloration",
+                          "value":  "Vert vif"
+                      },
+                      {
+                          "icon":  "🏠",
+                          "label":  "Habitat",
+                          "value":  "Bord de l\u0027eau"
+                      },
+                      {
+                          "icon":  "📏",
+                          "label":  "Hauteur",
+                          "value":  "10-30 cm"
+                      },
+                      {
+                          "icon":  "💎",
+                          "label":  "Présence",
+                          "value":  "Très commune"
+                      }
+                  ],
+        "description":  [
+                            "Sphagnum cuspidatum est une sphaigne aquatique qui peut croître entièrement submergée. D\u0027un vert vif caractéristique, elle développe des feuilles fines et allongées qui ondulent élégamment dans l\u0027eau. Cette adaptation lui permet de flotter et de coloniser les mares et les dépressions inondées des tourbières.",
+                            "Cette espèce joue un rôle écologique crucial en initialisant le processus de comblement des mares tourbeuses, première étape de la formation de tourbe dans les dépressions humides."
+                        ],
+        "observation":  "Facilement observable dans les mares et \"gouilles\" (dépressions inondées) de la Fagne de la Poleur et autour du lac de la Gileppe. Elle forme parfois des tapis flottants à la surface de l\u0027eau qui peuvent supporter le poids d\u0027autres végétaux, créant ainsi des radeaux de végétation."
+    },
+    {
+        "id":  "fallax",
+        "type":  "jaune",
+        "habitat":  "tourbiere",
+        "name":  "Sphagnum fallax",
+        "commonName":  "Sphaigne trompeuse",
+        "image":  "../images/sphaignes/sphagnum-fallax.jpg",
+        "specs":  [
+                      {
+                          "icon":  "🎨",
+                          "label":  "Coloration",
+                          "value":  "Vert jaunâtre à doré"
+                      },
+                      {
+                          "icon":  "🏠",
+                          "label":  "Habitat",
+                          "value":  "Tourbière / pelouses humides"
+                      },
+                      {
+                          "icon":  "📏",
+                          "label":  "Hauteur",
+                          "value":  "15-25 cm"
+                      },
+                      {
+                          "icon":  "💎",
+                          "label":  "Présence",
+                          "value":  "Très commune"
+                      }
+                  ],
+        "description":  [
+                            "Sphagnum fallax forme souvent de vastes « pelouses » vert jaunâtre à dorées. Son nom (« trompeuse ») rappelle qu\u0027elle se confond facilement avec d\u0027autres espèces du groupe Cuspidata (dont S. cuspidatum et S. majus).",
+                            "Très fréquente dans les Hautes Fagnes, elle domine beaucoup de surfaces humides ombrotrophes ou légèrement minérotrophes, colonise aussi fossés et zones en restauration, et accompagne souvent S. cuspidatum dans les dépressions."
+                        ],
+        "observation":  "Abondante dans les fagnes ouvertes (Fagne Wallonne, Polleur, Malchamps) et en lisière des tourbières boisées. Moins typique des vrais sous-bois secs : on la cherche surtout dans les zones engorgées, les fossés et les pelouses de sphaignes."
+    },
+    {
+        "id":  "russowii",
+        "type":  "rouge",
+        "habitat":  "sous-bois",
+        "name":  "Sphagnum russowii",
+        "commonName":  "Sphaigne de Russow",
+        "image":  "../images/sphaignes/sphagnum-russowii.jpg",
+        "specs":  [
+                      {
+                          "icon":  "🎨",
+                          "label":  "Coloration",
+                          "value":  "Rouge-violet"
+                      },
+                      {
+                          "icon":  "🏠",
+                          "label":  "Habitat",
+                          "value":  "Sous-bois humide"
+                      },
+                      {
+                          "icon":  "📏",
+                          "label":  "Hauteur",
+                          "value":  "10-15 cm"
+                      },
+                      {
+                          "icon":  "💎",
+                          "label":  "Présence",
+                          "value":  "Rare"
+                      }
+                  ],
+        "description":  [
+                            "Sphagnum russowii se distingue par sa coloration rouge-violet à bordeaux, particulièrement intense sur les parties exposées au soleil. Cette espèce forestière forme des touffes extensives sous le couvert des épicéas et des bouleaux dans les forêts tourbeuses.",
+                            "Contrairement à ses cousines des milieux ouverts, elle tolère l\u0027ombre partielle et profite de la protection des arbres pour maintenir son humidité, tout en contribuant à l\u0027acidification progressive du sol forestier."
+                        ],
+        "observation":  "Cette sphaigne est particulièrement présente dans les sous-bois humides de la Forêt de la Vecquée et du Bois des Minières. Elle forme des tapis colorés à la base des troncs d\u0027épicéas et dans les clairières partiellement ombragées de la forêt tourbeuse. Plus récemment, des observations la situent aussi vers la Grande Fange (Vielsalm)"
+    },
+    {
+        "id":  "fimbriatum",
+        "type":  "vert",
+        "habitat":  "bord-eau",
+        "name":  "Sphagnum fimbriatum",
+        "commonName":  "Sphaigne frangée",
+        "image":  "../images/sphaignes/sphagnum-fimbriatum.jpg",
+        "specs":  [
+                      {
+                          "icon":  "🎨",
+                          "label":  "Coloration",
+                          "value":  "Vert pâle"
+                      },
+                      {
+                          "icon":  "🏠",
+                          "label":  "Habitat",
+                          "value":  "Bord de l\u0027eau"
+                      },
+                      {
+                          "icon":  "📏",
+                          "label":  "Hauteur",
+                          "value":  "10-20 cm"
+                      },
+                      {
+                          "icon":  "💎",
+                          "label":  "Présence",
+                          "value":  "Commune"
+                      }
+                  ],
+        "description":  [
+                            "Sphagnum fimbriatum tire son nom de ses feuilles caulinaires frangées au sommet, une caractéristique observable à la loupe. Cette sphaigne d\u0027un vert tendre forme des touffes peu denses dans les zones humides à la périphérie des tourbières.",
+                            "Cette espèce est particulièrement présente dans les zones de recolonisation, notamment après des travaux de restauration de tourbières. Elle joue un rôle pionnier important dans la régénération des milieux humides perturbés."
+                        ],
+        "observation":  "Cette sphaigne est facilement observable dans les zones périphériques de la Fagne de Malchamps et le long des ruisseaux de la vallée de la Hoëgne. Elle colonise souvent les fossés humides et les bords des chemins forestiers dans les Hautes Fagnes."
+    },
+    {
+        "id":  "squarrosum",
+        "type":  "vert",
+        "habitat":  "sous-bois",
+        "name":  "Sphagnum squarrosum",
+        "commonName":  "Sphaigne squarreuse",
+        "image":  "../images/sphaignes/sphagnum-squarrosum.jpg",
+        "specs":  [
+                      {
+                          "icon":  "🎨",
+                          "label":  "Coloration",
+                          "value":  "Vert brillant"
+                      },
+                      {
+                          "icon":  "🏠",
+                          "label":  "Habitat",
+                          "value":  "Sous-bois humide"
+                      },
+                      {
+                          "icon":  "📏",
+                          "label":  "Hauteur",
+                          "value":  "15-30 cm"
+                      },
+                      {
+                          "icon":  "💎",
+                          "label":  "Présence",
+                          "value":  "Commune"
+                      }
+                  ],
+        "description":  [
+                            "Sphagnum squarrosum est reconnaissable à ses feuilles recourbées qui lui donnent un aspect hérissé ou \"squarreux\". C\u0027est une grande sphaigne robuste d\u0027un vert brillant, qui peut atteindre 30 cm de hauteur dans les conditions optimales.",
+                            "Contrairement à la plupart des sphaignes qui préfèrent les milieux très acides, cette espèce tolère des eaux légèrement moins acides et plus riches en minéraux, ce qui explique sa présence dans les forêts marécageuses et les aulnaies."
+                        ],
+        "observation":  "Cette sphaigne est particulièrement visible dans les sous-bois humides du Bois de Staneux et dans les zones boisées humides autour du lac de la Gileppe. Elle forme des touffes luxuriantes au pied des aulnes et des bouleaux dans les forêts marécageuses."
+    },
+    {
+        "id":  "subnitens",
+        "type":  "rouge",
+        "habitat":  "tourbiere",
+        "name":  "Sphagnum subnitens",
+        "commonName":  "Sphaigne brillante",
+        "image":  "../images/sphaignes/sphagnum-subnitens.jpg",
+        "specs":  [
+                      {
+                          "icon":  "🎨",
+                          "label":  "Coloration",
+                          "value":  "Rouge-rose iridescent"
+                      },
+                      {
+                          "icon":  "🏠",
+                          "label":  "Habitat",
+                          "value":  "Tourbière haute"
+                      },
+                      {
+                          "icon":  "📏",
+                          "label":  "Hauteur",
+                          "value":  "10-15 cm"
+                      },
+                      {
+                          "icon":  "💎",
+                          "label":  "Présence",
+                          "value":  "Peu commune"
+                      }
+                  ],
+        "description":  [
+                            "Sphagnum subnitens se distingue par son aspect brillant et ses reflets métalliques qui lui confèrent une apparence iridescente unique. Sa coloration varie du rose au rouge-cuivré, particulièrement au soleil.",
+                            "Cette espèce forme des buttes compactes dans les tourbières, créant des microhabitats surélevés et plus secs qui favorisent la diversité végétale. S. subnitens est souvent considérée comme une sphaigne de milieux faiblement à modérément minérotrophes, qu\u0027on trouve en lisière de tourbière ou dans les bas-marais acides."
+                        ],
+        "observation":  "Souvent en habitats de transition entre tourbière ombrotrophe (bog) et bas-marais (fen), ou en lisière. Particulièrement visible en fin d\u0027été, quand les teintes rougeâtres s\u0027intensifient au soleil."
+    },
+    {
+        "id":  "papillosum",
+        "type":  "jaune",
+        "habitat":  "tourbiere",
+        "name":  "Sphagnum papillosum",
+        "commonName":  "Sphaigne papilleuse",
+        "image":  "../images/sphaignes/sphagnum-papillosum.jpg",
+        "specs":  [
+                      {
+                          "icon":  "🎨",
+                          "label":  "Coloration",
+                          "value":  "Brun-doré"
+                      },
+                      {
+                          "icon":  "🏠",
+                          "label":  "Habitat",
+                          "value":  "Tourbière haute"
+                      },
+                      {
+                          "icon":  "📏",
+                          "label":  "Hauteur",
+                          "value":  "10-20 cm"
+                      },
+                      {
+                          "icon":  "💎",
+                          "label":  "Présence",
+                          "value":  "Commune"
+                      }
+                  ],
+        "description":  [
+                            "Sphagnum papillosum tire son nom des papilles présentes sur ses cellules foliaires (visibles au microscope). Cette sphaigne robuste présente des teintes allant du vert-olive au brun-doré et forme des buttes denses et compactes.",
+                            "C\u0027est l\u0027une des principales espèces formatrices de tourbe dans les Hautes Fagnes. Comme les autres sphaignes, elle retient plusieurs dizaines de fois son poids sec en eau grâce à ses hyalocystes (cellules mortes servant de réservoirs)."
+                        ],
+        "observation":  "Abondante dans les parties centrales de la Fagne Wallonne ; également présente sur d\u0027autres plateaux tourbeux ardennais proches (ex. plateau des Tailles). Elle forme souvent des buttes favorables à la canneberge (Vaccinium oxycoccos) et à certaines plantes carnivores."
+    },
+    {
+        "id":  "tenellum",
+        "type":  "vert",
+        "habitat":  "tourbiere",
+        "name":  "Sphagnum tenellum",
+        "commonName":  "Sphaigne délicate",
+        "image":  "../images/sphaignes/sphagnum-tenellum.jpg",
+        "specs":  [
+                      {
+                          "icon":  "🎨",
+                          "label":  "Coloration",
+                          "value":  "Vert jaunâtre"
+                      },
+                      {
+                          "icon":  "🏠",
+                          "label":  "Habitat",
+                          "value":  "Tourbière haute"
+                      },
+                      {
+                          "icon":  "📏",
+                          "label":  "Hauteur",
+                          "value":  "3-8 cm"
+                      },
+                      {
+                          "icon":  "💎",
+                          "label":  "Présence",
+                          "value":  "Peu commune"
+                      }
+                  ],
+        "description":  [
+                            "Sphagnum tenellum est une petite sphaigne délicate qui forme des coussins bas et peu denses. Comme son nom l\u0027indique, elle est plus frêle que ses cousines, avec des tiges fines et des feuilles minuscules qui lui donnent un aspect délicat.",
+                            "Cette espèce pionnière colonise souvent les zones de tourbe nue ou récemment perturbées, jouant un rôle crucial dans la cicatrisation des tourbières après érosion ou après les travaux de restauration écologique."
+                        ],
+        "observation":  "On peut observer cette petite sphaigne dans les zones de restauration de la Fagne des Deux-Séries et sur les bordures des mares creusées dans le cadre des programmes de restauration des tourbières. Elle forme de petits coussins vert clair sur la tourbe humide."
+    },
+    {
+        "id":  "denticulatum",
+        "type":  "vert",
+        "habitat":  "bord-eau",
+        "name":  "Sphagnum denticulatum",
+        "commonName":  "Sphaigne denticulée (syn. auriculée)",
+        "image":  "../images/sphaignes/sphagnum-auriculatum.jpg",
+        "specs":  [
+                      {
+                          "icon":  "🎨",
+                          "label":  "Coloration",
+                          "value":  "Vert à brun"
+                      },
+                      {
+                          "icon":  "🏠",
+                          "label":  "Habitat",
+                          "value":  "Bord de l\u0027eau"
+                      },
+                      {
+                          "icon":  "📏",
+                          "label":  "Hauteur",
+                          "value":  "10-20 cm"
+                      },
+                      {
+                          "icon":  "💎",
+                          "label":  "Présence",
+                          "value":  "Commune"
+                      }
+                  ],
+        "description":  [
+                            "Sphagnum denticulatum (également connue sous le nom de S. auriculatum) est une sphaigne aquatique qui forme des tapis lâches dans les eaux peu profondes et les zones temporairement inondées. Sa coloration varie du vert au brun selon l\u0027exposition au soleil.",
+                            "Très tolérante aux fluctuations du niveau d\u0027eau, cette espèce est particulièrement résistante à la dessication temporaire, ce qui lui permet de coloniser des mares saisonnières et des dépressions qui s\u0027assèchent partiellement en été."
+                        ],
+        "observation":  "Cette sphaigne est facilement observable autour des mares et des ruisseaux de la Fagne de la Poleûr et dans les dépressions humides du Grand Bongard. Elle forme souvent des tapis denses le long des berges peu profondes des étangs forestiers."
+    },
+    {
+        "id":  "contortum",
+        "type":  "jaune",
+        "habitat":  "bord-eau",
+        "name":  "Sphagnum contortum",
+        "commonName":  "Sphaigne contournée",
+        "image":  "../images/sphaignes/sphagnum-contortum.jpg",
+        "specs":  [
+                      {
+                          "icon":  "🎨",
+                          "label":  "Coloration",
+                          "value":  "Jaune-ocre"
+                      },
+                      {
+                          "icon":  "🏠",
+                          "label":  "Habitat",
+                          "value":  "Bord de l\u0027eau"
+                      },
+                      {
+                          "icon":  "📏",
+                          "label":  "Hauteur",
+                          "value":  "8-15 cm"
+                      },
+                      {
+                          "icon":  "💎",
+                          "label":  "Présence",
+                          "value":  "Rare"
+                      }
+                  ],
+        "description":  [
+                            "Sphagnum contortum tire son nom de ses tiges et rameaux souvent contournés qui lui donnent un aspect tortueux caractéristique. Cette sphaigne présente une coloration jaune-ocre à dorée qui la rend particulièrement attrayante au soleil.",
+                            "Contrairement à la plupart des sphaignes, elle peut tolérer des eaux légèrement plus riches en minéraux et moins acides, ce qui explique sa présence dans les zones de transition entre tourbières et bas-marais."
+                        ],
+        "observation":  "Cette sphaigne rare peut être observée dans les zones de suintement et les sources des Hautes Fagnes, notamment dans la Fagne des Deux-Séries et aux abords de la Vecquée. Elle forme de petits coussinets dorés dans les zones d\u0027écoulement d\u0027eau."
+    },
+    {
+        "id":  "teres",
+        "type":  "jaune",
+        "habitat":  "sous-bois",
+        "name":  "Sphagnum teres",
+        "commonName":  "Sphaigne cylindrique",
+        "image":  "../images/sphaignes/sphagnum-teres.jpg",
+        "specs":  [
+                      {
+                          "icon":  "🎨",
+                          "label":  "Coloration",
+                          "value":  "Jaune olive"
+                      },
+                      {
+                          "icon":  "🏠",
+                          "label":  "Habitat",
+                          "value":  "Sous-bois humide"
+                      },
+                      {
+                          "icon":  "📏",
+                          "label":  "Hauteur",
+                          "value":  "10-20 cm"
+                      },
+                      {
+                          "icon":  "💎",
+                          "label":  "Présence",
+                          "value":  "Peu commune"
+                      }
+                  ],
+        "description":  [
+                            "Sphagnum teres doit son nom à ses rameaux cylindriques qui lui confèrent une silhouette élancée et régulière. Cette sphaigne d\u0027un jaune olive à brunâtre forme des touffes peu denses dans les zones de transition forestières.",
+                            "Espèce de mi-ombre, elle est souvent associée aux zones de suintement en sous-bois et aux clairières humides des forêts tourbeuses. Elle tolère mieux que d\u0027autres sphaignes une certaine richesse minérale de l\u0027eau."
+                        ],
+        "observation":  "Cette sphaigne peut être observée dans les clairières humides du Bois des Minières et dans les zones de suintement de la Forêt Domaniale des Hautes Fagnes. Elle forme des touffes vert olive à la base des aulnes et dans les dépressions forestières humides."
+    }
+]

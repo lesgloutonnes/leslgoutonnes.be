@@ -1,0 +1,735 @@
+[
+  {
+    "id": "eupen-botrange",
+    "region": "wallonie",
+    "difficulte": "difficile",
+    "plantes": "drosera sphaignes",
+    "image": "../images/sphaignes/tourbiere-fagnes.jpg",
+    "imageAlt": "Eupen à Botrange",
+    "titre": "Traversée Eupen → Botrange",
+    "sousTitre": "Immersion totale dans les Hautes Fagnes",
+    "specs": {
+      "localisation": "Départ Eupen – Arrivée Signal de Botrange",
+      "distance": "24,8 km",
+      "duree": "7 à 8 heures",
+      "difficulte": "Difficile"
+    },
+    "description": "Cette traversée relie les forêts humides autour du lac d'Eupen au cœur des Hautes Fagnes, jusqu'au Signal de Botrange (694 m, point culminant de Belgique). Itinéraire long traversant tourbières, landes et boisements tourbeux ; observation des carnivores depuis les caillebotis uniquement, sans garantie à chaque sortie.",
+    "plantesObservables": [
+      {
+        "nom": "Drosera rotundifolia",
+        "description": "En zone humide ouverte (surtout juin à août), souvent visible depuis les caillebotis si on prend le temps de chercher"
+      },
+      {
+        "nom": "Sphagnum medium / S. divinum",
+        "description": "Présentes toute l'année, coussins rougeâtres sur les buttes (complexe autrefois appelé magellanicum)"
+      },
+      {
+        "nom": "Sphagnum fallax",
+        "description": "Tapis verdâtres dans les zones gorgées d'eau et pelouses de sphaignes"
+      },
+      {
+        "nom": "Eriophorum vaginatum",
+        "description": "(Linaigrette engainée) Cypéracée typique des tourbières, touffes à pompons blancs au printemps"
+      }
+    ],
+    "meilleurePeriode": "De juin à août pour les Drosera en activité. L'automne est idéal pour les sphaignes et les ambiances brumeuses typiques des fagnes.",
+    "conseils": "Marche longue nécessitant endurance et équipement adéquat. Certaines parties peuvent être très humides ou glissantes. Respecter scrupuleusement les balisages et caillebotis pour ne pas altérer les habitats sensibles. Prévoir suffisamment d'eau et de nourriture car peu de points de ravitaillement sur le chemin. Traversée nécessitant une bonne organisation (voiture à l'arrivée ou transport en commun).",
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&origin=Lac+d'Eupen&destination=Signal+de+Botrange"
+  },
+  {
+    "id": "botrange-malmedy",
+    "region": "wallonie",
+    "difficulte": "difficile",
+    "plantes": "drosera sphaignes",
+    "image": "../images/sphaignes/tourbiere-fagnes.jpg",
+    "imageAlt": "Botrange à Malmedy",
+    "titre": "Botrange → Malmedy",
+    "sousTitre": "Des brumes des fagnes aux vallées boisées",
+    "specs": {
+      "localisation": "Départ Signal de Botrange – Arrivée Malmedy",
+      "distance": "19,9 km",
+      "duree": "6 à 7 heures",
+      "difficulte": "Difficile"
+    },
+    "description": "Cette randonnée descend des tourbières du plateau fagnard vers les vallées boisées de la Warche. Une diversité de paysages allant des landes humides aux hêtraies, avec un dénivelé important mais progressif. Le parcours traverse plusieurs réserves naturelles protégées et offre des panoramas exceptionnels.",
+    "plantesObservables": [
+      {
+        "nom": "Drosera rotundifolia",
+        "description": "Présente dans les zones tourbeuses bien exposées au soleil, observable principalement depuis les caillebotis"
+      },
+      {
+        "nom": "Sphagnum medium / S. divinum",
+        "description": "Forme des buttes rougeâtres caractéristiques en zones ouvertes"
+      },
+      {
+        "nom": "Sphagnum fallax",
+        "description": "Tapisse les dépressions humides"
+      },
+      {
+        "nom": "Vaccinium uliginosum",
+        "description": "(Airelle des marais) Petit arbuste caractéristique des tourbières"
+      }
+    ],
+    "meilleurePeriode": "De juin à août pour les Drosera en activité. L'automne est idéal pour les couleurs de la végétation et les ambiances brumeuses typiques des fagnes.",
+    "conseils": "Prévoir de bonnes chaussures imperméables et suffisamment d'eau. Trajet non circulaire nécessitant une organisation (véhicule à l'arrivée ou transport en commun depuis Malmedy). En période humide, certaines portions deviennent difficiles d'accès. Respectez rigoureusement les sentiers balisés et les zones de protection intégrale où l'accès est interdit.",
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&origin=Signal+de+Botrange&destination=Malmedy"
+  },
+  {
+    "id": "pres-grand-rieu",
+    "region": "wallonie",
+    "difficulte": "facile",
+    "plantes": "zones humides tourbe",
+    "image": "../images/randonnees/pres-grand-rieu.jpg",
+    "imageAlt": "Réserve naturelle des Prés de Grand Rieu",
+    "titre": "Réserve naturelle des Prés de Grand Rieu",
+    "sousTitre": "Mosaïque de zones humides en Hainaut",
+    "specs": {
+      "localisation": "Hautrage, Hainaut",
+      "distance": "3 km (boucle)",
+      "duree": "1 heure",
+      "difficulte": "Facile"
+    },
+    "description": "Cette réserve naturelle de plus de 100 hectares (Hautrage) est une mosaïque de milieux humides : roselières, prairies inondées, mares temporaires et sols tourbeux localement. Gérée par Natagora, elle vise surtout l'avifaune et la flore hygrophile sur d'anciennes terres agricoles restaurées — pas un haut-marais à Drosera comme les Hautes Fagnes.",
+    "plantesObservables": [
+      {
+        "nom": "Roselières et fossés de drainage",
+        "description": "Habitat de nombreux oiseaux paludicoles"
+      },
+      {
+        "nom": "Prairies humides à joncs",
+        "description": "Avec présence de plantes hygrophiles"
+      },
+      {
+        "nom": "Grand étang",
+        "description": "Creusé sur sol tourbeux et riche en végétation aquatique"
+      },
+      {
+        "nom": "Mares temporaires",
+        "description": "Importantes pour les amphibiens et libellules"
+      }
+    ],
+    "meilleurePeriode": "Printemps pour la nidification des oiseaux et la floraison de nombreuses plantes hygrophiles comme la Reine des prés et les orchidées des marais. Une visite ornithologique est organisée chaque année par Natagora en mai-juin.",
+    "conseils": "Chaussures imperméables recommandées toute l'année. Certaines zones sont accessibles uniquement lors de visites guidées organisées par Natagora pour préserver la tranquillité des espèces sensibles. Prévoyez des jumelles pour l'observation ornithologique et des vêtements longs pendant la saison des moustiques qui peuvent être nombreux dans ce type de zone humide.",
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Reserve+Naturelle+Pres+Grand+Rieu+Hautrage+Belgique"
+  },
+  {
+    "id": "fagne-crambon",
+    "region": "wallonie",
+    "difficulte": "difficile",
+    "plantes": "drosera sphaignes",
+    "image": "../images/randonnees/fagne-crambon.jpg",
+    "imageAlt": "La Fagne de Crambon",
+    "titre": "La Fagne de Crambon",
+    "sousTitre": "Tourbière sauvage des Ardennes",
+    "specs": {
+      "localisation": "Stoumont, Province de Liège",
+      "distance": "7 km (aller-retour)",
+      "duree": "4 heures",
+      "difficulte": "Difficile"
+    },
+    "description": "Une bien fort jolie promenade en boucle depuis Stoumont jusqu'à la fagne de Crambon. Le point de départ se situe à l'église de Stoumont où il y a de la place pour stationner son véhicule. De là on descend la rue principale sur 150m jusqu'au syndicat d'initiatives en face duquel se trouve une ruelle qui file entre les maisons vers le haut du village dénommé Roua. Le parcours offre une diversité de paysages allant des forêts aux zones tourbeuses.",
+    "plantesObservables": [
+      {
+        "nom": "Drosera rotundifolia",
+        "description": "(Rossolis à feuilles rondes) - Localement bien présente sur certains secteurs ouverts, surtout juin–août ; rester sur les sentiers"
+      },
+      {
+        "nom": "Sphagnum rubellum",
+        "description": "Sphaigne rouge formant des buttes dans les zones bien exposées (à distinguer des autres sphaignes rouges)"
+      },
+      {
+        "nom": "Sphagnum cuspidatum",
+        "description": "Dans les gouilles et dépressions inondées"
+      },
+      {
+        "nom": "Eriophorum vaginatum",
+        "description": "Linaigrette formant des touffes denses et caractéristiques"
+      }
+    ],
+    "meilleurePeriode": "Juillet-août pour maximiser les chances d'observer les Drosera en pleine activité. Les sphaignes sont visibles toute l'année mais plus colorées au printemps et à l'automne.",
+    "conseils": "Terrain très accidenté et parfois instable. Prévoir des chaussures de randonnée imperméables et des vêtements adaptés à la météo changeante des Ardennes. GPS recommandé car sentiers peu marqués par endroits. Respectez rigoureusement les zones protégées et ne quittez pas les sentiers dans les zones tourbeuses pour préserver cet écosystème fragile.",
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Eglise+Stoumont+Belgique"
+  },
+  {
+    "id": "de-liereman",
+    "region": "flandre",
+    "difficulte": "facile",
+    "plantes": "drosera utricularia sphaignes",
+    "image": "../images/randonnees/de-liereman.jpg",
+    "imageAlt": "Réserve naturelle De Liereman",
+    "titre": "Réserve naturelle De Liereman",
+    "sousTitre": "Mosaïque de landes et tourbières en Campine",
+    "specs": {
+      "localisation": "Oud-Turnhout, Province d'Anvers",
+      "distance": "6 km (boucle balisée)",
+      "duree": "2 heures",
+      "difficulte": "Facile"
+    },
+    "description": "De Liereman (Oud-Turnhout, Natuurpunt) : l'une des plus anciennes réserves flamandes (~400 ha). Mosaïque Campine — landes, forêts, zones humides restaurées — où chercher Drosera intermedia / rotundifolia et, plus discrètement, Utricularia minor. Centre d'accueil et sentiers bien aménagés.",
+    "plantesObservables": [
+      {
+        "nom": "Drosera intermedia",
+        "description": "(Rossolis intermédiaire) - Dans les zones de tourbe nue, visible de juin à septembre"
+      },
+      {
+        "nom": "Drosera rotundifolia",
+        "description": "(Rossolis à feuilles rondes) - Localement présent dans les zones de sphaignes"
+      },
+      {
+        "nom": "Utricularia minor",
+        "description": "(Petite utriculaire) - Dans les mares tourbeuses peu profondes, observation difficile"
+      },
+      {
+        "nom": "Sphagnum denticulatum",
+        "description": "Dans les zones inondées temporairement"
+      }
+    ],
+    "meilleurePeriode": "De mai à septembre pour l'observation des plantes carnivores. Le centre d'accueil organise des visites guidées thématiques régulièrement, ce qui est recommandé pour repérer les plantes carnivores les plus discrètes.",
+    "conseils": "Sentiers bien aménagés et accessibles à tous, y compris aux familles avec enfants. Le centre d'accueil propose une exposition permanente sur les écosystèmes locaux, ainsi que des informations sur les itinéraires de promenade. Possibilité de se restaurer au bistro de la réserve qui propose des produits locaux et bio. Prévoyez des jumelles pour l'observation des oiseaux qui sont nombreux, notamment dans les zones humides.",
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Natuurpunt+De+Liereman+Oud+Turnhout+Belgique"
+  },
+  {
+    "id": "de-maten",
+    "region": "flandre",
+    "difficulte": "facile",
+    "plantes": "utricularia",
+    "image": "../images/randonnees/de-maten.jpg",
+    "imageAlt": "Réserve naturelle De Maten",
+    "titre": "Réserve naturelle De Maten",
+    "sousTitre": "Le paradis des étangs en Limbourg",
+    "specs": {
+      "localisation": "Genk, Province de Limbourg",
+      "distance": "7 km (boucle)",
+      "duree": "2.5 heures",
+      "difficulte": "Facile"
+    },
+    "description": "De Maten (Natuurpunt, Genk) : réseau d'étangs peu profonds issus de l'ancienne pisciculture. Site réputé pour les utriculaires (U. vulgaris / U. australis souvent confondues hors floraison) et pour l'ornithologie. Observation des carnivores aquatiques discrète — jumelles et/ou visite guidée aident beaucoup.",
+    "plantesObservables": [
+      {
+        "nom": "Utricularia vulgaris / U. australis",
+        "description": "(Grandes utriculaires) - Dans les eaux peu profondes ; U. vulgaris et U. australis se confondent hors floraison — identification fine difficile"
+      },
+      {
+        "nom": "Potamogeton natans",
+        "description": "(Potamot nageant) - Plante aquatique aux feuilles flottantes"
+      },
+      {
+        "nom": "Menyanthes trifoliata",
+        "description": "(Trèfle d'eau) - Zones marécageuses, fleurs blanches au printemps"
+      },
+      {
+        "nom": "Nymphaea alba",
+        "description": "(Nénuphar blanc) - Étangs calmes"
+      }
+    ],
+    "meilleurePeriode": "Juin–août pour tenter les fleurs d'utriculaires (jaunes, émergées) ; avril–mai pour le trèfle d'eau. L'été est aussi excellent pour l'avifaune.",
+    "conseils": "Caillebotis autour des étangs principaux. Jumelles utiles. Centre « Slagmolen » pour le contexte écologique. Visite guidée Natuurpunt recommandée pour repérer les utriculaires, souvent discrètes.",
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=De+Maten+Genk+Belgique"
+  },
+  {
+    "id": "doode-bemde",
+    "region": "flandre",
+    "difficulte": "moyen",
+    "plantes": "utricularia",
+    "image": "../images/randonnees/doode-bemde.jpg",
+    "imageAlt": "Marais de Doode Bemde",
+    "titre": "Marais de Doode Bemde",
+    "sousTitre": "Zone humide préservée du Brabant flamand",
+    "specs": {
+      "localisation": "Neerijse, Brabant flamand",
+      "distance": "5.5 km (boucle)",
+      "duree": "2.5 heures",
+      "difficulte": "Moyenne"
+    },
+    "description": "Le Doode Bemde (vallée de la Dyle) est une zone humide restaurée : prairies, roselières, mares. Intérêt fort pour l'avifaune et la flore hygrophile ; les utriculaires y sont possibles mais discrètes — une visite guidée Natuurpunt augmente nettement les chances.",
+    "plantesObservables": [
+      {
+        "nom": "Utricularia minor",
+        "description": "(Petite utriculaire) - Fossés et mares ; observation difficile et non garantie"
+      },
+      {
+        "nom": "Sphagnum palustre",
+        "description": "Possible localement dans les secteurs les plus acides / tourbeux — à confirmer sur place"
+      },
+      {
+        "nom": "Comarum palustre",
+        "description": "(Comaret des marais) - Plante des bas-marais et zones tourbeuses"
+      }
+    ],
+    "meilleurePeriode": "Juin–août pour la flore humide ; juil.–août pour tenter les utriculaires. Toute l'année pour les oiseaux.",
+    "conseils": "Terrain boueux après pluie. Jumelles recommandées. Consultez le calendrier Natuurpunt pour les visites guidées.",
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Doode+Bemde+Neerijse+Belgique"
+  },
+  {
+    "id": "rouge-cloitre",
+    "region": "bruxelles",
+    "difficulte": "facile",
+    "plantes": "zones humides sphaignes",
+    "image": "../images/randonnees/rouge-cloitre.jpg",
+    "imageAlt": "Rouge-Cloître",
+    "titre": "Rouge-Cloître",
+    "sousTitre": "Étangs et zones humides en pleine ville",
+    "specs": {
+      "localisation": "Auderghem, Région de Bruxelles-Capitale",
+      "distance": "4 km (boucle)",
+      "duree": "1.5 heure",
+      "difficulte": "Facile"
+    },
+    "description": "Rouge-Cloître (Auderghem), aux portes de la Forêt de Soignes : jardins, étangs, zones marécageuses et sous-bois. Idéal pour une balade urbaine nature ; les sphaignes, si présentes, restent localisées et discrètes — ce n'est pas une tourbière à Drosera.",
+    "plantesObservables": [
+      {
+        "nom": "Sphagnum squarrosum",
+        "description": "Possible en sous-bois / suintements très humides — observation non systématique"
+      },
+      {
+        "nom": "Dryopteris dilatata",
+        "description": "Fougère des zones ombragées humides"
+      },
+      {
+        "nom": "Potamogeton natans",
+        "description": "Plante aquatique fréquente dans les étangs"
+      }
+    ],
+    "meilleurePeriode": "Printemps pour les floraisons forestières ; toute l'année pour une balade autour des étangs.",
+    "conseils": "Sentiers faciles, familial. Centre d'art et activités nature sur place. Restez sur les chemins aménagés.",
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Rouge+Cloitre+Auderghem+Bruxelles+Belgique"
+  },
+  {
+    "id": "vallee-hoegne",
+    "region": "wallonie",
+    "difficulte": "moyen",
+    "plantes": "sphaignes drosera",
+    "image": "../images/randonnees/hoegne.jpg",
+    "imageAlt": "Vallée de la Hoëgne",
+    "titre": "Vallée de la Hoëgne",
+    "sousTitre": "Le torrent sauvage des Ardennes",
+    "specs": {
+      "localisation": "Sart-lez-Spa, Province de Liège",
+      "distance": "6 km (boucle)",
+      "duree": "2.5 heures",
+      "difficulte": "Moyenne"
+    },
+    "description": "La vallée de la Hoëgne est l'une des plus belles promenades de Belgique : torrent sur lit rocheux, cascades et rapides. Les sphaignes et suintements humides sont réalistes le long du parcours ; les Drosera, elles, sont rares et aléatoires ici (plutôt en retrait, sur placettes tourbeuses) — ne quittez jamais les sentiers pour les chercher.",
+    "plantesObservables": [
+      {
+        "nom": "Drosera rotundifolia",
+        "description": "(Rossolis) - Présence possible mais peu fiable sur ce parcours ; observation difficile et non garantie"
+      },
+      {
+        "nom": "Sphagnum squarrosum",
+        "description": "En coussinets sur rochers humides et berges"
+      },
+      {
+        "nom": "Sphagnum palustre",
+        "description": "Dans les zones plus marécageuses du sous-bois"
+      },
+      {
+        "nom": "Vaccinium myrtillus",
+        "description": "(Myrtille) - Arbuste en sous-bois acides"
+      }
+    ],
+    "meilleurePeriode": "Toute l'année pour le paysage et les sphaignes ; juin-août si vous espérez (sans garantie) croiser une Drosera. L'automne offre de belles couleurs le long de l'eau vive.",
+    "conseils": "Sentier parfois glissant (rochers, ponts de bois). Chaussures de randonnée impératives. Départ au pont du Centenaire (Sart-lez-Spa). Restez sur le balisage : s'écarter vers la tourbe fragile n'améliore pas vraiment les chances et endommage le milieu.",
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Pont+du+Centenaire+Hoegne+Sart+Belgique"
+  },
+  {
+    "id": "signal-botrange",
+    "region": "wallonie",
+    "difficulte": "facile",
+    "plantes": "drosera sphaignes",
+    "image": "../images/randonnees/botrange.jpg",
+    "imageAlt": "Signal de Botrange",
+    "titre": "Circuit du Signal de Botrange",
+    "sousTitre": "Balade autour du point culminant de Belgique",
+    "specs": {
+      "localisation": "Waimes, Province de Liège",
+      "distance": "4.5 km (boucle)",
+      "duree": "1.5 heure",
+      "difficulte": "Facile"
+    },
+    "description": "Partant du Bistrot de Botrange, situé à proximité du Signal de Botrange (point culminant de Belgique à 694m), cette randonnée circulaire vous emmène à travers les fagnes et les tourbières typiques du plateau des Hautes Fagnes. Le parcours est agréable, majoritairement sur caillebotis, et permet d'observer facilement la flore typique sans endommager ce milieu fragile.",
+    "plantesObservables": [
+      {
+        "nom": "Drosera rotundifolia",
+        "description": "(Rossolis à feuilles rondes) - Abondant dans les zones tourbeuses ouvertes, observable depuis les caillebotis"
+      },
+      {
+        "nom": "Sphagnum medium / S. divinum",
+        "description": "Formant des buttes rougeâtres caractéristiques dans les zones bien exposées"
+      },
+      {
+        "nom": "Sphagnum cuspidatum",
+        "description": "Dans les dépressions et zones inondées"
+      },
+      {
+        "nom": "Eriophorum vaginatum",
+        "description": "(Linaigrette engainée) - Cypéracée à pompons blancs caractéristique des tourbières"
+      }
+    ],
+    "meilleurePeriode": "De juin à août pour les Drosera en floraison et la pleine activité des plantes carnivores. Le printemps et l'automne offrent de magnifiques couleurs avec les sphaignes et la végétation environnante.",
+    "conseils": "Parcours idéal pour les familles et débutants grâce aux caillebotis bien aménagés. La Maison du Parc Naturel Hautes Fagnes – Eifel, à proximité, propose une exposition sur les tourbières. Les Drosera se cherchent depuis les caillebotis par temps ensoleillé — restez sur les sentiers pour protéger ce milieu fragile.",
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=La+Maison+du+Parc-Botrange+Belgique"
+  },
+  {
+    "id": "fagne-poleur",
+    "region": "wallonie",
+    "difficulte": "moyen",
+    "plantes": "drosera sphaignes",
+    "image": "../images/randonnees/fagne-poleur.jpg",
+    "imageAlt": "Fagne de la Poleûr",
+    "titre": "Fagne de la Poleûr",
+    "sousTitre": "Tourbière entre Spa et Stavelot",
+    "specs": {
+      "localisation": "Spa, Province de Liège",
+      "distance": "7 km (boucle)",
+      "duree": "2.5 heures",
+      "difficulte": "Moyenne"
+    },
+    "description": "Cette fagne située sur le plateau des Hautes-Fagnes présente des zones de tourbière active et une belle diversité botanique. Ce site de grand intérêt biologique est caractérisé par une alternance de zones boisées et de landes tourbeuses ouvertes. Le sentier sur caillebotis permet de traverser la fagne tout en préservant son écosystème fragile.",
+    "plantesObservables": [
+      {
+        "nom": "Drosera rotundifolia",
+        "description": "En lisière de tourbières, visible de juin à août depuis les caillebotis dans les zones bien ensoleillées"
+      },
+      {
+        "nom": "Sphagnum fallax",
+        "description": "En tapis denses dans les zones humides"
+      },
+      {
+        "nom": "Sphagnum capillifolium",
+        "description": "Formant des buttes rougeâtres caractéristiques"
+      },
+      {
+        "nom": "Eriophorum vaginatum",
+        "description": "(Linaigrette engainée) Facilement reconnaissable à ses houppes blanches"
+      }
+    ],
+    "meilleurePeriode": "Juin à août pour l'observation du Drosera. Les sphaignes sont visibles toute l'année, avec des colorations particulièrement intéressantes au printemps et à l'automne. L'été est également propice à l'observation de nombreux papillons et libellules spécifiques aux tourbières.",
+    "conseils": "Caillebotis dans les zones les plus humides ; bottes ou chaussures imperméables utiles. Accès souvent depuis le secteur Malchamps / Poleûr (parking selon balisage du jour). Restez sur les sentiers. Répulsif recommandé en été.",
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Fagne+de+la+Poleur+Spa+Belgique"
+  },
+  {
+    "id": "source-helle",
+    "region": "wallonie",
+    "difficulte": "moyen",
+    "plantes": "drosera sphaignes",
+    "image": "../images/randonnees/source-helle.jpg",
+    "imageAlt": "Source de la Helle",
+    "titre": "Source de la Helle",
+    "sousTitre": "Tourbières isolées des Hautes Fagnes",
+    "specs": {
+      "localisation": "Sourbrodt, Province de Liège",
+      "distance": "9 km (aller-retour)",
+      "duree": "3 heures",
+      "difficulte": "Moyenne"
+    },
+    "description": "Cette randonnée en pleine Fagne conduit à des zones très humides, presque inaccessibles en hiver, riches en sphaignes et en Drosera dans les zones ouvertes. Le parcours permet d'observer la naissance de la rivière Helle et offre des paysages typiques des Hautes Fagnes, entre landes à callunes, boulaies tourbeuses et tourbières actives.",
+    "plantesObservables": [
+      {
+        "nom": "Drosera rotundifolia",
+        "description": "En bordure de mares acides et sur les buttes de sphaignes bien exposées au soleil"
+      },
+      {
+        "nom": "Sphagnum medium / S. divinum",
+        "description": "Très présent sur buttes tourbeuses, reconnaissable à sa teinte rougeâtre"
+      },
+      {
+        "nom": "Sphagnum cuspidatum",
+        "description": "Dans les gouilles et dépressions inondées"
+      },
+      {
+        "nom": "Narthecium ossifragum",
+        "description": "(Narthécie) Jolie plante à floraison jaune en été"
+      }
+    ],
+    "meilleurePeriode": "Juillet-août pour observer les Drosera en pleine activité; les sphaignes sont colorées au printemps et à l'automne. L'hiver est déconseillé car le site est souvent inaccessible ou dangereux en raison de l'humidité importante et du gel.",
+    "conseils": "Accès libre mais terrain instable et par endroits spongieux. Suivre les caillebotis ou sentiers balisés quand ils existent. Prévoir des bottes imperméables même par temps sec, car le sol reste gorgé d'eau. Cette zone est plus sauvage que d'autres parties des Hautes Fagnes, ce qui permet une immersion totale dans la nature, mais nécessite une certaine prudence. Respectez scrupuleusement les zones protégées et ne piétinez pas les zones humides.",
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Source+de+la+Helle+Sourbrodt+Belgique"
+  },
+  {
+    "id": "tourbiere-helle",
+    "region": "wallonie",
+    "difficulte": "difficile",
+    "plantes": "drosera sphaignes",
+    "image": "../images/randonnees/helle.jpg",
+    "imageAlt": "Tourbière de la Helle",
+    "titre": "Tourbière de la Helle",
+    "sousTitre": "Immersion dans les Hautes Fagnes profondes",
+    "specs": {
+      "localisation": "Signal de Botrange, Liège",
+      "distance": "10 km (aller-retour)",
+      "duree": "4 heures",
+      "difficulte": "Difficile"
+    },
+    "description": "Randonnée immersive vers l'une des tourbières les plus sauvages et préservées de Belgique, traversée par la rivière Helle. Ce site exceptionnel est classé réserve naturelle et constitue l'une des rares tourbières actives encore présentes en Belgique. Le paysage, typique des Hautes Fagnes, offre un aspect quasi nordique unique en Belgique.",
+    "plantesObservables": [
+      {
+        "nom": "Drosera rotundifolia",
+        "description": "Visible dans les zones ouvertes bien exposées de juin à août"
+      },
+      {
+        "nom": "Sphagnum medium / S. divinum",
+        "description": "Très abondant, formant des tapis rougeâtres caractéristiques"
+      },
+      {
+        "nom": "Sphagnum papillosum",
+        "description": "Dans les zones humides plus ombragées"
+      },
+      {
+        "nom": "Narthecium ossifragum",
+        "description": "(Narthécie des marais) Plante à floraison jaune caractéristique des tourbières"
+      }
+    ],
+    "meilleurePeriode": "Juillet-août pour les Drosera en floraison. L'automne offre de magnifiques couleurs avec le feuillage des bouleaux contrastant avec les teintes rougeâtres des sphaignes. L'hiver est à éviter en raison de l'enneigement fréquent et des conditions difficiles.",
+    "conseils": "Sentier peu balisé par endroits. GPS fortement conseillé pour ne pas se perdre. Chaussures imperméables indispensables même par temps sec. Attention aux conditions météorologiques qui peuvent changer rapidement à cette altitude. Certaines parties du parcours sont réglementées - respectez absolument les interdictions d'accès aux zones de protection intégrale et restez sur les sentiers balisés. Cette randonnée s'adresse à des marcheurs expérimentés.",
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Tourbiere+de+la+Helle+Botrange+Belgique"
+  },
+  {
+    "id": "reserve-tihange",
+    "region": "wallonie",
+    "difficulte": "moyen",
+    "plantes": "zones humides",
+    "image": "../images/randonnees/tihange.jpg",
+    "imageAlt": "Promenade de Beaufort-Solières",
+    "titre": "Promenade de Beaufort-Solières",
+    "sousTitre": "Vallon humide discret en bordure de Meuse",
+    "specs": {
+      "localisation": "Ben-Ahin, Huy, Province de Liège",
+      "distance": "10,6 km (boucle)",
+      "duree": "4 h 30",
+      "difficulte": "Moyenne"
+    },
+    "description": "Boucle autour du vallon de la Solière (Ben-Ahin) : prairies humides, suintements et flore hygrophile. Intérêt surtout paysager et naturaliste local — la présence de sphaignes n'est pas confirmée de façon fiable ; ce n'est pas un site à carnivores.",
+    "plantesObservables": [
+      {
+        "nom": "Sphagnum palustre",
+        "description": "Signalée / possible en suintements — à confirmer ; ne pas compter dessus"
+      },
+      {
+        "nom": "Chrysosplenium alternifolium",
+        "description": "(Dorine à feuilles alternes) Zones de sources"
+      },
+      {
+        "nom": "Carex pendula",
+        "description": "(Laîche pendante) Zones humides ombragées"
+      }
+    ],
+    "meilleurePeriode": "Avril–mai pour la floraison printanière.",
+    "conseils": "Dénivelé notable au départ ; chaussures étanches utiles. Natagora organise parfois des visites guidées.",
+    "googleMapsUrl": "https://www.google.com/maps/place/Promenade+de+Beaufort-Soli%C3%A8res+-10.6km/@50.519043,5.1931365,17z/data=!3m1!4b1!4m6!3m5!1s0x47c1a973cb42b54f:0x4828ccdf7b112284!8m2!3d50.519043!4d5.1957114!16s%2Fg%2F11kj_msrp2?entry=ttu&g_ep=EgoyMDI1MDgwMy4wIKXMDSoASAFQAw%3D%3D"
+  },
+  {
+    "id": "etangs-virelles",
+    "region": "wallonie",
+    "difficulte": "facile",
+    "plantes": "utricularia sphaignes",
+    "image": "../images/randonnees/virelles.jpg",
+    "imageAlt": "Étangs de Virelles",
+    "titre": "Étangs de Virelles",
+    "sousTitre": "Réserve ornithologique et tourbeuse du Hainaut",
+    "specs": {
+      "localisation": "Chimay, Province de Hainaut",
+      "distance": "5 km (boucle)",
+      "duree": "2 heures",
+      "difficulte": "Facile"
+    },
+    "description": "Site mêlant roselières, bas-marais et étangs. L'étang de Virelles (~100 ha) est un haut lieu ornithologique ; la flore des zones périphériques peut inclure utriculaires et sphaignes, mais leur observation est discrète et souvent plus facile lors d'une visite guidée (Aquascope).",
+    "plantesObservables": [
+      {
+        "nom": "Utricularia minor",
+        "description": "(Petite utriculaire) – Dans certaines mares tourbeuses à l'est de la réserve"
+      },
+      {
+        "nom": "Sphagnum palustre",
+        "description": "En tapis mous dans les marais périphériques"
+      },
+      {
+        "nom": "Hottonia palustris",
+        "description": "(Hottonie des marais) – Plante aquatique à fleurs blanches des eaux calmes"
+      }
+    ],
+    "meilleurePeriode": "Mars à juin pour l'avifaune migratrice. Juillet-août pour les utriculaires qui sont cependant difficiles à repérer sans guide. L'Aquascope organise régulièrement des visites thématiques.",
+    "conseils": "Accès très facile. Sentier pédagogique balisé avec observatoires pour la faune. Site idéal pour familles et débutants. Le centre d'interprétation \"Aquascope\" propose de nombreuses activités pédagogiques et des jumelles peuvent être empruntées.",
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Etangs+de+Virelles+Chimay+Belgique"
+  },
+  {
+    "id": "rocher-herou",
+    "region": "wallonie",
+    "difficulte": "moyen",
+    "plantes": "zones humides",
+    "image": "../images/randonnees/herou-caillou.jpg",
+    "imageAlt": "Rocher du Hérou",
+    "titre": "Rocher du Hérou",
+    "sousTitre": "Belvédère spectaculaire sur l'Ourthe sauvage",
+    "specs": {
+      "localisation": "Nadrin, Houffalize, Luxembourg belge",
+      "distance": "5,4 km (boucle fléchée rectangle vert)",
+      "duree": "2 heures",
+      "difficulte": "Moyen"
+    },
+    "description": "Le rocher du Hérou, classé au patrimoine exceptionnel de Wallonie, surplombe l'Ourthe (falaise et crête rocheuse). Parcours paysager et sportif : panoramas, descente vers la rivière, remontée en forêt. Ce n'est pas un site de tourbière à carnivores — les Drosera / sphaignes de haut-marais n'y sont pas typiques ; on vient surtout pour la géologie et le paysage.",
+    "plantesObservables": [
+      {
+        "nom": "Flore de falaise et de ripisylve",
+        "description": "Mousses, fougères et végétation de rochers / berges selon l'exposition"
+      },
+      {
+        "nom": "Forêt ardennaise",
+        "description": "Sous-bois et lisières le long de la remontée"
+      },
+      {
+        "nom": "Ourthe sauvage",
+        "description": "Ambiances de gorge et méandres — intérêt surtout paysager"
+      }
+    ],
+    "meilleurePeriode": "Printemps à automne pour la randonnée ; l'été pour se rafraîchir près de l'Ourthe (prudence). L'automne offre de belles couleurs sur les méandres.",
+    "conseils": "Départ parking du Belvédère (rue du Hérou) ou terrain de football de Nadrin. Bonnes chaussures : passages raides et caillouteux, glissants sous la pluie. Descente parfois équipée d'une corde. Natura 2000 — restez sur les sentiers.",
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Restaurant+le+Belvedere+Rue+du+Herou+Nadrin+Belgique"
+  },
+  {
+    "id": "reserve-buitengoor",
+    "region": "flandre",
+    "difficulte": "facile",
+    "plantes": "pinguicula drosera",
+    "image": "../images/randonnees/buitengoor.jpg",
+    "imageAlt": "Réserve du Buitengoor",
+    "titre": "Réserve du Buitengoor",
+    "sousTitre": "Bas-marais et gradient acide–calcaire en Haute Campine",
+    "specs": {
+      "localisation": "Mol, Province d'Anvers",
+      "distance": "4 km (boucle)",
+      "duree": "1.5 heure",
+      "difficulte": "Facile"
+    },
+    "description": "Le Buitengoor-Meergoor (Natuurpunt) est une réserve sur un gradient rare entre sables acides et influences plus minérales / calcaires. La population de Pinguicula vulgaris y résulte d'une réintroduction (années 1980) : ce n'est pas une station « spontanée » historique intacte, mais un site de conservation réussi. Observation depuis les sentiers / caillebotis uniquement ; les placettes de grassette sont sensibles.",
+    "plantesObservables": [
+      {
+        "nom": "Pinguicula vulgaris",
+        "description": "(Grassette commune) - Population réintroduite ; floraison surtout mai–juillet, observation non garantie sans guide"
+      },
+      {
+        "nom": "Drosera rotundifolia",
+        "description": "(Rossolis à feuilles rondes) - Présent dans certaines zones de la réserve"
+      },
+      {
+        "nom": "Eriophorum angustifolium",
+        "description": "(Linaigrette à feuilles étroites) - Remarquable avec ses houppes blanches"
+      },
+      {
+        "nom": "Dactylorhiza sp.",
+        "description": "Plusieurs espèces d'orchidées des milieux humides"
+      }
+    ],
+    "meilleurePeriode": "Mai à juillet pour observer la grassette en fleur (fleurs violettes caractéristiques). La fin du printemps est également la meilleure période pour les orchidées. Le site est intéressant toute l'année pour ses paysages et sa diversité d'habitats.",
+    "conseils": "Sentier bien aménagé avec des caillebotis dans les zones les plus humides, accessible même aux familles. Respectez rigoureusement les sentiers balisés et ne tentez pas de vous approcher des zones de réintroduction de la grassette qui sont particulièrement sensibles. Le site est géré par Natuurpunt et des visites guidées sont régulièrement organisées, ce qui est le meilleur moyen de découvrir les espèces rares avec l'aide d'un expert.",
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Buitengoor+Meergoor+Mol+Belgique"
+  },
+  {
+    "id": "marais-uitbergen",
+    "region": "flandre",
+    "difficulte": "facile",
+    "plantes": "zones humides",
+    "image": "../images/randonnees/berlare.jpg",
+    "imageAlt": "Marais de Berlare",
+    "titre": "Marais d'Uitbergen-Berlare",
+    "sousTitre": "Ancienne station de grassette (espèce disparue localement)",
+    "specs": {
+      "localisation": "Berlare, Flandre-Orientale",
+      "distance": "5 km (boucle)",
+      "duree": "2 heures",
+      "difficulte": "Facile"
+    },
+    "description": "Les marais de Berlare-Uitbergen (vallée de l'Escaut) ont abrité historiquement Pinguicula vulgaris, disparue localement (drainage, eutrophisation). Ne comptez pas y voir de grassette aujourd'hui : l'intérêt actuel est surtout ornithologique et paysager, avec une végétation palustre et des efforts de restauration.",
+    "plantesObservables": [
+      {
+        "nom": "Pinguicula vulgaris",
+        "description": "(Grassette) - Historique uniquement ; absente actuellement sur le site"
+      },
+      {
+        "nom": "Liparis loeselii",
+        "description": "(Liparis de Loesel) - Orchidée rare des bas-marais, signalée historiquement (présence actuelle à vérifier)"
+      },
+      {
+        "nom": "Menyanthes trifoliata",
+        "description": "(Trèfle d'eau) - Plante des marais tourbeux, localement possible"
+      },
+      {
+        "nom": "Végétation palustre",
+        "description": "Roselières, zones inondables — intérêt surtout pour l'avifaune"
+      }
+    ],
+    "meilleurePeriode": "Avril–juin pour la flore des zones humides ; automne pour les migrations d'oiseaux d'eau. Sans attente de plantes carnivores.",
+    "conseils": "Sentiers autour des étangs ; jumelles recommandées. Site davantage ornithologique que botanique « carnivore ». Le Donkmeer (Berlare) complète bien la balade.",
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Uitbergen+Berlare+Belgique"
+  },
+  {
+  "id": "le-tros-maret",
+  "region": "wallonie",
+  "difficulte": "moyen",
+  "plantes": "zones humides",
+  "image": "../images/randonnees/tros-maret.jpg",
+  "imageAlt": "Rando Tros-Maret",
+  "titre": "Le Trôs-Maret",
+  "sousTitre": "Cascade, ruisseau et landes acides près de Malmedy",
+  "specs": {
+    "localisation": "Malmedy, Province de Liège",
+    "distance": "7,3 km (boucle)",
+    "duree": "2.5 heures",
+    "difficulte": "Moyenne"
+  },
+  "description": "Le sentier du Trôs-Maret longe un ruisseau vif, des zones humides, landes et boisements — ambiance ardennaise / lisière de fagne, sans être un circuit garanti pour les Drosera. Intérêt surtout paysager et pour la flore acidophile (bruyères, myrtilles, lycopodes).",
+  "plantesObservables": [
+    {
+      "nom": "Calluna vulgaris",
+      "description": "(Bruyère commune) – Fréquente sur les pentes dégagées"
+    },
+    {
+      "nom": "Vaccinium myrtillus",
+      "description": "(Myrtille) – Abondante dans les sous-bois acides"
+    },
+    {
+      "nom": "Lycopodium clavatum",
+      "description": "(Lycopode en massue) – Possible sur landes ouvertes"
+    }
+  ],
+  "meilleurePeriode": "Mai à septembre ; fin d'été pour les bruyères. Sans attente particulière de plantes carnivores.",
+  "conseils": "Chaussures de marche ; passages escarpés ou humides. Départ possible depuis l'Auberge de jeunesse de Malmedy. Restez sur le balisage.",
+  "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Auberge+de+Jeunesse+de+Malmedy"
+},
+
+{
+  "id": "malmedy-canyon",
+  "region": "wallonie",
+  "difficulte": "facile",
+  "plantes": "zones humides",
+  "image": "../images/randonnees/malmedy-canyon.jpg",
+  "imageAlt": "Sentier autour de Malmedy",
+  "titre": "Canyon des Trôs-Marets",
+  "sousTitre": "Petite boucle nature et patrimoine près des cascades",
+  "specs": {
+    "localisation": "Malmedy, Province de Liège",
+    "distance": "4,6 km (boucle)",
+    "duree": "1.5 heure",
+    "difficulte": "Facile"
+  },
+  "description": "Promenade familiale autour de Malmedy : prairies humides, haies, ruisseaux et talus. Flore hygrophile classique (reine des prés, laîches…) — pas un site de tourbière à carnivores.",
+  "plantesObservables": [
+    {
+      "nom": "Lysimachia vulgaris",
+      "description": "(Lysimaque commune) – En fleurs en été dans les fossés humides"
+    },
+    {
+      "nom": "Filipendula ulmaria",
+      "description": "(Reine des prés) – Abondante le long des berges"
+    },
+    {
+      "nom": "Carex sp.",
+      "description": "(Laîches) – Zones humides"
+    }
+  ],
+  "meilleurePeriode": "Mai à août pour les floraisons ; automne pour les couleurs.",
+  "conseils": "Sentier simple, familial. Chaussures fermées si sol détrempé. Suivre le balisage local.",
+  "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Malmedy+centre"
+}
+]
