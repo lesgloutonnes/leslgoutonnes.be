@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administration Newsletter - Les Gloutonnes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="/images/favicon/site.webmanifest" />
+</head>
+
+<body class="newsletter-admin">
+    <div class="container">
+        <!-- Navigation entre les sections -->
+        <div class="admin-nav">
+            <h1>📧 Administration Newsletter - Les Gloutonnes</h1>
+            <div class="nav-tabs">
+                <button class="nav-tab active" data-tab="subscribers">👥 Abonnés</button>
+                <button class="nav-tab" data-tab="editor">✏️ Éditeur Newsletter</button>
+                <button class="nav-tab" data-tab="stats">📊 Statistiques</button>
+            </div>
+        </div>
+
+        <!-- Section Gestion des abonnés -->
+        <div class="tab-content" id="subscribers-tab">
+            <div class="header">
+                <h2>Liste des Emails Newsletter</h2>
+                <div class="action-buttons">
+                    <button id="btn-export" class="btn btn-primary">Exporter en CSV</button>
+                    <button id="btn-refresh" class="btn btn-light">Actualiser</button>
+                </div>
+            </div>
+
+            <div class="stats-container">
+                <div class="stat-card">
+                    <div class="stat-value" id="total-emails">0</div>
+                    <div class="stat-label">Emails enregistrés</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="new-emails">0</div>
+                    <div class="stat-label">Nouveaux (7 derniers jours)</div>
+                </div>
+            </div>
+
+            <div id="alert-container"></div>
+
+            <div class="add-email-form">
+                <input type="email" id="new-email" class="form-control" placeholder="Ajouter un email manuellement...">
+                <button id="btn-add-email" class="btn btn-accent">Ajouter</button>
+            </div>
+
+            <div class="search-container">
+                <input type="text" id="search-input" class="form-control" placeholder="Rechercher un email...">
+                <button id="btn-search" class="btn btn-primary">Rechercher</button>
+            </div>
+
+            <div class="table-container">
+                <table id="emails-table">
+                    <thead>
+                        <tr>
+                            <th>Email</th>
+                            <th>Date d'inscription</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="emails-list">
+                        <!-- Les emails seront chargés ici via JavaScript -->
+                    </tbody>
+                </table>
+
+                <div id="empty-state" class="empty-state">
+                    <div class="empty-state-icon">📭</div>
+                    <h3>Aucun abonné</h3>
+                    <p>Tu n'as pas encore d'abonnés à ta newsletter.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section Éditeur de Newsletter avec système de lots -->
+        <div class="tab-content" id="editor-tab" style="display: none;">
+
+            <div class="editor-layout">
+                <!-- Panneau d'édition -->
+                <div class="editor-panel">
+                    <h2>✏️ Édition du contenu</h2>
+
+                    <!-- NOUVEAU: Sélection de campagne OBLIGATOIRE -->
+                    <div class="form-group"
+                        style="border: 2px solid var(--primary-color); padding: 15px; border-radius: 8px; margin-bottom: 20px; background: rgba(91, 0, 146, 0.05);">
+                        <label for="campaign-selector" style="font-weight: 600; color: var(--primary-color);">📊
+                            Campagne de tracking (OBLIGATOIRE) *</label>
+                        <select id="campaign-selector" class="form-control" required style="margin-bottom: 10px;">
+                            <option value="">🚫 Sélectionne une campagne pour activer le tracking</option>
+                            <option value="new">➕ Créer une nouvelle campagne</option>
+                        </select>
+
+                        <!-- Formulaire nouvelle campagne (masqué par défaut) -->
+                        <div id="new-campaign-form"
+                            style="display: none; margin-top: 15px; padding: 15px; background: white; border-radius: 5px; border: 1px solid #ddd;">
+                            <div class="form-group">
+                                <label for="new-campaign-name">📝 Nom de la campagne *</label>
+                                <input type="text" id="new-campaign-name" class="form-control"
+                                    placeholder="Ex: Newsletter Mars 2025 - Nouvelles Dionaea">
+                            </div>
+                            <div class="form-group">
+                                <label for="new-campaign-description">📄 Description (facultatif)</label>
+                                <textarea id="new-campaign-description" class="form-control"
+                                    placeholder="Description courte de cette campagne..." rows="2"></textarea>
+                            </div>
+                            <button type="button" id="btn-create-campaign" class="btn btn-primary">
+                                ✨ Créer la campagne
+                            </button>
+                        </div>
+
+                        <!-- Statut de la campagne -->
+                        <div id="campaign-status"
+                            style="margin-top: 10px; padding: 10px; border-radius: 5px; display: none;">
+                            <strong>📊 Campagne active :</strong> <span id="active-campaign-name"></span><br>
+                            <small style="color: #666;"><!-- ID: <span id="active-campaign-id"></span> | -->Tracking
+                                activé
+                                ✅</small>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="newsletter-subject">📧 Objet de l'email *</label>
+                        <input type="text" id="newsletter-subject" class="form-control"
+                            placeholder="Ex: Nouvelles plantes carnivores disponibles !">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="newsletter-title">🏷️ Titre principal *</label>
+                        <input type="text" id="newsletter-title" class="form-control"
+                            placeholder="Ex: Découvre mes nouvelles créations">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="newsletter-intro">👋 Introduction *</label>
+                        <textarea id="newsletter-intro" class="form-control textarea"
+                            placeholder="Salut ! J'espère que tu vas bien. Aujourd'hui, j'ai de super nouvelles à partager avec toi..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="newsletter-content">📝 Contenu principal *</label>
+                        <textarea id="newsletter-content" class="form-control textarea-large"
+                            placeholder="Écris ici le contenu principal de ta newsletter. Tu peux parler de tes nouvelles plantes, donner des conseils, annoncer des événements...&#10;&#10;Utilise des doubles retours à la ligne pour créer des paragraphes séparés."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="newsletter-cta-text">🔗 Texte du bouton d'action</label>
+                        <input type="text" id="newsletter-cta-text" class="form-control"
+                            placeholder="Ex: Découvrir la collection" value="Découvrir mes plantes">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="newsletter-cta-link">🌐 Lien du bouton d'action</label>
+                        <input type="url" id="newsletter-cta-link" class="form-control"
+                            placeholder="https://www.lesgloutonnes.be/pages/contact.html"
+                            value="https://www.lesgloutonnes.be/pages/contact.html">
+                    </div>
+                </div>
+
+                <!-- Panneau de prévisualisation -->
+                <div class="preview-panel">
+                    <h2>👀 Aperçu en temps réel</h2>
+
+                    <!-- Alerte si pas de campagne -->
+                    <div id="no-campaign-alert"
+                        style="background: #fff3cd; border: 1px solid #ffeaa7; border-radius: 5px; padding: 15px; margin-bottom: 15px;">
+                        <strong style="color: #856404;">⚠️ Aucune campagne sélectionnée</strong><br>
+                        <small style="color: #856404;">Sélectionne une campagne pour activer le tracking et voir le
+                            preview final.</small>
+                    </div>
+
+                    <!-- Info campagne active -->
+                    <div id="campaign-info-preview"
+                        style="background: #d4edda; border: 1px solid #c3e6cb; border-radius: 5px; padding: 15px; margin-bottom: 15px; display: none;">
+                        <strong style="color: #155724;">✅ Tracking activé</strong><br>
+                        <small style="color: #155724;">Campagne: <span id="preview-campaign-name"></span><!-- | ID: <span
+                                id="preview-campaign-id"></span> --></small>
+                    </div>
+
+                    <!-- Boutons de copie magiques -->
+                    <div style="margin-bottom: 15px; display: flex; gap: 10px; flex-wrap: wrap;">
+                        <button id="btn-copy-html-magic" class="btn btn-accent" disabled
+                            title="Sélectionne une campagne et un lot d'abord">
+                            ✨ Copier HTML avec tracking
+                        </button>
+                        <button id="btn-copy-status" class="btn btn-light" style="display: none;" disabled>
+                            📋 Copié !
+                        </button>
+                    </div>
+
+                    <p style="color: #666; font-size: 0.9em; margin-bottom: 15px;">
+                        💡 Utilise le bouton "Copier HTML avec tracking" pour avoir le HTML parfait dans ton
+                        presse-papiers !
+                    </p>
+
+                    <div class="newsletter-preview">
+                        <div class="newsletter-template" id="newsletter-preview">
+                            <!-- Le contenu sera généré ici -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section pour gérer les lots d'emails -->
+            <div class="batch-section">
+                <h3>📮 Envoi Newsletter par Lots (50 emails max par envoi)</h3>
+
+                <!-- Informations sur les lots -->
+                <div id="batch-info">
+                    <!-- Les stats seront générées ici -->
+                </div>
+
+                <!-- Boutons pour charger les différents lots -->
+                <div id="batch-buttons-container" class="batch-buttons-container">
+                    <!-- Les boutons de lots seront générés ici -->
+                </div>
+
+                <!-- Zone d'affichage des emails du lot sélectionné -->
+                <div class="form-group">
+                    <label for="email-list-textarea">📋 Emails du lot sélectionné</label>
+                    <textarea id="email-list-textarea" class="form-control email-textarea"
+                        placeholder="Sélectionne un lot ci-dessus pour voir les emails..." readonly></textarea>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Section Statistiques -->
+        <!-- Section Statistiques NETTOYÉE -->
+<div class="tab-content" id="stats-tab" style="display: none;">
+
+    <!-- Loading State -->
+    <div id="stats-loading" class="loading-stats">
+        <div class="loading-spinner"></div>
+        <p>Chargement des statistiques...</p>
+    </div>
+
+    <!-- Stats Content -->
+    <div id="stats-content" style="display: none;">
+
+        <!-- Stats Overview -->
+        <div class="stats-overview" id="stats-overview">
+            <!-- Les cartes de stats seront générées ici -->
+        </div>
+
+        <!-- Campaigns Performance - GARDÉ -->
+        <div class="campaigns-section">
+            <div class="section-header">
+                <h3 class="section-title">📊 Performance des campagnes</h3>
+                <div class="action-buttons">
+                    <button id="btn-refresh-stats" class="btn btn-light">🔄 Actualiser</button>
+                    <button id="btn-export-stats" class="btn btn-primary">📥 Exporter CSV</button>
+                </div>
+            </div>
+
+            <div class="table-container">
+                <table class="campaigns-table" id="campaigns-table">
+                    <thead>
+                        <tr>
+                            <th>Newsletter</th>
+                            <th>Date d'envoi</th>
+                            <th>Envoyés</th>
+                            <th>Taux d'ouverture</th>
+                            <th>Performance</th>
+                        </tr>
+                    </thead>
+                    <tbody id="campaigns-list">
+                        <!-- Les campagnes seront chargées ici -->
+                    </tbody>
+                </table>
+
+                <div id="empty-campaigns" class="empty-state" style="display: none;">
+                    <div class="empty-state-icon">📊</div>
+                    <h3>Aucune campagne</h3>
+                    <p>Tu n'as pas encore envoyé de newsletter avec le tracking activé.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../js/newsletter-admin.js"></script>
+    <script src="../js/newsletter-stats.js"></script>
+    <script src="../js/newsletter-campaigns.js"></script>
+    <script src="../js/newsletter-copy-magic.js"></script>
+</body>
+
+</html>

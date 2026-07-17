@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assistant de Publication IA - Les Gloutonnes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="/images/favicon/site.webmanifest" />
+</head>
+<body class="social-publisher">
+  <div class="social-container">
+    <!-- Header simplifié -->
+    <div class="social-header">
+      <h1>🧠 Assistant IA Ultra-Intelligent</h1>
+      <p>Crée du contenu optimisé avec l'intelligence artificielle avancée</p>
+    </div>
+
+    <div class="social-creation-layout">
+      <!-- Éditeur principal -->
+      <div class="social-editor-panel">
+        <!-- Templates de démarrage rapide -->
+        <div class="quick-templates">
+          <h4>🚀 Démarrage rapide</h4>
+          <div class="template-grid">
+            <button class="template-btn" onclick="loadTemplate('newPlant')">
+              🌱 Nouvelle plante
+            </button>
+            <button class="template-btn" onclick="loadTemplate('tip')">
+              💡 Conseil/Astuce
+            </button>
+            <button class="template-btn" onclick="loadTemplate('showcase')">
+              📸 Mise en avant
+            </button>
+            <button class="template-btn" onclick="loadTemplate('question')">
+              ❓ Question communauté
+            </button>
+          </div>
+        </div>
+
+        <!-- Zone de texte principale -->
+        <div class="social-form-group">
+          <label>📝 Ton message</label>
+          <div class="textarea-container">
+            <textarea id="post-content" 
+                      class="social-form-control social-textarea-large" 
+                      placeholder="Commence à taper ici...
+
+💡 Astuce : commence par 'Salut !' ou 'Hello les passionnés !' pour créer du lien avec ton audience
+
+L'IA analysera ton contenu en temps réel et te proposera des améliorations intelligentes !"></textarea>
+            
+            <div class="content-metrics">
+              <div id="char-counter">0 / 2200 caractères</div>
+              <div id="engagement-score">Score d'engagement : <span>-</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Assistant IA ULTRA-INTELLIGENT - VERSION SIMPLIFIÉE -->
+        <div class="ai-assistant-enhanced">
+          <h4>🧠 Assistant IA Ultra-Intelligent</h4>
+          
+          <!-- Outils IA principaux - SIMPLIFIÉS -->
+          <div class="ai-tools">
+            <button class="ai-btn primary" onclick="makeEngaging()">
+              🔧 Auto-Optimiser
+            </button>
+            <button class="ai-btn" onclick="generateVariantsAdvanced()">
+              📝 Générer variantes
+            </button>
+            <button class="ai-btn" onclick="fixGrammar()">
+              ✅ Corriger grammaire
+            </button>
+            <button class="ai-btn" onclick="optimizeForPlants()">
+              🌱 Optimiser plantes
+            </button>
+          </div>
+
+          <!-- Indicateurs IA en temps réel - DÉSACTIVÉS -->
+
+          <!-- Variantes automatiques améliorées -->
+          <div class="text-variants-advanced" id="text-variants" style="display: none;">
+            <h5>📝 Variantes IA</h5>
+            <div id="variants-list"></div>
+          </div>
+
+          <!-- Conseils IA contextuels -->
+          <div class="ai-contextual-tips" id="ai-tips" style="display: none;">
+            <h5>💡 Conseils IA personnalisés</h5>
+            <div id="ai-tips-content"></div>
+          </div>
+        </div>
+
+        <!-- Hashtags intelligents - AMÉLIORÉS -->
+        <div class="hashtags-smart">
+          <h4>🏷️ Hashtags optimisés par IA</h4>
+          
+          <!-- Détection automatique améliorée -->
+          <div class="auto-detection" id="auto-detection">
+            <p>🤖 L'IA analysera ton texte et proposera des hashtags pertinents automatiquement</p>
+          </div>
+
+          <!-- Groupes de hashtags ÉTENDUS -->
+          <div class="hashtag-categories">
+            <div class="hashtag-category" data-category="essential">
+              <h6>⭐ Essentiels</h6>
+              <div class="hashtag-list">
+                <span onclick="toggleHashtag('#PlantesCarnivoRes')">#PlantesCarnivoRes</span>
+                <span onclick="toggleHashtag('#LesGloutonnes')">#LesGloutonnes</span>
+                <span onclick="toggleHashtag('#carnivorousplants')">#carnivorousplants</span>
+                <span onclick="toggleHashtag('#plantecarnivore')">#plantecarnivore</span>
+                <span onclick="toggleHashtag('#carniplant')">#carniplant</span>
+              </div>
+            </div>
+            
+            <div class="hashtag-category" data-category="species">
+              <h6>🌿 Espèces</h6>
+              <div class="hashtag-list">
+                <span onclick="toggleHashtag('#dionaea')">#dionaea</span>
+                <span onclick="toggleHashtag('#venusflytrap')">#venusflytrap</span>
+                <span onclick="toggleHashtag('#dionaeamuscipula')">#dionaeamuscipula</span>
+                <span onclick="toggleHashtag('#sarracenia')">#sarracenia</span>
+                <span onclick="toggleHashtag('#nepenthes')">#nepenthes</span>
+                <span onclick="toggleHashtag('#drosera')">#drosera</span>
+                <span onclick="toggleHashtag('#sundew')">#sundew</span>
+                <span onclick="toggleHashtag('#heliamphora')">#heliamphora</span>
+                <span onclick="toggleHashtag('#pinguicula')">#pinguicula</span>
+                <span onclick="toggleHashtag('#cephalotus')">#cephalotus</span>
+                <span onclick="toggleHashtag('#pitcherplant')">#pitcherplant</span>
+              </div>
+            </div>
+
+            <div class="hashtag-category" data-category="community">
+              <h6>👥 Communauté</h6>
+              <div class="hashtag-list">
+                <span onclick="toggleHashtag('#carnivorousplantsofinstagram')">#carnivorousplantsofinstagram</span>
+                <span onclick="toggleHashtag('#sophieorchids1')">#sophieorchids1</span>
+                <span onclick="toggleHashtag('#lesdentsdelaterre')">#lesdentsdelaterre</span>
+                <span onclick="toggleHashtag('#qelicera')">#qelicera</span>
+                <span onclick="toggleHashtag('#terreacrocs')">#terreacrocs</span>
+                <span onclick="toggleHashtag('#carnivore_de_sologne')">#carnivore_de_sologne</span>
+                <span onclick="toggleHashtag('#carnivore_fredo')">#carnivore_fredo</span>
+              </div>
+            </div>
+
+            <div class="hashtag-category" data-category="engagement">
+              <h6>💪 Engagement</h6>
+              <div class="hashtag-list">
+                <span onclick="toggleHashtag('#plantsofinstagram')">#plantsofinstagram</span>
+                <span onclick="toggleHashtag('#plantlover')">#plantlover</span>
+                <span onclick="toggleHashtag('#plantaddict')">#plantaddict</span>
+                <span onclick="toggleHashtag('#plantsmakepeoplehappy')">#plantsmakepeoplehappy</span>
+                <span onclick="toggleHashtag('#houseplants')">#houseplants</span>
+                <span onclick="toggleHashtag('#rareplants')">#rareplants</span>
+                <span onclick="toggleHashtag('#exoticplants')">#exoticplants</span>
+                <span onclick="toggleHashtag('#botanical')">#botanical</span>
+                <span onclick="toggleHashtag('#gardening')">#gardening</span>
+                <span onclick="toggleHashtag('#jardin')">#jardin</span>
+              </div>
+            </div>
+
+            <div class="hashtag-category" data-category="seasonal">
+              <h6>🌺 Saisonniers</h6>
+              <div class="hashtag-list">
+                <span onclick="toggleHashtag('#spring')">#spring</span>
+                <span onclick="toggleHashtag('#printemps')">#printemps</span>
+                <span onclick="toggleHashtag('#summer')">#summer</span>
+                <span onclick="toggleHashtag('#été')">#été</span>
+                <span onclick="toggleHashtag('#autumn')">#autumn</span>
+                <span onclick="toggleHashtag('#automne')">#automne</span>
+                <span onclick="toggleHashtag('#winter')">#winter</span>
+                <span onclick="toggleHashtag('#hiver')">#hiver</span>
+                <span onclick="toggleHashtag('#dormancy')">#dormancy</span>
+                <span onclick="toggleHashtag('#dormance')">#dormance</span>
+              </div>
+            </div>
+          </div>
+
+          <textarea id="custom-hashtags" 
+                    class="social-form-control hashtag-textarea" 
+                    rows="3" 
+                    placeholder="Tes hashtags s'afficheront ici... L'IA te suggérera les meilleurs selon ton contenu !"></textarea>
+        </div>
+
+      </div>
+
+      <!-- Aperçu et actions -->
+      <div class="social-preview-panel">
+        <h2 class="social-panel-title">👀 Aperçu & Publication</h2>
+
+        <!-- Aperçu multi-plateformes -->
+        <div class="platform-previews">
+          <div class="platform-preview facebook">
+            <div class="platform-header">
+              <span class="platform-icon">📘</span>
+              <span>Facebook - Page Les Gloutonnes</span>
+            </div>
+            <div class="preview-content">
+              <div id="facebook-preview">Ton contenu apparaîtra ici...</div>
+              <div id="facebook-hashtags" class="preview-hashtags">#PlantesCarnivoRes #LesGloutonnes</div>
+            </div>
+          </div>
+
+          <div class="platform-preview instagram">
+            <div class="platform-header">
+              <span class="platform-icon">📷</span>
+              <span>Instagram - @lesgloutonnes.be</span>
+            </div>
+            <div class="preview-content">
+              <div id="instagram-preview">Ton contenu apparaîtra ici...</div>
+              <div id="instagram-hashtags" class="preview-hashtags">#PlantesCarnivoRes #LesGloutonnes</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Score de performance prédit -->
+        <div class="performance-predictor">
+          <h4>📊 Performance prédite par IA</h4>
+          <div class="performance-metrics">
+            <div class="metric">
+              <span class="metric-label">Engagement prévu</span>
+              <span class="metric-value" id="predicted-engagement">Moyen</span>
+            </div>
+            <div class="metric">
+              <span class="metric-label">Portée estimée</span>
+              <span class="metric-value" id="predicted-reach">500-800</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Timing optimal -->
+        <div class="timing-optimizer">
+          <h4>⏰ Timing optimal</h4>
+          <div class="timing-suggestion" id="timing-suggestion">
+            <div class="timing-info">
+              <strong>📅 Meilleur moment :</strong> Mercredi 14h-16h
+            </div>
+            <div class="timing-reason">
+              Ton audience est plus active en milieu de semaine
+            </div>
+          </div>
+        </div>
+
+        <!-- Actions de publication -->
+        <div class="publication-actions">
+          <h4>🚀 Prêt à publier ?</h4>
+          
+          <div class="copy-actions">
+            <button class="copy-btn facebook" onclick="copyForFacebook()">
+              📘 Copier pour Facebook
+            </button>
+            <button class="copy-btn instagram" onclick="copyForInstagram()">
+              📷 Copier pour Instagram
+            </button>
+            <button class="copy-btn both" onclick="copyForBoth()">
+              📋 Copier tout
+            </button>
+          </div>
+
+          <div class="quick-publish">
+            <button class="publish-btn" onclick="quickPublish()">
+              ⚡ Publication rapide
+            </button>
+            <p class="publish-help">Ouvre Meta Business Suite avec ton contenu optimisé par IA</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Barre d'actions flottante -->
+    <div class="floating-actions">
+      <button class="float-btn save" onclick="saveDraft()" title="Sauvegarder brouillon">
+        💾
+      </button>
+      <button class="float-btn clear" onclick="clearAll()" title="Tout effacer">
+        🗑️
+      </button>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="../js/social-publisher.js"></script>
+  <script>
+    // Auto-focus sur le textarea au chargement
+    document.addEventListener('DOMContentLoaded', function() {
+      const textarea = document.getElementById('post-content');
+      if (textarea) {
+        textarea.focus();
+      }
+    });
+  </script>
+</body>
+</html>
