@@ -1,0 +1,16 @@
+{
+    "id": "RDV-20250817-6b90a5",
+    "name": "Angelina Zapszalka",
+    "email": "z.angelika@gmail.com",
+    "phone": "0494881487",
+    "date": "2025-08-20",
+    "time": "16:30",
+    "visitors": 2,
+    "plants": [
+        "other"
+    ],
+    "message": "Darlingtonia",
+    "status": "confirmed",
+    "created_at": "2025-08-17 19:48:11",
+    "token": "d1e78bbc86328e02fe18dbd6384c08c5"
+}
