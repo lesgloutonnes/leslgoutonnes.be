@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <script src="/js/analytics.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maintenance - Les Gloutonnes</title>
+    <style>
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            background: linear-gradient(135deg, #5b0092, #ff9100);
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        .maintenance-container {
+            text-align: center;
+            max-width: 600px;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+        .logo {
+            width: 150px;
+            height: auto;
+            margin-bottom: 2rem;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+            opacity: 0.9;
+        }
+        .contact-info {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-top: 2rem;
+        }
+        .contact-info h3 {
+            margin-top: 0;
+            color: #ff9100;
+        }
+        .contact-link {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .contact-link:hover {
+            color: #ff9100;
+        }
+        .spinner {
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            border-top: 3px solid #ff9100;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 2rem auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .eta {
+            font-size: 0.9rem;
+            opacity: 0.7;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="maintenance-container">
+        <img src="https://www.lesgloutonnes.be/images/logo/logo.png" alt="Les Gloutonnes" class="logo" loading="eager" data-lazy="eager">
+        
+        <h1>🔧 Maintenance en cours</h1>
+        
+        <p>
+            Le site est temporairement en maintenance pour optimiser les performances et corriger quelques problèmes techniques.
+        </p>
+        
+        <div class="spinner"></div>
+        
+        <p>
+            <strong>Je travaille activement pour rétablir le service.</strong><br>
+            La maintenance devrait être terminée sous peu.
+        </p>
+        
+        <div class="contact-info">
+            <h3>🌱 En attendant...</h3>
+            <p>Tu peux toujours :</p>
+            <ul style="text-align: left; display: inline-block;">
+                <li>Nous contacter par <a href="mailto:infos@lesgloutonnes.be" class="contact-link">email</a></li>
+                <li>Appeler au <a href="tel:+32494881487" class="contact-link">+32 494 88 14 87</a></li>
+                <li>Suivre nos <a href="https://instagram.com/lesgloutonnes.be" class="contact-link">réseaux sociaux</a></li>
+            </ul>
+        </div>
+        
+        <div class="eta">
+            <small>Merci pour ta patience ! 🙏</small>
+        </div>
+    </div>
+    
+    <script>
+        // Auto-refresh toutes les 30 secondes
+        setTimeout(() => {
+            window.location.reload();
+        }, 30000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <script src="/js/analytics.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ajout optionnel : Meta pour empêcher l'indexation de la page 500 -->
+    <meta name="robots" content="noindex, nofollow">
+    <title>Erreur Serveur - Les Gloutonnes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/faviconfavicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="/images/favicon/site.webmanifest" />
+    <style>
+        .error-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            min-height: 70vh;
+            padding: 2rem;
+        }
+
+        .error-logo {
+            max-width: 300px;
+            margin-bottom: 2rem;
+            animation: shake 2s infinite;
+        }
+
+        .error-title {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #ff9100;
+            font-weight: 600;
+        }
+
+        .error-message {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            line-height: 1.6;
+            color: #212121;
+        }
+
+        .error-actions {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .carnivorous-plants {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background-image: url('/images/404/plants-silhouette.png');
+            background-repeat: repeat-x;
+            background-position: bottom;
+            opacity: 0.2;
+            z-index: -1;
+        }
+
+        @keyframes shake {
+            0%, 100% {
+                transform: translateX(0);
+            }
+            10%, 30%, 50%, 70%, 90% {
+                transform: translateX(-5px);
+            }
+            20%, 40%, 60%, 80% {
+                transform: translateX(5px);
+            }
+        }
+
+        .featured-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            max-width: 900px;
+            margin: 2rem auto;
+        }
+
+        .featured-link {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-decoration: none;
+            color: #212121;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .featured-link:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(255, 145, 0, 0.2);
+        }
+
+        .featured-link-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #ff9100;
+        }
+
+        .featured-link h3 {
+            margin: 0 0 0.5rem 0;
+            color: #ff9100;
+        }
+
+        .featured-link p {
+            margin: 0;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        .error-details {
+            background: #f8f9fa;
+            border-left: 4px solid #ff9100;
+            padding: 1rem;
+            margin: 2rem auto;
+            max-width: 600px;
+            border-radius: 4px;
+        }
+
+        .error-details h3 {
+            color: #ff9100;
+            margin-top: 0;
+        }
+
+        .retry-button {
+            background: #ff9100;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 1rem;
+            transition: background 0.3s;
+        }
+
+        .retry-button:hover {
+            background: #e67e00;
+        }
+
+        @media (max-width: 768px) {
+            .error-title {
+                font-size: 2.5rem;
+            }
+
+            .error-logo {
+                max-width: 200px;
+            }
+
+            .featured-links {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header-component"></div>
+
+    <main>
+        <div class="error-container">
+            <img src="/images/logo/logo.png" alt="Les Gloutonnes Logo" class="error-logo" loading="eager" data-lazy="eager">
+            <h1 class="error-title">Erreur 500 - Problème serveur</h1>
+            <p class="error-message">Oups ! Il semblerait que mes plantes carnivores aient un peu trop faim et qu'elles aient grignoté notre serveur ! 🌿💻</p>
+
+            <div class="error-details">
+                <h3>Que s'est-il passé ?</h3>
+                <p>Une erreur technique temporaire empêche l'affichage de cette page. Mes Dionaea sont en train de réparer les dégâts !</p>
+            </div>
+
+            <button class="retry-button" onclick="window.location.reload()">Réessayer</button>
+
+            <div class="error-actions">
+                <a href="/" class="btn btn-primary">Retour à l'accueil</a>
+                <a href="/index.html#contact" class="btn btn-outline">Signaler le problème</a>
+            </div>
+
+            <h2 style="margin-top: 3rem; color: #ff9100;">En attendant, découvre ces pages</h2>
+
+            <div class="featured-links">
+                <a href="/pages/collection-dionaea.html" class="featured-link">
+                    <div class="featured-link-icon">🌱</div>
+                    <h3>Collection Dionaea</h3>
+                    <p>Découvre ma collection unique de plantes carnivores</p>
+                </a>
+
+                <a href="/pages/guides.html" class="featured-link">
+                    <div class="featured-link-icon">📚</div>
+                    <h3>Guides de Culture</h3>
+                    <p>Apprends à cultiver tes plantes avec mes conseils</p>
+                </a>
+
+                <a href="/bonus/index.html" class="featured-link">
+                    <div class="featured-link-icon">🎁</div>
+                    <h3>Guide Gratuit</h3>
+                    <p>Télécharge mon guide de culture gratuit en PDF</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="carnivorous-plants"></div>
+    </main>
+
+    <div id="footer-component"></div>
+
+    <script src="/js/components.js"></script>
+    <script src="/js/navigation.js"></script>
+    
+    <script>
+        // Tentative de rechargement automatique après 30 secondes
+        setTimeout(function() {
+            if (confirm("Voulez-vous réessayer de charger la page ?")) {
+                window.location.reload();
+            }
+        }, 30000);
+    </script>
+</body>
+
+</html>
