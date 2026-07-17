@@ -1,0 +1,750 @@
+/* Page Guides - styles namespacés */
+
+.guides-page {
+  background-color: var(--white);
+}
+
+.guides-page .guides-section {
+  padding: clamp(3.5rem, 7vw, 5.5rem) var(--container-padding);
+  color: var(--black);
+}
+
+.guides-page .guides-section:nth-of-type(even) {
+  background-color: #f7f2ff;
+}
+
+/* Hero -------------------------------------------------------------- */
+
+.guides-page .guides-hero {
+  position: relative;
+  padding: clamp(4rem, 9vw, 7rem) var(--container-padding);
+  background: url('/images/guides/guides-hero.jpg') center/cover no-repeat;
+  color: #fff;
+  overflow: hidden;
+}
+
+.guides-page .guides-hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--hero-overlay);
+}
+
+.guides-page .guides-hero-content {
+  position: relative;
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1rem, 3vw, 1.75rem);
+  z-index: 1;
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: var(--border-radius-lg);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.guides-page .guides-hero-content h1 {
+  margin: 0;
+  font-size: clamp(2.6rem, 5vw, 3.6rem);
+  font-weight: 600;
+  text-shadow: 
+    0 2px 4px rgba(0, 0, 0, 0.8),
+    0 4px 8px rgba(0, 0, 0, 0.7),
+    0 8px 16px rgba(0, 0, 0, 0.6),
+    0 16px 32px rgba(6, 0, 14, 0.55);
+}
+
+.guides-page .hero-subtitle {
+  margin: 0 auto;
+  max-width: 52ch;
+  font-size: clamp(1.05rem, 2.2vw, 1.3rem);
+  color: rgba(255, 255, 255, 0.95);
+  line-height: 1.8;
+  text-shadow: 
+    0 1px 3px rgba(0, 0, 0, 0.7),
+    0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* Introduction ------------------------------------------------------ */
+
+.guides-page .guides-intro {
+  background-color: var(--white);
+}
+
+.guides-page .intro-content {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  display: grid;
+  gap: clamp(1.8rem, 4vw, 3rem);
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+  .guides-page .intro-content {
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+  }
+}
+
+.guides-page .intro-text h2 {
+  margin: 0 0 clamp(1rem, 3vw, 1.6rem);
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.guides-page .intro-text p {
+  margin: 0 0 1rem;
+  line-height: 1.8;
+  color: var(--dark-gray);
+  font-size: 1.05rem;
+}
+
+.guides-page .intro-text .text-link {
+  font-weight: 600;
+  color: var(--accent-color);
+  position: relative;
+  text-decoration: none;
+}
+
+.guides-page .intro-text .text-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 1px;
+  background-color: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.25s ease;
+}
+
+.guides-page .intro-text .text-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.guides-page .intro-image {
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-medium);
+}
+
+.guides-page .intro-image img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.45s ease;
+}
+
+.guides-page .intro-image:hover img {
+  transform: scale(1.04);
+}
+
+.guides-page .guide-features {
+  list-style: none;
+  margin: clamp(1.4rem, 3vw, 2rem) 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0.75rem 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.guides-page .guide-features li {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-size: 1rem;
+  color: var(--dark-gray);
+}
+
+.guides-page .feature-icon {
+  font-size: 1.6rem;
+  color: var(--accent-color);
+}
+
+/* Navigation -------------------------------------------------------- */
+
+.guides-page .guides-index {
+  background-color: #f2ebff;
+}
+
+.guides-page .section-title {
+  margin: 0 auto 0.75rem;
+  text-align: center;
+  font-size: clamp(2rem, 3.5vw, 2.6rem);
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.guides-page .section-intro {
+  margin: 0 auto clamp(1.5rem, 3vw, 2.5rem);
+  max-width: 60ch;
+  text-align: center;
+  color: var(--dark-gray);
+  line-height: 1.7;
+}
+
+.guides-page .guides-nav-grid {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  display: grid;
+  gap: clamp(1.2rem, 3vw, 1.8rem);
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+}
+
+.guides-page .guide-nav-item {
+  position: relative;
+  display: grid;
+  gap: 0.75rem;
+  justify-items: center;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.25s ease;
+}
+
+.guides-page .guide-nav-item:hover,
+.guides-page .guide-nav-item:focus-visible {
+  transform: translateY(-6px);
+}
+
+.guides-page .guide-nav-item::after {
+  content: '';
+  position: absolute;
+  bottom: -0.4rem;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: var(--accent-color);
+  transform: translateX(-50%);
+  transition: width 0.25s ease;
+}
+
+.guides-page .guide-nav-item:hover::after,
+.guides-page .guide-nav-item:focus-visible::after {
+  width: 70%;
+}
+
+.guides-page .guide-nav-image {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-small);
+}
+
+.guides-page .guide-nav-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.45s ease;
+}
+
+.guides-page .guide-nav-item:hover img {
+  transform: scale(1.08);
+}
+
+.guides-page .guide-nav-name {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+/* Guides individuels ------------------------------------------------ */
+
+.guides-page .guides-library {
+  background-color: var(--white);
+}
+
+.guides-page .plant-guide {
+  max-width: var(--container-max-width);
+  margin: 0 auto clamp(3rem, 6vw, 4.5rem);
+  padding-top: clamp(2rem, 4vw, 3rem);
+  border-top: 1px solid var(--light-gray);
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.guides-page .plant-guide:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
+.guides-page .plant-guide.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.guides-page .guide-header {
+  text-align: center;
+  margin-bottom: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.guides-page .guide-title {
+  margin: 0;
+  font-size: clamp(2rem, 3.5vw, 2.6rem);
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.guides-page .guide-subtitle {
+  margin: 0.4rem 0 0;
+  font-size: 1.2rem;
+  color: var(--dark-gray);
+  font-style: italic;
+}
+
+.guides-page .guide-content {
+  display: grid;
+  gap: clamp(1.8rem, 4vw, 3rem);
+}
+
+@media (min-width: 1024px) {
+  .guides-page .guide-content {
+    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+    align-items: start;
+  }
+
+  .guides-page .guide-image {
+    position: sticky;
+    top: 120px;
+  }
+}
+
+.guides-page .guide-image {
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-medium);
+}
+
+.guides-page .guide-image img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.guides-page .guide-description p {
+  margin: 0 0 1rem;
+  line-height: 1.75;
+  color: var(--dark-gray);
+  font-size: 1.05rem;
+}
+
+.guides-page .cultivation-basics {
+  background-color: #f4f1ff;
+  border-radius: var(--border-radius-lg);
+  padding: clamp(1.6rem, 3vw, 2.4rem);
+  margin-top: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.guides-page .cultivation-basics h3 {
+  margin: 0 0 1.2rem;
+  font-size: 1.6rem;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.guides-page .cultivation-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.guides-page .cultivation-item {
+  background: #fff;
+  border-radius: var(--border-radius-md);
+  padding: 1rem;
+  box-shadow: var(--shadow-small);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.guides-page .cultivation-item:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-medium);
+}
+
+.guides-page .item-icon {
+  font-size: 1.8rem;
+  color: var(--accent-color);
+}
+
+.guides-page .cultivation-item h4 {
+  margin: 0.4rem 0;
+  font-size: 1.1rem;
+  color: var(--primary-color);
+}
+
+.guides-page .cultivation-item p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: var(--dark-gray);
+}
+
+.guides-page .guide-video {
+  margin-top: clamp(1.8rem, 3vw, 2.6rem);
+  background: rgba(91, 0, 146, 0.05);
+  border-radius: var(--border-radius-lg);
+  padding: clamp(1.6rem, 3vw, 2.4rem);
+}
+
+.guides-page .guide-video h3 {
+  text-align: center;
+  margin: 0 0 1.2rem;
+  color: var(--primary-color);
+  font-size: 1.6rem;
+}
+
+.guides-page .video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-medium);
+}
+
+.guides-page .video-container iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.guides-page .video-description {
+  margin-top: 1rem;
+  text-align: center;
+  color: var(--dark-gray);
+  line-height: 1.6;
+}
+
+.guides-page .additional-tips,
+.guides-page .sarracenia-species,
+.guides-page .seasonal-care,
+.guides-page .utricularia-types,
+.guides-page .cultivation-aquatic,
+.guides-page .utricularia-fascination,
+.guides-page .triantha-characteristics,
+.guides-page .cultivation-notes,
+.guides-page .conservation-status {
+  margin-top: clamp(1.8rem, 3vw, 2.8rem);
+  background: #fff;
+  border-radius: var(--border-radius-lg);
+  padding: clamp(1.6rem, 3vw, 2.4rem);
+  box-shadow: var(--shadow-small);
+}
+
+.guides-page .additional-tips h3,
+.guides-page .sarracenia-species h3,
+.guides-page .seasonal-care h3,
+.guides-page .cultivation-aquatic h3,
+.guides-page .utricularia-fascination h3,
+.guides-page .triantha-characteristics h3,
+.guides-page .cultivation-notes h3,
+.guides-page .conservation-status h3 {
+  margin: 0 0 1.2rem;
+  text-align: center;
+  font-size: 1.6rem;
+  color: var(--primary-color);
+}
+
+.guides-page .tips-grid,
+.guides-page .species-grid,
+.guides-page .season-tips,
+.guides-page .aquatic-cultivation-grid,
+.guides-page .notes-grid {
+  display: grid;
+  gap: clamp(1rem, 2vw, 1.5rem);
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.guides-page .additional-tip,
+.guides-page .species-card,
+.guides-page .season,
+.guides-page .cultivation-card,
+.guides-page .note-card {
+  background: #fff;
+  border-radius: var(--border-radius-md);
+  padding: 1.25rem;
+  border: 1px solid rgba(91, 0, 146, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.guides-page .additional-tip:hover,
+.guides-page .species-card:hover,
+.guides-page .season:hover,
+.guides-page .cultivation-card:hover,
+.guides-page .note-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-medium);
+}
+
+.guides-page .additional-tip h4,
+.guides-page .species-card h4,
+.guides-page .season h4,
+.guides-page .cultivation-card h4,
+.guides-page .characteristic-item h4,
+.guides-page .note-card h4 {
+  margin: 0 0 0.6rem;
+  font-size: 1.15rem;
+  color: var(--primary-color);
+}
+
+.guides-page .season {
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.guides-page .season::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 6px;
+  border-radius: 6px;
+}
+
+.guides-page .season:nth-child(1)::before {
+  background-color: #7cb342;
+}
+
+.guides-page .season:nth-child(2)::before {
+  background-color: #f57c00;
+}
+
+.guides-page .season:nth-child(3)::before {
+  background-color: #8d6e63;
+}
+
+.guides-page .season:nth-child(4)::before {
+  background-color: #42a5f5;
+}
+
+.guides-page .type-item {
+  margin-bottom: 1rem;
+  border-left: 4px solid transparent;
+  background: rgba(91, 0, 146, 0.05);
+  padding: 1rem 1.25rem;
+  border-radius: var(--border-radius-md);
+}
+
+.guides-page .type-item.aquatic { border-left-color: #1565c0; }
+.guides-page .type-item.terrestrial { border-left-color: #2e7d32; }
+.guides-page .type-item.epiphytic { border-left-color: #6a1b9a; }
+
+.guides-page .fascination-content,
+.guides-page .characteristics-content {
+  display: grid;
+  gap: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+@media (min-width: 900px) {
+  .guides-page .fascination-content,
+  .guides-page .characteristics-content {
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+    align-items: center;
+  }
+}
+
+.guides-page .fascination-image img,
+.guides-page .characteristics-image img,
+.guides-page .contact-image img {
+  width: 100%;
+  display: block;
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-medium);
+}
+
+.guides-page .trap-mechanism,
+.guides-page .conservation-list {
+  margin: 1.2rem 0 0;
+  padding: 1.2rem 1.5rem;
+  background: #faf8ff;
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-small);
+}
+
+.guides-page .trap-mechanism {
+  list-style: decimal;
+  padding-left: 2.5rem;
+}
+
+.guides-page .trap-mechanism li,
+.guides-page .conservation-list li {
+  margin-bottom: 0.6rem;
+  line-height: 1.6;
+  color: var(--dark-gray);
+}
+
+.guides-page .conservation-list {
+  list-style: none;
+}
+
+.guides-page .conservation-list li::before {
+  content: '✦';
+  margin-right: 0.6rem;
+  color: var(--accent-color);
+}
+
+/* Section contact --------------------------------------------------- */
+
+.guides-page .guides-contact {
+  background: linear-gradient(130deg, rgba(91, 0, 146, 0.08) 0%, rgba(255, 145, 0, 0.12) 100%);
+}
+
+.guides-page .contact-banner {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  display: grid;
+  gap: clamp(1.8rem, 3vw, 2.6rem);
+  align-items: center;
+  background: #fff;
+  border-radius: var(--border-radius-xl);
+  padding: clamp(2rem, 4vw, 3rem);
+  box-shadow: var(--shadow-medium);
+}
+
+@media (min-width: 960px) {
+  .guides-page .contact-banner {
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  }
+}
+
+.guides-page .contact-text h2 {
+  margin: 0 0 1rem;
+  font-size: clamp(1.9rem, 3.5vw, 2.4rem);
+  color: var(--primary-color);
+}
+
+.guides-page .contact-text p {
+  margin: 0 0 1.25rem;
+  color: var(--dark-gray);
+  line-height: 1.7;
+}
+
+.guides-page .contact-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.guides-page .contact-buttons .btn {
+  flex: 1 1 auto;
+  min-width: 180px;
+  text-align: center;
+}
+
+.guides-page .youtube-btn {
+  background-color: #c4302b;
+  border-color: #c4302b;
+}
+
+.guides-page .youtube-btn:hover,
+.guides-page .youtube-btn:focus-visible {
+  background-color: #a62722;
+  border-color: #a62722;
+}
+
+.guides-page .whatsapp-link {
+  background-color: #25d366;
+  border-color: #25d366;
+  color: #fff;
+}
+
+.guides-page .whatsapp-link:hover,
+.guides-page .whatsapp-link:focus-visible {
+  background-color: #128c7e;
+  border-color: #128c7e;
+  color: #fff;
+}
+
+/* Animations -------------------------------------------------------- */
+
+.guides-page .guides-hero,
+.guides-page .guides-section {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.guides-page .guides-hero.visible,
+.guides-page .guides-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.guides-page .additional-tip,
+.guides-page .species-card,
+.guides-page .season,
+.guides-page .cultivation-card,
+.guides-page .note-card {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.guides-page .additional-tip.visible,
+.guides-page .species-card.visible,
+.guides-page .season.visible,
+.guides-page .cultivation-card.visible,
+.guides-page .note-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive -------------------------------------------------------- */
+
+@media (max-width: 768px) {
+  .guides-page .guides-section {
+    padding: clamp(2.6rem, 8vw, 3.1rem) var(--container-padding);
+  }
+
+  .guides-page .guide-content,
+  .guides-page .intro-content,
+  .guides-page .contact-banner,
+  .guides-page .fascination-content,
+  .guides-page .characteristics-content {
+    grid-template-columns: 1fr;
+  }
+
+  .guides-page .contact-buttons {
+    flex-direction: column;
+  }
+
+  .guides-page .contact-buttons .btn {
+    width: 100%;
+  }
+
+  .guides-page .guide-features,
+  .guides-page .tips-grid,
+  .guides-page .species-grid,
+  .guides-page .season-tips,
+  .guides-page .aquatic-cultivation-grid,
+  .guides-page .notes-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  .guides-page .guide-nav-grid {
+    grid-template-columns: repeat(2, minmax(120px, 1fr));
+  }
+
+  .guides-page .contact-banner {
+    padding: 1.8rem;
+  }
+
+  .guides-page .guides-hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .guides-page .hero-subtitle {
+    font-size: 1rem;
+  }
+}
+  

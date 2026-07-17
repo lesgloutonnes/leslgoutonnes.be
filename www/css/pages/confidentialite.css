@@ -1,0 +1,224 @@
+/* Page Politique de Confidentialité - styles namespacés */
+
+.privacy-page {
+  background-color: var(--white);
+}
+
+.privacy-page .privacy-section {
+  padding: clamp(3.5rem, 7vw, 5.5rem) var(--container-padding);
+  color: var(--black);
+}
+
+.privacy-page .privacy-section:nth-of-type(even) {
+  background: #f7f2ff;
+}
+
+.privacy-page .privacy-section__inner {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+}
+
+.privacy-page .privacy-section__title {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.privacy-page .privacy-section__subtitle {
+  margin: clamp(0.7rem, 2vw, 1.2rem) 0 0;
+  color: var(--dark-gray);
+  font-size: clamp(1rem, 2vw, 1.15rem);
+  line-height: 1.7;
+}
+
+/* Hero -------------------------------------------------------------- */
+
+.privacy-page .privacy-hero {
+  position: relative;
+  padding: clamp(4rem, 8vw, 6.4rem) var(--container-padding);
+  background: url('/images/sphaignes/tourbiere-fagnes.jpg') center/cover no-repeat;
+  color: #fff;
+  overflow: hidden;
+}
+
+.privacy-page .privacy-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(115deg, rgba(8, 0, 20, 0.82) 0%, rgba(68, 3, 104, 0.78) 55%, rgba(255, 145, 0, 0.58) 100%);
+}
+
+.privacy-page .privacy-hero .privacy-section__inner {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  display: grid;
+  gap: clamp(1rem, 3vw, 1.6rem);
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: var(--border-radius-lg);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.privacy-page .privacy-hero__title {
+  margin: 0;
+  font-size: clamp(2.6rem, 5vw, 3.6rem);
+  font-weight: 600;
+  text-shadow: 
+    0 2px 4px rgba(0, 0, 0, 0.8),
+    0 4px 8px rgba(0, 0, 0, 0.7),
+    0 8px 16px rgba(0, 0, 0, 0.6),
+    0 16px 32px rgba(6, 0, 14, 0.55);
+}
+
+.privacy-page .privacy-hero__subtitle {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.95);
+  font-size: clamp(1.05rem, 2.2vw, 1.3rem);
+  text-shadow: 
+    0 1px 3px rgba(0, 0, 0, 0.7),
+    0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* Intro ------------------------------------------------------------- */
+
+.privacy-page .privacy-intro__content {
+  text-align: center;
+  display: grid;
+  gap: clamp(1rem, 3vw, 1.8rem);
+}
+
+/* Content ----------------------------------------------------------- */
+
+.privacy-page .privacy-grid {
+  display: grid;
+  gap: clamp(1.6rem, 3vw, 2.4rem);
+}
+
+.privacy-page .privacy-card {
+  background: #fff;
+  border-radius: var(--border-radius-xl);
+  padding: clamp(1.6rem, 3vw, 2.2rem);
+  box-shadow: var(--shadow-small);
+  display: grid;
+  gap: 0.9rem;
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.privacy-page .privacy-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.privacy-page .privacy-card__title {
+  margin: 0;
+  font-size: clamp(1.4rem, 2.4vw, 1.8rem);
+  color: var(--primary-color);
+}
+
+.privacy-page .privacy-card__subtitle {
+  margin: 0;
+  font-size: 1.1rem;
+  color: var(--accent-color);
+}
+
+.privacy-page .privacy-card ul {
+  margin: 0;
+  padding-left: 1.4rem;
+  display: grid;
+  gap: 0.4rem;
+  color: var(--dark-gray);
+}
+
+.privacy-page .privacy-card p {
+  margin: 0;
+  color: var(--dark-gray);
+  line-height: 1.7;
+}
+
+/* Quick nav --------------------------------------------------------- */
+
+.privacy-page .privacy-quick-nav__header {
+  text-align: center;
+  margin-bottom: clamp(1.2rem, 3vw, 1.8rem);
+}
+
+.privacy-page .privacy-quick-nav__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  justify-content: center;
+}
+
+.privacy-page .privacy-quick-nav__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.35rem;
+  border-radius: 999px;
+  background: rgba(91, 0, 146, 0.08);
+  color: var(--primary-color);
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.privacy-page .privacy-quick-nav__link:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-small);
+}
+
+/* Animations -------------------------------------------------------- */
+
+.privacy-page .privacy-section {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.privacy-page .privacy-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.privacy-page .privacy-links li {
+  opacity: 0;
+  transform: translateX(-12px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  transition-delay: calc(0.05s * var(--index, 0));
+}
+
+.privacy-page .privacy-card.visible .privacy-links li {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Responsive -------------------------------------------------------- */
+
+@media (max-width: 700px) {
+  .privacy-page .privacy-section {
+    padding: clamp(2.6rem, 8vw, 3.4rem) var(--container-padding);
+  }
+
+  .privacy-page .privacy-quick-nav__list {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .privacy-page .privacy-quick-nav__link {
+    width: 100%;
+  }
+}
+
+@media (max-width: 540px) {
+  .privacy-page .privacy-card {
+    padding: 1.4rem;
+  }
+}
+

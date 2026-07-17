@@ -1,0 +1,86 @@
+/* 
+LES GLOUTONNES - RESET & BASE STYLES
+===================================
+Réinitialisation des styles et styles de base pour tous les éléments
+*/
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    /* Compense header sticky + bannière promo pour les ancres (#contact, etc.) */
+    scroll-padding-top: 7rem;
+  }
+
+  [id] {
+    scroll-margin-top: 7rem;
+  }
+  
+  body {
+    font-family: var(--primary-font);
+    color: var(--text-color);
+    line-height: 1.6;
+    background-color: var(--white);
+    overflow-x: hidden;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color var(--transition-normal), opacity var(--transition-normal);
+  }
+  
+  a:hover {
+    color: var(--link-hover);
+  }
+  
+  ul,
+  ol {
+    list-style: none;
+  }
+  
+  /* Layout containers */
+  .container {
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+  }
+  
+  section {
+    padding: var(--section-padding);
+  }
+  
+  /* Accessibilité */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+  
+  /* Focus styles pour accessibilité */
+  a:focus,
+  button:focus,
+  input:focus,
+  select:focus,
+  textarea:focus {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 2px;
+  }
+  

@@ -1,0 +1,81 @@
+/* 
+LES GLOUTONNES - VARIABLES CSS
+==============================
+Toutes les variables du site (couleurs, typographie, espacements)
+*/
+
+:root {
+    /* Couleurs principales */
+    --primary-color: #5b0092;
+    /* Violet - Remplace le vert foncé d'origine */
+    --accent-color: #ff9100;
+    /* Orange - Remplace le rouge foncé d'origine */
+  
+    /* Couleurs neutres */
+    --white: #ffffff;
+    --black: #212121;
+    --dark: #212121;
+    --light-gray: #e0e0e0;
+    --medium-gray: #f4f4f4;
+    --light-bg: #f7f2ff;
+    --dark-gray: #757575;
+
+    /* Overlay hero partagé (pages contenu) */
+    --hero-overlay: linear-gradient(
+      115deg,
+      rgba(8, 0, 20, 0.82) 0%,
+      rgba(68, 3, 104, 0.78) 55%,
+      rgba(255, 145, 0, 0.55) 100%
+    );
+  
+    /* Couleurs fonctionnelles */
+    --heading-color: var(--primary-color);
+    --text-color: var(--black);
+    --link-color: var(--primary-color);
+    --link-hover: var(--accent-color);
+    --button-primary-bg: var(--accent-color);
+    --button-primary-hover: #e58200;
+    /* Version plus foncée de l'accent */
+    --button-secondary-bg: var(--primary-color);
+    --button-secondary-hover: #4a007a;
+    /* Version plus foncée du primaire */
+  
+    /* Ombres */
+    --shadow-small: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --shadow-medium: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --shadow-large: 0 6px 12px rgba(0, 0, 0, 0.15);
+  
+    /* Typographie */
+    --primary-font: "Poppins", sans-serif;
+  
+    /* Espacements */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+    --spacing-xxl: 4rem;
+  
+    /* Rayons de bordure */
+    --border-radius-sm: 5px;
+    --border-radius-md: 10px;
+    --border-radius-lg: 16px;
+    --border-radius-xl: 20px;
+    --border-radius-xxl: 28px;
+  
+    /* Transitions */
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+    --transition-slow: 0.5s ease;
+  
+    /* Layout */
+    --container-max-width: 1200px;
+    --container-padding: 5%;
+    --section-padding: 4rem 5%;
+  
+    /* Border radius */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+  }
+  

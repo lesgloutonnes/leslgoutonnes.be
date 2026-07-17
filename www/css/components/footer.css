@@ -1,0 +1,368 @@
+/* 
+LES GLOUTONNES - FOOTER
+=====================
+Styles pour le pied de page
+*/
+
+footer {
+    background-color: var(--black);
+    color: var(--white);
+    padding: var(--spacing-lg) var(--container-padding);
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-md);
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+  }
+  
+  /* Section réseaux sociaux */
+  .social-media h3 {
+    color: var(--white);
+    margin-bottom: var(--spacing-sm);
+    font-size: 1.2rem;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: var(--spacing-md);
+    justify-content: center;
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all var(--transition-normal);
+  }
+  
+  .social-icons a:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-2px);
+  }
+
+  /* Icônes sociales spécifiques */
+  .social-icons .facebook-link::before,
+  .social-icons .instagram-link::before,
+  .social-icons .youtube-link::before,
+  .social-icons .twitch-link::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .social-icons .facebook-link::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%23ff9100' d='M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z'/%3E%3C/svg%3E");
+  }
+
+  .social-icons .instagram-link::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3Cpath fill='%23ff9100' d='M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z'/%3E%3C/svg%3E");
+  }
+
+  .social-icons .youtube-link::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 576 512'%3E%3Cpath fill='%23ff9100' d='M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z'/%3E%3C/svg%3E");
+  }
+
+  .social-icons .twitch-link::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%23ff9100' d='M391.17 103.47h-38.63v109.7h38.63zM285 103h-38.63v109.75H285zM120.83 0L24.31 91.42v329.16h115.83V512l96.53-91.42h77.25L487.69 256V0zm328.24 237.75l-77.22 73.12h-77.24l-67.6 64v-64h-86.87V36.58h366.93z'/%3E%3C/svg%3E");
+  }
+  
+  /* Copyright */
+  footer p {
+    color: var(--light-gray);
+    font-size: 0.9rem;
+    margin-top: var(--spacing-md);
+  }
+  
+  /* Links in Footer */
+  footer a {
+    color: var(--white);
+    transition: color var(--transition-normal);
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    color: var(--accent-color);
+  }
+  
+  /* Newsletter Signup */
+  .newsletter-signup {
+    max-width: 500px;
+    width: 100%;
+    margin: var(--spacing-md) 0;
+    padding: var(--spacing-md);
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: var(--border-radius-md);
+  }
+  
+  .newsletter-signup h3 {
+    color: var(--white);
+    margin-bottom: var(--spacing-sm);
+    font-size: 1.2rem;
+  }
+  
+  .newsletter-signup p {
+    color: var(--light-gray);
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .newsletter-signup .btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--accent-color);
+    color: var(--white);
+    border-radius: var(--border-radius-md);
+    font-weight: 600;
+    transition: all var(--transition-normal);
+  }
+  
+  .newsletter-signup .btn:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-2px);
+  }
+  
+  /* Footer columns layout */
+  .footer-columns {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: var(--spacing-lg);
+    text-align: left;
+  }
+  
+  .footer-column {
+    flex: 1;
+    padding: 0 var(--spacing-sm);
+  }
+  
+  .footer-column__title,
+  .footer-column h3 {
+    color: var(--white);
+    margin-bottom: var(--spacing-md);
+    font-size: 1.2rem;
+    position: relative;
+    display: inline-block;
+    font-weight: 600;
+    font-family: var(--primary-font);
+    cursor: default;
+    list-style: none;
+  }
+
+  .footer-column__title::-webkit-details-marker {
+    display: none;
+  }
+  
+  .footer-column__title:after,
+  .footer-column h3:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 40px;
+    height: 2px;
+    background-color: var(--accent-color);
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-column li {
+    margin-bottom: var(--spacing-xs);
+  }
+  
+  .footer-column a {
+    text-decoration: none;
+    color: var(--light-gray);
+    transition: color var(--transition-normal);
+  }
+  
+  .footer-column a:hover {
+    color: var(--accent-color);
+  }
+  
+  /* Footer links */
+  .footer-links {
+    display: flex;
+    gap: var(--spacing-md);
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* Back to top button */
+  .back-to-top {
+    position: fixed;
+    bottom: var(--spacing-md);
+    right: var(--spacing-md);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    opacity: 0;
+    transition: opacity var(--transition-normal),
+      background-color var(--transition-normal),
+      color var(--transition-normal),
+      transform var(--transition-normal);
+    z-index: 99;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .back-to-top.visible {
+    opacity: 1;
+  }
+  
+  .back-to-top:hover {
+    background-color: var(--accent-color);
+    color: var(--white);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Footer divider */
+  .footer-divider {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.15);
+    margin: var(--spacing-md) 0;
+  }
+  
+  /* ====== MEDIA QUERIES POUR RESPONSIVE ====== */
+  
+  /* Tablettes */
+  @media screen and (max-width: 992px) {
+    .footer-columns {
+      flex-wrap: wrap;
+    }
+  
+    .footer-column {
+      flex: 0 0 50%;
+      margin-bottom: var(--spacing-md);
+    }
+  }
+  
+  /* Mobiles */
+  @media screen and (max-width: 768px) {
+    /* Ajustement du padding pour le footer */
+    footer {
+      padding: var(--spacing-md) var(--spacing-sm);
+    }
+  
+    /* Passage en colonne pour les colonnes du footer */
+    .footer-columns {
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-bottom: var(--spacing-md);
+    }
+  
+    /* Centrer chaque colonne sur mobile */
+    .footer-column {
+      text-align: left;
+      padding: 0.35rem 0;
+      margin-bottom: 0;
+      flex: 0 0 100%;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .footer-column__title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      margin: 0;
+      padding: 0.85rem 0;
+      cursor: pointer;
+      min-height: 44px;
+    }
+
+    .footer-column__title:after {
+      display: none;
+    }
+
+    .footer-column__title::after {
+      content: "";
+      width: 10px;
+      height: 10px;
+      border-right: 2px solid var(--accent-color);
+      border-bottom: 2px solid var(--accent-color);
+      transform: rotate(45deg);
+      transition: transform 0.2s ease;
+      flex-shrink: 0;
+    }
+
+    .footer-column[open] .footer-column__title::after {
+      transform: rotate(-135deg);
+    }
+
+    .footer-column ul {
+      padding-bottom: 0.75rem;
+    }
+  
+    /* Ajouter un peu d'espace entre les éléments de liste */
+    .footer-column li {
+      margin-bottom: var(--spacing-sm);
+    }
+  
+    /* Assurer que le texte long se coupe correctement */
+    .footer-column li {
+      word-break: break-word;
+      hyphens: auto;
+      max-width: 100%;
+    }
+  
+    /* Ajuster le formulaire de newsletter */
+    .newsletter-signup {
+      padding: var(--spacing-sm);
+    }
+  
+    /* Passage des liens en colonne */
+    .footer-links {
+      flex-direction: column;
+      gap: var(--spacing-sm);
+    }
+  
+    /* Ajuster le bouton back-to-top */
+    .back-to-top {
+      right: 12px;
+      bottom: 12px;
+      width: 44px;
+      height: 44px;
+    }
+  }
+
+  /* Desktop : titres non cliquables (toujours ouverts) */
+  @media screen and (min-width: 769px) {
+    .footer-column__title {
+      pointer-events: none;
+    }
+  }
+  
+  /* Très petits écrans */
+  @media screen and (max-width: 320px) {
+    /* Réduire davantage la taille du texte si nécessaire */
+    .footer-column li,
+    .footer-links a,
+    footer p {
+      font-size: 0.85rem;
+    }
+  
+  }
+  

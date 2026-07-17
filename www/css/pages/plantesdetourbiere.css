@@ -1,0 +1,635 @@
+/* Page Plantes de Tourbière - styles namespacés */
+
+.tourbiere-page {
+  background-color: var(--white);
+}
+
+.tourbiere-page .tourbiere-section {
+  padding: clamp(3.5rem, 7vw, 5.5rem) var(--container-padding);
+  color: var(--black);
+}
+
+.tourbiere-page .tourbiere-section:nth-of-type(even) {
+  background-color: #f7f2ff;
+}
+
+.tourbiere-page .tourbiere-section__inner {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+}
+
+.tourbiere-page .tourbiere-section__header {
+  max-width: 54rem;
+  margin: 0 auto clamp(2rem, 4vw, 3.5rem);
+  text-align: center;
+}
+
+.tourbiere-page .tourbiere-section__title {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.tourbiere-page .tourbiere-section__subtitle {
+  margin: clamp(0.75rem, 2vw, 1.25rem) 0 0;
+  color: var(--dark-gray);
+  font-size: clamp(1rem, 2.1vw, 1.15rem);
+  line-height: 1.7;
+}
+
+/* Hero -------------------------------------------------------------- */
+
+.tourbiere-page .tourbiere-hero {
+  position: relative;
+  padding: clamp(4.5rem, 9vw, 7.5rem) var(--container-padding);
+  background: url('/images/tourbiere/tourbiere-hero.jpg') center/cover no-repeat;
+  overflow: hidden;
+  color: #fff;
+}
+
+.tourbiere-page .tourbiere-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: var(--hero-overlay);
+}
+
+.tourbiere-page .tourbiere-hero__content {
+  position: relative;
+  max-width: 46rem;
+  margin: 0 auto;
+  text-align: center;
+  display: grid;
+  gap: clamp(1rem, 3vw, 1.6rem);
+  z-index: 1;
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: var(--border-radius-lg);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.tourbiere-page .tourbiere-hero__title {
+  margin: 0;
+  font-size: clamp(2.6rem, 5.4vw, 3.8rem);
+  font-weight: 600;
+  text-shadow: 
+    0 2px 4px rgba(0, 0, 0, 0.8),
+    0 4px 8px rgba(0, 0, 0, 0.7),
+    0 8px 16px rgba(0, 0, 0, 0.6),
+    0 16px 32px rgba(6, 0, 14, 0.55);
+}
+
+.tourbiere-page .tourbiere-hero__subtitle {
+  margin: 0;
+  font-size: clamp(1.05rem, 2.5vw, 1.3rem);
+  color: rgba(255, 255, 255, 0.95);
+  line-height: 1.8;
+  text-shadow: 
+    0 1px 3px rgba(0, 0, 0, 0.7),
+    0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* Intro ------------------------------------------------------------- */
+
+.tourbiere-page .tourbiere-intro__content {
+  display: grid;
+  gap: clamp(1.8rem, 4vw, 3rem);
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+  .tourbiere-page .tourbiere-intro__content {
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  }
+}
+
+.tourbiere-page .tourbiere-intro__text {
+  display: grid;
+  gap: 1rem;
+  color: var(--dark-gray);
+  line-height: 1.75;
+  font-size: 1.05rem;
+}
+
+.tourbiere-page .tourbiere-intro__media {
+  border-radius: var(--border-radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-medium);
+}
+
+.tourbiere-page .tourbiere-intro__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.45s ease;
+}
+
+.tourbiere-page .tourbiere-intro__content:hover .tourbiere-intro__media img {
+  transform: scale(1.05);
+}
+
+/* Filtres ----------------------------------------------------------- */
+
+.tourbiere-page .tourbiere-filters__controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: clamp(1rem, 3vw, 1.8rem);
+  padding: clamp(1.2rem, 3vw, 1.8rem);
+  border-radius: var(--border-radius-xl);
+  background: rgba(91, 0, 146, 0.08);
+  box-shadow: var(--shadow-small);
+}
+
+.tourbiere-page .tourbiere-filter {
+  display: grid;
+  gap: 0.45rem;
+  min-width: min(240px, 100%);
+}
+
+.tourbiere-page .tourbiere-filter__label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.tourbiere-page .tourbiere-filter__select {
+  padding: 0.65rem 1rem;
+  border-radius: var(--border-radius-sm);
+  border: 1px solid rgba(91, 0, 146, 0.18);
+  background: #fff;
+  color: var(--dark-gray);
+  font-family: var(--primary-font);
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='4' viewBox='0 0 8 4'%3E%3Cpath fill='%235b0092' d='M7 0H1C0.45 0 0.2 0.45 0.2 0.7C0.2 0.8 0.25 0.9 0.35 1L3.3 3.8C3.6 4.1 4.1 4.1 4.4 3.8L7.35 1C7.75 0.7 7.65 0 7 0Z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 8px 4px;
+  padding-right: 2.5rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tourbiere-page .tourbiere-filter__select:focus {
+  outline: none;
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 3px rgba(255, 145, 0, 0.22);
+}
+
+/* Loader ------------------------------------------------------------ */
+
+.tourbiere-page .tourbiere-loader {
+  display: grid;
+  gap: 0.9rem;
+  place-items: center;
+  padding: clamp(1.6rem, 4vw, 2.4rem);
+  border-radius: var(--border-radius-lg);
+  border: 1px solid rgba(91, 0, 146, 0.12);
+  background: rgba(91, 0, 146, 0.06);
+  min-height: clamp(160px, 22vw, 220px);
+  box-shadow: var(--shadow-small);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.tourbiere-page .tourbiere-loader[hidden] {
+  display: none !important;
+}
+
+.tourbiere-page .tourbiere-loader__spinner {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 4px solid rgba(91, 0, 146, 0.18);
+  border-top-color: rgba(91, 0, 146, 0.55);
+  animation: tourbiere-spin 0.9s linear infinite;
+}
+
+.tourbiere-page .tourbiere-loader__text {
+  margin: 0;
+  color: var(--primary-color);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+@keyframes tourbiere-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Grille ------------------------------------------------------------ */
+
+.tourbiere-page .tourbiere-grid {
+  display: grid;
+  gap: clamp(1.5rem, 3vw, 2.2rem);
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  margin-top: clamp(1.8rem, 4vw, 2.6rem);
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.tourbiere-page .tourbiere-grid.is-ready {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.tourbiere-page .tourbiere-card {
+  background: #fff;
+  border-radius: var(--border-radius-xl);
+  box-shadow: var(--shadow-small);
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.tourbiere-page .tourbiere-card:hover,
+.tourbiere-page .tourbiere-card:focus-within {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-medium);
+}
+
+.tourbiere-page .tourbiere-card__media {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.tourbiere-page .tourbiere-card__media img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.45s ease;
+}
+
+.tourbiere-page .tourbiere-card:hover .tourbiere-card__media img {
+  transform: scale(1.05);
+}
+
+.tourbiere-page .tourbiere-card__badge {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  background: rgba(91, 0, 146, 0.95);
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.tourbiere-page .tourbiere-card__logo {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  background: rgba(255, 255, 255, 0.92);
+  padding: 0.3rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--primary-color);
+  z-index: 1;
+}
+
+.tourbiere-page .tourbiere-card__body {
+  padding: clamp(1.2rem, 2.5vw, 1.6rem);
+  display: grid;
+  gap: 1rem;
+  align-content: start;
+}
+
+.tourbiere-page .tourbiere-card__title {
+  margin: 0;
+  font-size: 1.4rem;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.tourbiere-page .tourbiere-card__subtitle {
+  margin: 0;
+  color: var(--dark-gray);
+  font-style: italic;
+}
+
+.tourbiere-page .tourbiere-specs {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.tourbiere-page .tourbiere-spec {
+  background: rgba(91, 0, 146, 0.08);
+  border-radius: var(--border-radius-md);
+  padding: 0.75rem;
+  display: grid;
+  gap: 0.3rem;
+  justify-items: center;
+  text-align: center;
+}
+
+.tourbiere-page .tourbiere-spec__icon {
+  font-size: 1.4rem;
+  color: var(--accent-color);
+}
+
+.tourbiere-page .tourbiere-spec__value {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.tourbiere-page .tourbiere-spec__label {
+  font-size: 0.78rem;
+  color: var(--dark-gray);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.tourbiere-page .tourbiere-card__description {
+  display: grid;
+  gap: 0.6rem;
+  color: var(--dark-gray);
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+.tourbiere-page .tourbiere-card__culture {
+  background: rgba(91, 0, 146, 0.08);
+  border-radius: var(--border-radius-lg);
+  padding: 0.9rem 1.2rem;
+}
+
+.tourbiere-page .tourbiere-card__culture h4 {
+  margin: 0 0 0.4rem;
+  font-size: 1.05rem;
+  color: var(--primary-color);
+}
+
+.tourbiere-page .tourbiere-card__culture ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: var(--dark-gray);
+  line-height: 1.6;
+}
+
+/* Empty state ------------------------------------------------------- */
+
+.tourbiere-page .tourbiere-empty {
+  margin-top: clamp(2rem, 4vw, 3rem);
+  padding: clamp(1.6rem, 4vw, 2.4rem);
+  border-radius: var(--border-radius-xl);
+  background: #fff;
+  box-shadow: var(--shadow-small);
+  text-align: center;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tourbiere-page .tourbiere-empty__title {
+  margin: 0 0 0.6rem;
+  color: var(--primary-color);
+  font-size: 1.4rem;
+}
+
+.tourbiere-page .tourbiere-empty__text {
+  margin: 0 0 1rem;
+  color: var(--dark-gray);
+  line-height: 1.6;
+}
+
+/* Contact ----------------------------------------------------------- */
+
+.tourbiere-page .tourbiere-contact {
+  background: linear-gradient(130deg, rgba(91, 0, 146, 0.08) 0%, rgba(255, 145, 0, 0.12) 100%);
+}
+
+.tourbiere-page .tourbiere-contact__banner {
+  display: grid;
+  gap: clamp(1.8rem, 3vw, 2.6rem);
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  background: #fff;
+  border-radius: var(--border-radius-xxl);
+  padding: clamp(2rem, 4vw, 3rem);
+  box-shadow: var(--shadow-medium);
+  align-items: center;
+}
+
+@media (max-width: 960px) {
+  .tourbiere-page .tourbiere-contact__banner {
+    grid-template-columns: 1fr;
+  }
+}
+
+.tourbiere-page .tourbiere-contact__text {
+  display: grid;
+  gap: 1.1rem;
+  color: var(--dark-gray);
+}
+
+.tourbiere-page .tourbiere-contact__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.tourbiere-page .tourbiere-contact__actions .btn {
+  min-width: 180px;
+  text-align: center;
+}
+
+.tourbiere-page .tourbiere-contact__media {
+  border-radius: var(--border-radius-xl);
+  overflow: hidden;
+}
+
+.tourbiere-page .tourbiere-contact__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Modal ------------------------------------------------------------- */
+
+.tourbiere-page .tourbiere-modal {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.6rem;
+  background: rgba(8, 0, 20, 0.78);
+  z-index: 1200;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+
+.tourbiere-page .tourbiere-modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.tourbiere-page .tourbiere-modal__content {
+  position: relative;
+  max-width: 760px;
+  width: min(92vw, 760px);
+  background: #fff;
+  border-radius: var(--border-radius-xxl);
+  padding: clamp(1.6rem, 4vw, 2.4rem);
+  box-shadow: 0 24px 72px rgba(12, 0, 28, 0.35);
+  display: grid;
+  gap: 1rem;
+}
+
+.tourbiere-page .tourbiere-modal__close {
+  position: absolute;
+  top: -18px;
+  right: -18px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 2px solid var(--primary-color);
+  background: #fff;
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.tourbiere-page .tourbiere-modal__close:hover {
+  background: var(--accent-color);
+  border-color: var(--accent-color);
+  color: #fff;
+  transform: rotate(90deg);
+}
+
+.tourbiere-page .tourbiere-modal__image {
+  width: 100%;
+  height: auto;
+  border-radius: var(--border-radius-lg);
+  object-fit: contain;
+}
+
+.tourbiere-page .tourbiere-modal__title {
+  margin: 0;
+  font-size: 1.4rem;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+/* Boutons ----------------------------------------------------------- */
+
+.tourbiere-page .whatsapp-link {
+  background-color: #25d366;
+  border-color: #25d366;
+  color: #fff;
+}
+
+.tourbiere-page .whatsapp-link:hover,
+.tourbiere-page .whatsapp-link:focus-visible {
+  background-color: #128c7e;
+  border-color: #128c7e;
+  color: #fff;
+}
+
+.tourbiere-page .btn-outline {
+  border-color: rgba(91, 0, 146, 0.4);
+  color: var(--primary-color);
+}
+
+.tourbiere-page .btn-outline:hover,
+.tourbiere-page .btn-outline:focus-visible {
+  border-color: var(--primary-color);
+  color: #fff;
+  background: var(--primary-color);
+}
+
+/* Animations -------------------------------------------------------- */
+
+.tourbiere-page .tourbiere-hero,
+.tourbiere-page .tourbiere-section {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+
+.tourbiere-page .tourbiere-hero.visible,
+.tourbiere-page .tourbiere-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.tourbiere-page .tourbiere-card,
+.tourbiere-page .tourbiere-link-card,
+.tourbiere-page .tourbiere-contact__banner {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.tourbiere-page .tourbiere-card.visible,
+.tourbiere-page .tourbiere-link-card.visible,
+.tourbiere-page .tourbiere-contact__banner.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive -------------------------------------------------------- */
+
+@media (max-width: 768px) {
+  .tourbiere-page .tourbiere-section {
+    padding: clamp(2.6rem, 8vw, 3.1rem) var(--container-padding);
+  }
+
+  .tourbiere-page .tourbiere-filter {
+    width: 100%;
+  }
+
+  .tourbiere-page .tourbiere-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+
+  .tourbiere-page .tourbiere-specs {
+    grid-template-columns: 1fr;
+  }
+
+  .tourbiere-page .tourbiere-contact__actions {
+    flex-direction: column;
+  }
+
+  .tourbiere-page .tourbiere-contact__actions .btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 520px) {
+  .tourbiere-page .tourbiere-hero__title {
+    font-size: 2.2rem;
+  }
+
+  .tourbiere-page .tourbiere-filters__controls {
+    padding: 1.2rem 1.3rem;
+  }
+
+  .tourbiere-page .tourbiere-contact__banner,
+  .tourbiere-page .tourbiere-link-card,
+  .tourbiere-page .tourbiere-info__card {
+    padding: 1.6rem;
+  }
+}

@@ -1,0 +1,427 @@
+/* Page Bonus (guide gratuit) — styles namespacés, alignés sur le reste du site */
+
+.bonus-section {
+  padding: clamp(3.5rem, 7vw, 5.5rem) var(--container-padding);
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.bonus-section:nth-of-type(even) {
+  background-color: var(--light-bg);
+}
+
+.bonus-section__inner {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+}
+
+.bonus-section__header {
+  max-width: 52rem;
+  margin: 0 auto clamp(2rem, 4vw, 3.5rem);
+  text-align: center;
+}
+
+.bonus-section__title {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 600;
+  color: var(--primary-color);
+  line-height: 1.18;
+}
+
+.bonus-section__subtitle {
+  margin: clamp(0.75rem, 2vw, 1.25rem) 0 0;
+  color: var(--dark-gray);
+  font-size: clamp(1rem, 2.1vw, 1.15rem);
+  line-height: 1.7;
+}
+
+/* Hero ------------------------------------------------------------------ */
+
+.bonus-hero {
+  position: relative;
+  padding: clamp(4rem, 8vw, 7rem) var(--container-padding);
+  background: url("/images/about/about-hero.jpg") center/cover no-repeat;
+  color: #fff;
+  overflow: hidden;
+}
+
+.bonus-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: var(--hero-overlay);
+}
+
+.bonus-hero__inner {
+  position: relative;
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+}
+
+.bonus-hero__content {
+  max-width: 44rem;
+  display: grid;
+  gap: clamp(1rem, 3vw, 1.6rem);
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: var(--border-radius-lg);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.bonus-hero__eyebrow {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.bonus-hero__title {
+  margin: 0;
+  font-size: clamp(2.4rem, 5vw, 3.4rem);
+  line-height: 1.1;
+  font-weight: 600;
+  color: var(--white);
+  text-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.8),
+    0 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+.bonus-hero__subtitle {
+  margin: 0;
+  font-size: clamp(1.05rem, 2.4vw, 1.3rem);
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+/* Download block -------------------------------------------------------- */
+
+.bonus-download__layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 0;
+  max-width: 1000px;
+  margin: 0 auto;
+  background: var(--white);
+  border-radius: var(--border-radius-xl);
+  box-shadow: var(--shadow-medium);
+  overflow: hidden;
+}
+
+.bonus-download__preview {
+  padding: clamp(1.25rem, 3vw, 2rem);
+  background: var(--black);
+  display: grid;
+  gap: 1rem;
+  place-items: center;
+  align-content: center;
+}
+
+.bonus-download__preview img {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  border-radius: var(--border-radius-sm);
+  box-shadow: var(--shadow-large);
+}
+
+.bonus-download__specs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.bonus-download__spec {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.4rem 0.75rem;
+  background: var(--accent-color);
+  color: var(--white);
+  border-radius: var(--border-radius-sm);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.bonus-download__form,
+.bonus-download__success {
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+}
+
+.bonus-download__form .bonus-section__title,
+.bonus-download__success .bonus-section__title {
+  font-size: clamp(1.6rem, 3vw, 2rem);
+  margin-bottom: 0.75rem;
+}
+
+.bonus-download__form .bonus-section__subtitle,
+.bonus-download__success .bonus-section__subtitle {
+  margin: 0 0 1.5rem;
+}
+
+.bonus-page .form-group {
+  margin-bottom: 1rem;
+}
+
+.bonus-page .form-control {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--light-gray);
+  border-radius: var(--border-radius-sm);
+  font-family: var(--primary-font);
+  font-size: 1rem;
+}
+
+.bonus-page .form-control:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(91, 0, 146, 0.15);
+}
+
+.bonus-page .form-check {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.bonus-page .form-check label {
+  font-size: 0.9rem;
+  color: var(--dark-gray);
+  line-height: 1.5;
+}
+
+.bonus-download__privacy {
+  margin: 0 0 1.25rem;
+  font-size: 0.8rem;
+  color: var(--dark-gray);
+  line-height: 1.5;
+}
+
+.bonus-download__file {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  background: var(--medium-gray);
+  padding: 1.25rem;
+  border-radius: var(--border-radius-md);
+  margin-bottom: 1.5rem;
+}
+
+.bonus-page .file-icon img {
+  width: 60px;
+  height: 60px;
+}
+
+.bonus-page .file-info {
+  flex: 1;
+  min-width: 160px;
+}
+
+.bonus-page .file-info h3 {
+  margin: 0 0 0.25rem;
+  font-size: 1.1rem;
+  color: var(--primary-color);
+}
+
+.bonus-page .file-info p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--dark-gray);
+}
+
+.bonus-page .bonus-message {
+  background: rgba(255, 145, 0, 0.1);
+  border-left: 4px solid var(--accent-color);
+  padding: 1rem 1.25rem;
+  border-radius: var(--border-radius-sm);
+}
+
+.bonus-page .bonus-message h3 {
+  margin: 0 0 0.5rem;
+  color: var(--accent-color);
+  font-size: 1.1rem;
+}
+
+.bonus-page .bonus-message p {
+  margin: 0;
+}
+
+.bonus-page .bonus-message a {
+  color: var(--accent-color);
+  font-weight: 600;
+}
+
+.bonus-page .download-section.active,
+.bonus-page .bonus-download__success.active {
+  animation: bonus-fade-in 0.5s ease-out forwards;
+}
+
+@keyframes bonus-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Features -------------------------------------------------------------- */
+
+.bonus-features__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.bonus-page .feature-card {
+  background: var(--medium-gray);
+  padding: clamp(1.25rem, 3vw, 1.75rem);
+  border-radius: var(--border-radius-md);
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.bonus-page .feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-medium);
+}
+
+.bonus-page .feature-icon {
+  font-size: 2.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.bonus-page .feature-card h3 {
+  margin: 0 0 0.5rem;
+  color: var(--primary-color);
+  font-size: 1.2rem;
+}
+
+.bonus-page .feature-card p {
+  margin: 0;
+  color: var(--dark-gray);
+  line-height: 1.65;
+}
+
+/* Testimonials ---------------------------------------------------------- */
+
+.bonus-testimonials {
+  background: var(--primary-color) !important;
+  color: var(--white);
+}
+
+.bonus-testimonials .bonus-section__title {
+  color: var(--white);
+}
+
+.bonus-testimonials__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.bonus-page .testimonial-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: clamp(1.25rem, 3vw, 1.75rem);
+  border-radius: var(--border-radius-md);
+}
+
+.bonus-page .testimonial-stars {
+  color: var(--accent-color);
+  margin-bottom: 0.75rem;
+}
+
+.bonus-page .testimonial-text {
+  font-style: italic;
+  margin: 0 0 1rem;
+  color: var(--white);
+  line-height: 1.7;
+}
+
+.bonus-page .testimonial-author {
+  margin: 0;
+  font-weight: 600;
+  color: var(--white);
+}
+
+/* Contact CTA ----------------------------------------------------------- */
+
+.bonus-page .contact-banner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  gap: 0;
+  background: var(--white);
+  border-radius: var(--border-radius-xxl);
+  box-shadow: var(--shadow-medium);
+  overflow: hidden;
+  align-items: stretch;
+}
+
+.bonus-page .contact-text {
+  padding: clamp(1.75rem, 4vw, 2.75rem);
+  display: grid;
+  gap: 1rem;
+  align-content: center;
+}
+
+.bonus-page .contact-text .bonus-section__title {
+  font-size: clamp(1.6rem, 3vw, 2.1rem);
+}
+
+.bonus-page .contact-text p {
+  margin: 0;
+  color: var(--dark-gray);
+  line-height: 1.7;
+}
+
+.bonus-contact__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.bonus-page .contact-image {
+  min-height: 260px;
+}
+
+.bonus-page .contact-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .bonus-download__layout,
+  .bonus-page .contact-banner {
+    grid-template-columns: 1fr;
+  }
+
+  .bonus-page .contact-image {
+    order: -1;
+    min-height: 220px;
+  }
+}
+
+@media (max-width: 600px) {
+  .bonus-download__file {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .bonus-contact__actions {
+    flex-direction: column;
+  }
+
+  .bonus-contact__actions .btn,
+  .bonus-download__file .btn,
+  .bonus-download__form .btn {
+    width: 100%;
+    text-align: center;
+  }
+}

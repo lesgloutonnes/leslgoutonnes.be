@@ -1,0 +1,685 @@
+/* Page Collection Dionaea - styles namespacés */
+
+.dionaea-page {
+  background-color: var(--white);
+}
+
+.dionaea-page .dionaea-section {
+  padding: clamp(3.5rem, 7vw, 5.5rem) var(--container-padding);
+  color: var(--black);
+}
+
+.dionaea-page .dionaea-section:nth-of-type(even) {
+  background-color: #f7f2ff;
+}
+
+.dionaea-page .dionaea-section__inner {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+}
+
+.dionaea-page .dionaea-section__header {
+  max-width: 54rem;
+  margin: 0 auto clamp(2rem, 4vw, 3.5rem);
+  text-align: center;
+}
+
+.dionaea-page .dionaea-section__title {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.dionaea-page .dionaea-section__subtitle {
+  margin: clamp(0.75rem, 2vw, 1.25rem) 0 0;
+  color: var(--dark-gray);
+  font-size: clamp(1rem, 2.1vw, 1.15rem);
+  line-height: 1.7;
+}
+
+/* Hero -------------------------------------------------------------- */
+
+.dionaea-page .dionaea-hero {
+  position: relative;
+  padding: clamp(4.5rem, 9vw, 7.5rem) var(--container-padding);
+  background: url('/images/collection/collection-dionaea-hero.jpg') center/cover no-repeat;
+  overflow: hidden;
+  color: #fff;
+}
+
+.dionaea-page .dionaea-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: var(--hero-overlay);
+}
+
+.dionaea-page .dionaea-hero__content {
+  position: relative;
+  max-width: 46rem;
+  margin: 0 auto;
+  text-align: center;
+  display: grid;
+  gap: clamp(1rem, 3vw, 1.6rem);
+  z-index: 1;
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: var(--border-radius-lg);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.dionaea-page .dionaea-hero__title {
+  margin: 0;
+  font-size: clamp(2.6rem, 5.4vw, 3.8rem);
+  font-weight: 600;
+  text-shadow: 
+    0 2px 4px rgba(0, 0, 0, 0.8),
+    0 4px 8px rgba(0, 0, 0, 0.7),
+    0 8px 16px rgba(0, 0, 0, 0.6),
+    0 16px 32px rgba(6, 0, 14, 0.55);
+}
+
+.dionaea-page .dionaea-hero__subtitle {
+  margin: 0;
+  font-size: clamp(1.05rem, 2.5vw, 1.3rem);
+  color: rgba(255, 255, 255, 0.95);
+  line-height: 1.8;
+  text-shadow: 
+    0 1px 3px rgba(0, 0, 0, 0.7),
+    0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* Recherche --------------------------------------------------------- */
+
+.dionaea-page .dionaea-search {
+  display: grid;
+  gap: 0.75rem;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.dionaea-page .dionaea-search__label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.dionaea-page .dionaea-search__controls {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: minmax(0, 1fr) auto;
+}
+
+@media (max-width: 640px) {
+  .dionaea-page .dionaea-search__controls {
+    grid-template-columns: 1fr;
+  }
+}
+
+.dionaea-page .dionaea-search__input {
+  padding: 0.75rem 1.1rem;
+  border-radius: var(--border-radius-sm);
+  border: 1px solid rgba(91, 0, 146, 0.18);
+  background: #fff;
+  font-size: 1rem;
+  color: var(--dark-gray);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dionaea-page .dionaea-search__input:focus {
+  outline: none;
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 3px rgba(255, 145, 0, 0.22);
+}
+
+.dionaea-page .dionaea-search__button {
+  height: 100%;
+}
+
+/* Loader ------------------------------------------------------------ */
+
+.dionaea-page .dionaea-loader {
+  display: grid;
+  gap: 0.9rem;
+  place-items: center;
+  padding: clamp(1.6rem, 4vw, 2.4rem);
+  border-radius: var(--border-radius-lg);
+  background: rgba(91, 0, 146, 0.06);
+  border: 1px solid rgba(91, 0, 146, 0.12);
+  min-height: clamp(160px, 22vw, 220px);
+  box-shadow: var(--shadow-small);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.dionaea-page .dionaea-loader[hidden] {
+  display: none !important;
+}
+
+.dionaea-page .dionaea-loader__spinner {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 4px solid rgba(91, 0, 146, 0.18);
+  border-top-color: rgba(91, 0, 146, 0.55);
+  animation: dionaea-spin 0.9s linear infinite;
+}
+
+.dionaea-page .dionaea-loader__text {
+  margin: 0;
+  color: var(--primary-color);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+@keyframes dionaea-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Tableau ------------------------------------------------------------ */
+
+.dionaea-page .dionaea-table-container {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: clamp(1.6rem, 3vw, 2.4rem);
+  border-radius: var(--border-radius-xl);
+  box-shadow: var(--shadow-medium);
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.dionaea-page .dionaea-table-container.is-ready {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.dionaea-page .dionaea-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+  background: #fff;
+}
+
+.dionaea-page .dionaea-table thead {
+  background: linear-gradient(135deg, #5b0092 0%, #ff9100 100%);
+  color: #fff;
+}
+
+.dionaea-page .dionaea-table th {
+  padding: 1rem 1.1rem;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.dionaea-page .dionaea-table td {
+  padding: 0.9rem 1.1rem;
+  border-bottom: 1px solid rgba(91, 0, 146, 0.08);
+  vertical-align: middle;
+}
+
+.dionaea-page .dionaea-table tbody tr:hover {
+  background: rgba(91, 0, 146, 0.04);
+}
+
+.dionaea-page .dionaea-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.dionaea-page .dionaea-image-cell {
+  width: 80px;
+}
+
+.dionaea-page .dionaea-image-container {
+  position: relative;
+  width: 64px;
+  height: 64px;
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid rgba(91, 0, 146, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dionaea-page .dionaea-image-container:hover {
+  transform: scale(1.05);
+  box-shadow: var(--shadow-small);
+}
+
+.dionaea-page .dionaea-thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dionaea-page .dionaea-name-cell strong {
+  display: block;
+  color: var(--primary-color);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.dionaea-page .dionaea-id-cell {
+  font-size: 0.9rem;
+  color: var(--dark-gray);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-family: monospace;
+}
+
+/* Message vide ------------------------------------------------------ */
+
+.dionaea-page .dionaea-empty {
+  margin-top: clamp(2rem, 4vw, 3rem);
+  padding: clamp(1.6rem, 4vw, 2.4rem);
+  border-radius: var(--border-radius-xl);
+  background: #fff;
+  box-shadow: var(--shadow-small);
+  text-align: center;
+}
+
+.dionaea-page .dionaea-empty__text {
+  margin: 0 0 1rem;
+  color: var(--dark-gray);
+  line-height: 1.6;
+}
+
+/* Pagination -------------------------------------------------------- */
+
+.dionaea-page .dionaea-pagination {
+  margin-top: clamp(1.8rem, 4vw, 2.6rem);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem 0.6rem;
+}
+
+.dionaea-page .dionaea-pagination__control {
+  min-width: 110px;
+}
+
+.dionaea-page .dionaea-pagination__control.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.dionaea-page .dionaea-pagination__numbers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.dionaea-page .pagination-number,
+.dionaea-page .pagination-ellipsis {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  background: #fff;
+  border: 2px solid rgba(91, 0, 146, 0.12);
+  color: var(--primary-color);
+  font-weight: 600;
+  transition: transform 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.dionaea-page .pagination-number:hover {
+  transform: translateY(-2px);
+  border-color: rgba(91, 0, 146, 0.4);
+}
+
+.dionaea-page .pagination-number.active {
+  background: var(--primary-color);
+  color: #fff;
+  border-color: var(--primary-color);
+  transform: none;
+  cursor: default;
+}
+
+/* Infos ------------------------------------------------------------- */
+
+.dionaea-page .dionaea-info__columns {
+  display: grid;
+  gap: clamp(1.4rem, 3vw, 2rem);
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.dionaea-page .dionaea-info__card {
+  background: #fff;
+  border-radius: var(--border-radius-xl);
+  padding: clamp(1.5rem, 3vw, 2.2rem);
+  box-shadow: var(--shadow-small);
+}
+
+.dionaea-page .dionaea-info__title {
+  margin: 0 0 0.75rem;
+  font-size: 1.4rem;
+  color: var(--primary-color);
+}
+
+.dionaea-page .dionaea-info__text {
+  margin: 0 0 0.75rem;
+  color: var(--dark-gray);
+  line-height: 1.6;
+}
+
+.dionaea-page .dionaea-info__list {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: var(--dark-gray);
+  line-height: 1.6;
+}
+
+.dionaea-page .dionaea-info__note {
+  margin-top: clamp(1.6rem, 3vw, 2.2rem);
+  padding: clamp(1.4rem, 3vw, 2rem);
+  border-radius: var(--border-radius-lg);
+  background: rgba(91, 0, 146, 0.08);
+  color: var(--dark-gray);
+  line-height: 1.6;
+  box-shadow: var(--shadow-small);
+}
+
+/* Modal ------------------------------------------------------------- */
+
+.dionaea-page .dionaea-modal {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.6rem;
+  background: rgba(8, 0, 20, 0.78);
+  z-index: 1200;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+
+.dionaea-page .dionaea-modal.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.dionaea-page .dionaea-modal__content {
+  position: relative;
+  max-width: 720px;
+  width: min(92vw, 720px);
+  background: #fff;
+  border-radius: var(--border-radius-xxl);
+  padding: clamp(1.6rem, 4vw, 2.4rem);
+  box-shadow: 0 24px 72px rgba(12, 0, 28, 0.35);
+  display: grid;
+  gap: 1rem;
+}
+
+.dionaea-page .dionaea-modal__close {
+  position: absolute;
+  top: -18px;
+  right: -18px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 2px solid var(--primary-color);
+  background: #fff;
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.dionaea-page .dionaea-modal__close:hover {
+  background: var(--accent-color);
+  border-color: var(--accent-color);
+  color: #fff;
+  transform: rotate(90deg);
+}
+
+.dionaea-page .dionaea-modal__image {
+  width: 100%;
+  height: auto;
+  border-radius: var(--border-radius-lg);
+  object-fit: contain;
+}
+
+.dionaea-page .dionaea-modal__title {
+  margin: 0;
+  font-size: 1.4rem;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+/* Liens ------------------------------------------------------------- */
+
+.dionaea-page .dionaea-links__grid {
+  display: grid;
+  gap: clamp(1.5rem, 3vw, 2.2rem);
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.dionaea-page .dionaea-link-card {
+  display: grid;
+  gap: 0.85rem;
+  background: #fff;
+  border-radius: var(--border-radius-xl);
+  padding: clamp(1.4rem, 3vw, 2rem);
+  box-shadow: var(--shadow-small);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.dionaea-page .dionaea-link-card:hover,
+.dionaea-page .dionaea-link-card:focus-visible {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-medium);
+}
+
+.dionaea-page .dionaea-link-card__media {
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+}
+
+.dionaea-page .dionaea-link-card__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dionaea-page .dionaea-link-card__title {
+  margin: 0;
+  font-size: 1.25rem;
+  color: var(--primary-color);
+}
+
+.dionaea-page .dionaea-link-card__text {
+  margin: 0;
+  color: var(--dark-gray);
+  line-height: 1.6;
+}
+
+/* Contact ----------------------------------------------------------- */
+
+.dionaea-page .dionaea-contact {
+  background: linear-gradient(130deg, rgba(91, 0, 146, 0.08) 0%, rgba(255, 145, 0, 0.12) 100%);
+}
+
+.dionaea-page .dionaea-contact__banner {
+  display: grid;
+  gap: clamp(1.8rem, 3vw, 2.6rem);
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  background: #fff;
+  border-radius: var(--border-radius-xxl);
+  padding: clamp(2rem, 4vw, 3rem);
+  box-shadow: var(--shadow-medium);
+  align-items: center;
+}
+
+@media (max-width: 960px) {
+  .dionaea-page .dionaea-contact__banner {
+    grid-template-columns: 1fr;
+  }
+}
+
+.dionaea-page .dionaea-contact__text {
+  display: grid;
+  gap: 1.1rem;
+  color: var(--dark-gray);
+}
+
+.dionaea-page .dionaea-contact__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.dionaea-page .dionaea-contact__actions .btn {
+  min-width: 180px;
+  text-align: center;
+}
+
+.dionaea-page .dionaea-contact__media {
+  border-radius: var(--border-radius-xl);
+  overflow: hidden;
+}
+
+.dionaea-page .dionaea-contact__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Boutons ----------------------------------------------------------- */
+
+.dionaea-page .whatsapp-link {
+  background-color: #25d366;
+  border-color: #25d366;
+  color: #fff;
+}
+
+.dionaea-page .whatsapp-link:hover,
+.dionaea-page .whatsapp-link:focus-visible {
+  background-color: #128c7e;
+  border-color: #128c7e;
+  color: #fff;
+}
+
+.dionaea-page .btn-outline {
+  border-color: rgba(91, 0, 146, 0.4);
+  color: var(--primary-color);
+}
+
+.dionaea-page .btn-outline:hover,
+.dionaea-page .btn-outline:focus-visible {
+  border-color: var(--primary-color);
+  color: #fff;
+  background: var(--primary-color);
+}
+
+/* Animations -------------------------------------------------------- */
+
+.dionaea-page .dionaea-hero,
+.dionaea-page .dionaea-section {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+
+.dionaea-page .dionaea-hero.visible,
+.dionaea-page .dionaea-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.dionaea-page .dionaea-table-container,
+.dionaea-page .dionaea-contact__banner {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+
+.dionaea-page .dionaea-table-container.visible,
+.dionaea-page .dionaea-contact__banner.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive -------------------------------------------------------- */
+
+@media (max-width: 768px) {
+  .dionaea-page .dionaea-section {
+    padding: clamp(2.6rem, 8vw, 3.1rem) var(--container-padding);
+  }
+
+  .dionaea-page .dionaea-table {
+    min-width: 500px;
+  }
+
+  .dionaea-page .dionaea-table th,
+  .dionaea-page .dionaea-table td {
+    padding: 0.75rem 0.9rem;
+    font-size: 0.9rem;
+  }
+
+  .dionaea-page .dionaea-pagination {
+    gap: 0.5rem;
+  }
+
+  .dionaea-page .pagination-number,
+  .dionaea-page .pagination-ellipsis {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+@media (max-width: 520px) {
+  .dionaea-page .dionaea-hero__title {
+    font-size: 2.2rem;
+  }
+
+  .dionaea-page .dionaea-contact__banner,
+  .dionaea-page .dionaea-info__card {
+    padding: 1.6rem;
+  }
+
+  .dionaea-page .dionaea-table {
+    min-width: 400px;
+  }
+
+  .dionaea-page .dionaea-table th,
+  .dionaea-page .dionaea-table td {
+    padding: 0.6rem 0.75rem;
+    font-size: 0.85rem;
+  }
+
+  .dionaea-page .dionaea-image-cell {
+    width: 60px;
+  }
+
+  .dionaea-page .dionaea-image-container {
+    width: 48px;
+    height: 48px;
+  }
+
+  .dionaea-page .dionaea-contact__actions {
+    flex-direction: column;
+  }
+
+  .dionaea-page .dionaea-contact__actions .btn {
+    width: 100%;
+  }
+}

@@ -1,0 +1,41 @@
+/* 
+LES GLOUTONNES - MAIN CSS
+=========================
+Ce fichier importe tous les autres fichiers CSS dans l'ordre approprié
+*/
+
+/* Base */
+@import url("base/variables.css");
+@import url("base/reset.css");
+@import url("base/typography.css");
+@import url("base/utilities.css");
+
+/* Components */
+@import url("components/buttons.css");
+@import url("components/navigation.css");
+@import url("components/hero-slider.css");
+@import url("components/footer.css");
+@import url("components/promo-banner.css");
+@import url("components/search.css");
+
+/* Pages */
+@import url("pages/home.css");
+@import url("pages/producteurs.css");
+@import url("pages/collection-dionaea.css");
+@import url("pages/applications.css");
+@import url("pages/plantesdetourbiere.css");
+@import url("pages/sphaignes.css");
+@import url("pages/about.css");
+@import url("pages/conseils.css");
+@import url("pages/contact.css");
+@import url("pages/events.css");
+@import url("pages/guides.css");
+@import url("pages/bonus.css");
+@import url("pages/rando.css");
+
+/* Responsive */
+@import url("responsive.css");
+
+/* Admin */
+@import url("newsletter-admin.css");
+@import url("social-admin.css");

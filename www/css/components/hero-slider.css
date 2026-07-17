@@ -1,0 +1,291 @@
+/* 
+LES GLOUTONNES - MOBILE HERO
+=========================
+Styles pour la section hero optimisée mobile
+*/
+
+/* Section principale */
+#mobile-hero {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    padding: var(--spacing-sm);
+    background-color: var(--light-bg, var(--medium-gray));
+}
+
+/* Bannière d'introduction */
+.intro-banner {
+    position: relative;
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-md);
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    color: var(--white);
+    text-align: center;
+    box-shadow: var(--shadow-md);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Container du logo */
+.logo-container {
+    margin-bottom: var(--spacing-sm);
+}
+
+/* Style du logo */
+.hero-logo {
+    display: block;
+    max-width: 180px;
+    height: auto;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+/* Paragraphes dans la bannière */
+.intro-banner p {
+    position: relative;
+    margin-bottom: var(--spacing-md);
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 1.5;
+    z-index: 1;
+}
+
+/* Style spécifique pour le premier paragraphe (intro-title) */
+.intro-banner p:first-of-type {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--white);
+    margin-bottom: var(--spacing-xs);
+}
+
+.intro-actions {
+    position: relative;
+    z-index: 1;
+    margin-top: var(--spacing-sm);
+}
+
+/* Cartes de fonctionnalités */
+.feature-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-sm);
+}
+
+.feature-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: var(--spacing-md);
+    background-color: var(--white);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.feature-card:hover,
+.feature-card:focus {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.feature-card:active {
+    transform: translateY(-2px);
+}
+
+.card-icon {
+    font-size: 2rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.feature-card h3 {
+    margin-bottom: var(--spacing-xs);
+    font-size: 1rem;
+    color: var(--primary-color);
+}
+
+.feature-card p {
+    font-size: 0.85rem;
+    line-height: 1.4;
+}
+
+/* Bannière de mise en avant */
+.highlight-banner {
+    padding: var(--spacing-md);
+    background-color: var(--light-accent);
+    border-radius: var(--radius-md);
+    text-align: center;
+    margin-top: var(--spacing-sm);
+}
+
+.highlight-banner h2 {
+    margin-bottom: var(--spacing-xs);
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+
+.highlight-banner p {
+    margin-bottom: var(--spacing-md);
+    font-size: 0.9rem;
+}
+
+/* Styles pour tablettes */
+@media (min-width: 768px) {
+    #mobile-hero {
+        padding: var(--spacing-md);
+        gap: var(--spacing-lg);
+    }
+
+    .intro-banner {
+        padding: var(--spacing-xl);
+    }
+
+    .hero-logo {
+        max-width: 220px;
+    }
+
+    .intro-banner p:first-of-type {
+        font-size: 1.6rem;
+    }
+
+    .intro-banner p {
+        font-size: 1.2rem;
+    }
+
+    .feature-cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .highlight-banner {
+        padding: var(--spacing-lg);
+        margin-top: var(--spacing-md);
+    }
+
+    .highlight-banner h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Styles pour desktop */
+@media (min-width: 1024px) {
+    #mobile-hero {
+        padding: var(--spacing-lg) var(--spacing-xl);
+    }
+
+    .intro-banner {
+        min-height: 300px;
+    }
+
+    .hero-logo {
+        max-width: 250px;
+    }
+
+    .intro-banner p:first-of-type {
+        font-size: 2rem;
+    }
+
+    .intro-banner p {
+        font-size: 1.25rem;
+        max-width: 800px;
+    }
+
+    .feature-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .feature-card p {
+        font-size: 1rem;
+    }
+
+    .highlight-banner h2 {
+        font-size: 1.8rem;
+    }
+
+    .highlight-banner p {
+        font-size: 1.1rem;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* 
+=========================
+TEXTURE POUR BANNIÈRE - Nouvelle section ajoutée
+=========================
+*/
+
+/* Overlay de texture pour la bannière d'intro */
+.texture-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/images/logo/banniere2.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.15;
+    /* Ajustez cette valeur pour contrôler l'intensité de la texture */
+    mix-blend-mode: overlay;
+    /* Crée un effet de superposition intéressant */
+    z-index: 0;
+    pointer-events: none;
+    /* Permet aux interactions de passer à travers */
+    transition: transform 0.3s ease-out;
+}
+
+/* S'assurer que le contenu de la bannière reste au-dessus de la texture */
+.intro-banner>*:not(.texture-overlay) {
+    position: relative;
+    z-index: 1;
+}
+
+/* Ajout d'une légère ombre intérieure pour plus de profondeur */
+.intro-banner {
+    box-shadow: var(--shadow-medium), inset 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation subtile pour la texture en arrière-plan */
+@media (prefers-reduced-motion: no-preference) {
+    .texture-overlay {
+        animation: textureFloat 20s ease-in-out infinite alternate;
+    }
+
+    @keyframes textureFloat {
+        0% {
+            transform: scale(1.05) rotate(0deg);
+        }
+
+        50% {
+            transform: scale(1.1) rotate(1deg);
+        }
+
+        100% {
+            transform: scale(1.05) rotate(0deg);
+        }
+    }
+}
+
+/* Ajustez le comportement pour les écrans plus grands */
+@media (min-width: 768px) {
+    .texture-overlay {
+        background-size: 120%;
+        opacity: 0.2;
+    }
+}
+
+@media (min-width: 1024px) {
+    .texture-overlay {
+        background-size: 110%;
+    }
+
+    /* Effet de profondeur sur hover pour desktop */
+    .intro-banner:hover .texture-overlay {
+        transform: scale(1.03);
+        transition: transform 0.8s ease-out;
+    }
+}

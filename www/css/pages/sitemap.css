@@ -1,0 +1,200 @@
+/* Page Sitemap - styles namespacés */
+
+:root {
+  --sitemap-hero-background: linear-gradient(115deg, rgba(8, 0, 20, 0.84) 0%, rgba(68, 3, 104, 0.78) 55%, rgba(255, 145, 0, 0.56) 100%);
+}
+
+.sitemap-page {
+  background-color: var(--white);
+}
+
+.sitemap-page .sitemap-section {
+  padding: clamp(3.5rem, 7vw, 5.5rem) var(--container-padding);
+  color: var(--black);
+}
+
+.sitemap-page .sitemap-section:nth-of-type(even) {
+  background: #f7f2ff;
+}
+
+.sitemap-page .sitemap-section__inner {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+}
+
+.sitemap-page .sitemap-section__header {
+  max-width: 56ch;
+  margin: 0 auto clamp(2rem, 4vw, 3rem);
+  text-align: center;
+}
+
+.sitemap-page .sitemap-section__title {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.sitemap-page .sitemap-section__subtitle {
+  margin: clamp(0.7rem, 2vw, 1.2rem) 0 0;
+  color: var(--dark-gray);
+  font-size: clamp(1rem, 2vw, 1.15rem);
+  line-height: 1.7;
+}
+
+/* Hero -------------------------------------------------------------- */
+
+.sitemap-page .sitemap-hero {
+  position: relative;
+  padding: clamp(4rem, 8vw, 6.2rem) var(--container-padding);
+  background: url('/images/sphaignes/tourbiere-fagnes.jpg') center/cover no-repeat;
+  overflow: hidden;
+  color: #fff;
+}
+
+.sitemap-page .sitemap-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--sitemap-hero-background);
+}
+
+.sitemap-page .sitemap-hero .sitemap-section__inner {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  display: grid;
+  gap: clamp(1rem, 3vw, 1.6rem);
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: var(--border-radius-lg);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.sitemap-page .sitemap-hero__title {
+  margin: 0;
+  font-size: clamp(2.6rem, 5vw, 3.6rem);
+  font-weight: 600;
+  text-shadow: 
+    0 2px 4px rgba(0, 0, 0, 0.8),
+    0 4px 8px rgba(0, 0, 0, 0.7),
+    0 8px 16px rgba(0, 0, 0, 0.6),
+    0 16px 32px rgba(6, 0, 14, 0.55);
+}
+
+.sitemap-page .sitemap-hero__subtitle {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.95);
+  font-size: clamp(1.05rem, 2.2vw, 1.3rem);
+  text-shadow: 
+    0 1px 3px rgba(0, 0, 0, 0.7),
+    0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* Grid -------------------------------------------------------------- */
+
+.sitemap-page .sitemap-grid {
+  display: grid;
+  gap: clamp(1.6rem, 3vw, 2.4rem);
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.sitemap-page .sitemap-category {
+  background: #fff;
+  border-radius: var(--border-radius-xl);
+  padding: clamp(1.5rem, 3vw, 2.1rem);
+  box-shadow: var(--shadow-small);
+  display: grid;
+  gap: 0.9rem;
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.sitemap-page .sitemap-category.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.sitemap-page .sitemap-category__title {
+  margin: 0;
+  font-size: 1.25rem;
+  color: var(--primary-color);
+}
+
+.sitemap-page .sitemap-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.sitemap-page .sitemap-links li {
+  position: relative;
+  padding-left: 1.4rem;
+  color: var(--dark-gray);
+  opacity: 0;
+  transform: translateX(-12px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  transition-delay: calc(0.05s * var(--index, 0));
+}
+
+.sitemap-page .sitemap-category.visible .sitemap-links li {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.sitemap-page .sitemap-links li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--primary-color);
+}
+
+.sitemap-page .sitemap-links a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+.sitemap-page .sitemap-links a:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+.sitemap-page .sitemap-links a[aria-current='page'] {
+  font-weight: 600;
+  color: var(--accent-color);
+}
+
+/* Animations -------------------------------------------------------- */
+
+.sitemap-page .sitemap-section {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.sitemap-page .sitemap-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive -------------------------------------------------------- */
+
+@media (max-width: 700px) {
+  .sitemap-page .sitemap-section {
+    padding: clamp(2.6rem, 9vw, 3.4rem) var(--container-padding);
+  }
+}
+
+@media (max-width: 540px) {
+  .sitemap-page .sitemap-category {
+    padding: 1.4rem;
+  }
+}
+
