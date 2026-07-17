@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <script src="/js/analytics.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Pense-bête des événements à ne pas manquer pour les passionnés de plantes carnivores - Bourses, expositions et rendez-vous en Belgique et en Europe."
+    />
+    <meta
+      name="keywords"
+      content="événements plantes carnivores, bourse plantes, exposition, Belgique, Europe, calendrier"
+    />
+    <meta name="author" content="Charles Bussers" />
+    <title>Événements à ne pas manquer | Les Gloutonnes</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="/images/favicon/site.webmanifest" />
+  </head>
+
+  <body>
+    <div id="header-component"></div>
+
+    <main id="main-content" class="events-reminders-page">
+      <section id="reminders-hero" class="events-hero events-section" aria-labelledby="reminders-hero-heading">
+        <div class="events-hero__overlay" aria-hidden="true"></div>
+        <div class="events-hero__content">
+          <h1 class="events-hero__title" id="reminders-hero-heading">Événements à ne pas manquer</h1>
+          <p class="events-hero__subtitle">Un pense-bête des événements à garder à l'œil</p>
+        </div>
+      </section>
+
+      <section id="reminders-content" class="events-section" aria-labelledby="reminders-content-heading">
+        <div class="events-section__inner">
+          <div class="events-section__header">
+            <h2 class="events-section__title" id="reminders-content-heading">Calendrier de référence</h2>
+            <p class="events-section__subtitle" data-reminders-description>
+              Un pense-bête des événements à garder à l'œil. Les dates peuvent varier d'une année à l'autre, vérifie toujours les informations officielles.
+            </p>
+          </div>
+
+          <div class="events-reminders__list" data-reminders-list>
+            <div class="events-loading" aria-live="polite">
+              <div class="events-loading__spinner"></div>
+              <p class="events-loading__text">Chargement des événements…</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="reminders-contact" class="events-section events-contact" aria-labelledby="reminders-contact-heading">
+        <div class="events-section__inner">
+          <div class="events-contact__banner">
+            <div class="events-contact__text">
+              <h2 class="events-section__title" id="reminders-contact-heading">Une question sur un événement&nbsp;?</h2>
+              <p class="events-section__subtitle">
+                Tu souhaites plus d'informations sur un événement de ce calendrier&nbsp;? 
+                N'hésite pas à me contacter, je serai ravi de t'aider à trouver les informations que tu cherches.
+              </p>
+              <div class="events-contact__actions">
+                <a href="https://wa.me/+32494881487?text=Bonjour, j'aimerais avoir plus d'informations sur un événement du calendrier." class="btn btn-primary whatsapp-link">Contacter via WhatsApp</a>
+                <a href="contact.html" class="btn btn-outline">Me contacter</a>
+              </div>
+            </div>
+            <div class="events-contact__media">
+              <img src="../images/events/events-hero.jpg" alt="Contact Les Gloutonnes" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer-component"></div>
+
+    <script src="../js/components.js"></script>
+    <script src="../js/navigation.js"></script>
+    <script src="../js/events-reminders.js"></script>
+  </body>
+</html>
+

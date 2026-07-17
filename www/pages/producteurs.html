@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <!-- Head optimisé pour le SEO -->
+  <head>
+    <script src="/js/analytics.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Ajout des balises meta SEO -->
+    <meta
+      name="description"
+      content="Découvrez notre sélection de producteurs de plantes carnivores de confiance en Belgique et en France. Pépiniéristes spécialisés en Dionaea, Sarracenia, Nepenthes, Drosera et autres plantes carnivores avec vente en ligne ou boutique physique."
+    />
+    <meta
+      name="keywords"
+      content="producteurs plantes carnivores, pépiniéristes Dionaea, vente Sarracenia, Nepenthes boutique, élevage plantes carnivores, France, Belgique, serres spécialisées"
+    />
+    <meta name="author" content="Charles Bussers" />
+    <title>
+      Producteurs de Plantes Carnivores de Confiance | Les Gloutonnes
+    </title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+    <!-- Ajout des favicon comme sur l'index -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/images/favicon/site.webmanifest" />
+    <!-- Balise canonique pour éviter le contenu dupliqué -->
+    <link
+      rel="canonical"
+      href="https://www.lesgloutonnes.be/pages/producteurs.html"
+    />
+  </head>
+
+  <body>
+    <div id="header-component"></div>
+
+    <main id="main-content" class="producteurs-page">
+      <!-- Contenu invisible pour l'optimisation SEO -->
+      <div class="sr-only">
+        <p>
+          Les Gloutonnes vous présente une sélection rigoureuse de producteurs
+          et pépiniéristes spécialisés en plantes carnivores en France et en
+          Belgique. Découvrez des professionnels passionnés qui cultivent leurs
+          plantes dans le respect de l'environnement et proposent des Dionaea
+          muscipula (plantes attrape-mouches), Sarracenia, Nepenthes, Drosera,
+          Pinguicula, Cephalotus et autres plantes carnivores de qualité. Que
+          vous recherchiez une boutique en ligne, une pépinière accessible au
+          public ou des exposants présents sur les marchés aux plantes, notre
+          guide vous aide à trouver le producteur idéal pour enrichir votre
+          collection de plantes carnivores.
+        </p>
+      </div>
+
+      <!-- Hero Banner -->
+      <section id="producteurs-hero" class="producteurs-section producteurs-hero" aria-labelledby="producteurs-hero-heading">
+        <div class="producteurs-hero__overlay" aria-hidden="true"></div>
+        <div class="producteurs-hero__content">
+          <h1 class="producteurs-hero__title" id="producteurs-hero-heading">Producteurs de confiance</h1>
+          <p class="producteurs-hero__subtitle">
+            Découvre ma sélection de pépiniéristes spécialisés en plantes carnivores
+          </p>
+        </div>
+      </section>
+
+      <!-- Filtres -->
+      <section id="producteurs-filters" class="producteurs-section producteurs-filters" aria-label="Filtres des producteurs">
+        <div class="producteurs-section__inner">
+          <div class="producteurs-section__header">
+            <h2 class="producteurs-section__title">Affiner ta recherche</h2>
+            <p class="producteurs-section__subtitle">
+              Sélection de pépiniéristes et boutiques que je recommande. Stocks, horaires et ventes en ligne évoluent : vérifie toujours leur site ou Instagram avant de commander.
+            </p>
+          </div>
+
+          <div class="producteurs-filters__controls">
+            <div class="producteurs-filter">
+              <label class="producteurs-filter__label" for="pays-filter">Filtrer par pays</label>
+              <select id="pays-filter" class="producteurs-filter__select">
+                <option value="all">Tous les pays</option>
+                <option value="france">France</option>
+                <option value="belgique">Belgique</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Catalogue des producteurs -->
+      <section id="producteurs-catalogue" class="producteurs-section producteurs-catalogue" aria-labelledby="producteurs-catalogue-heading">
+        <div class="producteurs-section__inner">
+          <div class="producteurs-section__header">
+            <h2 class="producteurs-section__title" id="producteurs-catalogue-heading">Les producteurs recommandés</h2>
+            <p class="producteurs-section__subtitle">Toutes les fiches sont présentées sous forme de cartes détaillant la localisation et les informations de contact pour chaque professionnel.</p>
+          </div>
+
+          <div class="producteurs-grid" data-producteurs-grid>
+            <div class="producteurs-loader" aria-live="polite">
+              <div class="producteurs-loader__spinner"></div>
+              <p class="producteurs-loader__text">Chargement des producteurs…</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Contact -->
+      <section id="producteurs-contact" class="producteurs-section producteurs-contact" aria-labelledby="producteurs-contact-heading">
+        <div class="producteurs-section__inner">
+          <div class="producteurs-contact__banner">
+            <div class="producteurs-contact__text">
+              <h2 class="producteurs-section__title" id="producteurs-contact-heading">Un producteur à suggérer&nbsp;?</h2>
+              <p class="producteurs-section__subtitle">
+                Tu connais un producteur de qualité qui devrait figurer ici&nbsp;? Partage tes découvertes, je reste à l'affût de nouveaux talents pour élargir mon réseau de confiance.
+              </p>
+              <div class="producteurs-contact__actions">
+                <a
+                  href="https://wa.me/+32494881487?text=Bonjour, j'aimerais suggérer un producteur de plantes carnivores pour votre site Les Gloutonnes."
+                  class="btn btn-primary whatsapp-link"
+                  >Contacter via WhatsApp</a
+                >
+                <a href="contact.html" class="btn btn-outline">Prendre rendez-vous</a>
+              </div>
+            </div>
+            <div class="producteurs-contact__media">
+              <img
+                src="../images/about/about-hero.jpg"
+                alt="Conseils personnalisés pour trouver un producteur"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer-component"></div>
+
+    <script src="../js/components.js"></script>
+    <script src="../js/navigation.js"></script>
+    <script src="../js/producteurs.js"></script>
+    <!-- Schema.org pour les données structurées -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Producteurs de Plantes Carnivores de Confiance | Les Gloutonnes",
+        "description": "Sélection de producteurs et pépiniéristes spécialisés en plantes carnivores en France et en Belgique proposant des Dionaea, Sarracenia, Nepenthes et autres espèces rares.",
+        "mainEntity": {
+          "@type": "ItemList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "item": {
+                "@type": "LocalBusiness",
+                "name": "Les Petits Jardins d'Agathe",
+                "description": "Pépinière artisanale en Charente-Maritime spécialisée dans l'hybridation de Sarracenia et la culture raisonnée de plantes carnivores",
+                "image": "https://www.lesgloutonnes.be/images/producteurs/jardins-agathe.jpg",
+                "url": "https://lespetitsjardinsdagathe.com",
+                "telephone": "",
+                "email": "lespetitsjardinsdagathe@gmail.com",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "3, route des Sabliers",
+                  "addressLocality": "Lussant",
+                  "postalCode": "17430",
+                  "addressCountry": "FR"
+                },
+                "geo": {
+                  "@type": "GeoCoordinates",
+                  "latitude": "45.9473",
+                  "longitude": "-0.8883"
+                }
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "item": {
+                "@type": "LocalBusiness",
+                "name": "Philippe & Hélène Depiets",
+                "description": "Producteurs en Charente-Maritime proposant une vaste gamme de plantes carnivores, du commun au très rare",
+                "image": "https://www.lesgloutonnes.be/images/producteurs/depiets.jpg",
+                "url": "https://lesplantescarnivores.com",
+                "telephone": "",
+                "email": "philippe.depiets@hotmail.fr",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "18, rue du Château d'eau",
+                  "addressLocality": "Péré",
+                  "postalCode": "17700",
+                  "addressCountry": "FR"
+                }
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "item": {
+                "@type": "LocalBusiness",
+                "name": "Carnivore de Sologne",
+                "description": "Boutique en ligne spécialisée proposant un large choix de plantes carnivores, cultivées et expédiées soigneusement depuis la France",
+                "image": "https://www.lesgloutonnes.be/images/producteurs/sologne.jpg",
+                "url": "https://carnivoredesologne.com",
+                "telephone": "",
+                "email": "info@carnivoredesologne.com",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "1071 Chem. de la Badanière",
+                  "addressLocality": "Mur-de-Sologne",
+                  "postalCode": "41230",
+                  "addressCountry": "FR"
+                }
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "item": {
+                "@type": "LocalBusiness",
+                "name": "Les Dents de la Terre",
+                "description": "Élevage et expertise par Enzo Defer proposant des plantes carnivores de collection et des formations",
+                "image": "https://www.lesgloutonnes.be/images/producteurs/dentsdelaterre.jpg",
+                "url": "https://lesdentsdelaterre.com",
+                "telephone": "",
+                "email": "cultivonslinsolite@gmail.com",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "Le Bois Joly",
+                  "addressLocality": "La Planche",
+                  "postalCode": "44140",
+                  "addressCountry": "FR"
+                }
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "item": {
+                "@type": "Organization",
+                "name": "Carnivorose",
+                "description": "Producteur professionnel de plantes carnivores, antenne Est de l'association Dionée (France)",
+                "image": "https://www.lesgloutonnes.be/images/producteurs/carnivorose.jpg",
+                "url": "https://www.instagram.com/carnivorose_/"
+              }
+            }
+          ]
+        },
+        "provider": {
+          "@type": "Organization",
+          "name": "Les Gloutonnes",
+          "url": "https://www.lesgloutonnes.be",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Voie des Jardinets 47B",
+            "addressLocality": "Verlaine",
+            "postalCode": "4537",
+            "addressCountry": "BE"
+          },
+          "telephone": "+32494881487",
+          "email": "infos@lesgloutonnes.be"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Accueil",
+              "item": "https://www.lesgloutonnes.be/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Culture & Conseils",
+              "item": "https://www.lesgloutonnes.be/pages/guides.html"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Producteurs de Confiance",
+              "item": "https://www.lesgloutonnes.be/pages/producteurs.html"
+            }
+          ]
+        }
+      }
+    </script>
+  </body>
+</html>

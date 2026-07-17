@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <script src="/js/analytics.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Ajout des balises meta SEO -->
+    <meta name="description" content="Découvrez la collection exceptionnelle de plus de 120 cultivars de Dionaea muscipula (plantes attrape-mouches) des Gloutonnes. Variétés rares, colorations uniques et formes de pièges spectaculaires cultivées en Belgique." />
+    <meta name="keywords" content="Dionaea muscipula, plante attrape-mouches, collection Dionaea, cultivars Dionaea, Venus flytrap, Les Gloutonnes, plantes carnivores Belgique" />
+    <meta name="author" content="Charles Bussers" />
+    <title>Collection de 120+ Dionaea muscipula (Plantes Attrape-mouches) | Les Gloutonnes</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+    <!-- Ajout des favicon comme sur l'index -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="/images/favicon/site.webmanifest" />
+  </head>
+
+  <body>
+    <div id="header-component"></div>
+
+    <main id="main-content" class="dionaea-page">
+      <!-- Contenu invisible pour l'optimisation SEO -->
+      <div class="sr-only">
+        <p>Les Gloutonnes propose une collection impressionnante de plus de 120 variétés de Dionaea muscipula (plantes carnivores attrape-mouches), cultivées à Verlaine en Belgique. Collection comprenant des cultivars rares comme Dionaea 'B52', 'Alien', 'Red Dragon', 'Dentate Traps', 'Cupped Trap', 'DC XL', 'Fused Tooth' et de nombreuses autres plantes aux caractéristiques uniques en termes de taille, forme, coloration ou particularités des pièges.</p>
+      </div>
+      
+      <!-- Hero Banner -->
+      <section id="collection-hero" class="dionaea-hero dionaea-section" aria-labelledby="dionaea-hero-heading">
+        <div class="dionaea-hero__overlay" aria-hidden="true"></div>
+        <div class="dionaea-hero__content">
+          <h1 class="dionaea-hero__title" id="dionaea-hero-heading">Ma Collection de Dionaea muscipula</h1>
+          <p class="dionaea-hero__subtitle">
+            Découvre l'ensemble des variétés et cultivars de Dionaea muscipula
+          </p>
+        </div>
+      </section>
+
+      <!-- Introduction -->
+      <section id="collection-intro" class="dionaea-section dionaea-intro" aria-labelledby="dionaea-intro-heading">
+        <div class="dionaea-section__inner">
+          <div class="dionaea-section__header">
+            <h2 class="dionaea-section__title" id="dionaea-intro-heading">Plus de 120 cultivars sélectionnés</h2>
+            <p class="dionaea-section__subtitle">
+              Voici l'inventaire de ma collection de <strong>Dionaea muscipula</strong> (plantes
+              attrape-mouches), constituée de plus de <strong>120 cultivars différents</strong>.
+              Chaque variété présente des caractéristiques uniques en termes de
+              taille, forme, coloration ou particularités des pièges. La collection comprend des cultivars rares comme 
+              <strong>Dionaea "Wine Mouth"</strong>, <strong>'Alien'</strong>, <strong>"Akai Ryu"</strong>, <strong>'Chinese Dumpling'</strong>, 
+              <strong>"Biohazard II"</strong> et bien d'autres encore. Clique sur
+              les miniatures pour voir les images en plus grand format.
+            </p>
+          </div>
+
+          <form class="dionaea-search" role="search">
+            <label class="dionaea-search__label" for="search-input">Rechercher une variété</label>
+            <div class="dionaea-search__controls">
+              <input
+                type="search"
+                id="search-input"
+                class="dionaea-search__input"
+                placeholder="Ex.&nbsp;: B52, Alien, Biohazard…"
+                aria-label="Rechercher une variété de Dionaea"
+              />
+              <button id="search-button" class="btn btn-primary dionaea-search__button" type="button">Rechercher</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- Galerie des plantes -->
+      <section id="collection-gallery" class="dionaea-section dionaea-gallery" aria-labelledby="dionaea-gallery-heading">
+        <div class="dionaea-section__inner">
+          <div class="dionaea-section__header">
+            <h2 class="dionaea-section__title" id="dionaea-gallery-heading">Galerie des attrape-mouches</h2>
+            <p class="dionaea-section__subtitle">Parcourir la collection complète, filtrer par nom et explorer les photos haute définition de chaque cultivar.</p>
+          </div>
+
+          <div class="dionaea-loader" id="loading-indicator" aria-live="polite">
+            <div class="dionaea-loader__spinner"></div>
+            <p class="dionaea-loader__text">Chargement de la collection…</p>
+          </div>
+
+          <div id="plants-table-container" class="dionaea-table-container" itemscope itemtype="https://schema.org/CollectionPage">
+            <meta itemprop="name" content="Collection de Dionaea muscipula des Gloutonnes" />
+            <meta itemprop="description" content="Collection de plus de 120 variétés et cultivars de Dionaea muscipula" />
+          </div>
+
+          <div id="no-results" class="dionaea-empty" hidden>
+            <p class="dionaea-empty__text">Aucune variété ne correspond à ta recherche. Essaie un autre terme ou réinitialise les filtres.</p>
+            <button id="reset-search" class="btn btn-primary dionaea-empty__button">Réinitialiser la recherche</button>
+          </div>
+
+          <nav class="dionaea-pagination" aria-label="Pagination de la collection">
+            <button id="prev-page" class="btn btn-outline dionaea-pagination__control" type="button">Précédent</button>
+            <div id="pagination-numbers" class="dionaea-pagination__numbers"></div>
+            <button id="next-page" class="btn btn-outline dionaea-pagination__control" type="button">Suivant</button>
+          </nav>
+        </div>
+      </section>
+
+      <!-- Informations supplémentaires sur les Dionaea -->
+      <section id="dionaea-info" class="dionaea-section dionaea-info" aria-labelledby="dionaea-info-heading">
+        <div class="dionaea-section__inner">
+          <h2 class="dionaea-section__title" id="dionaea-info-heading">Variétés de Dionaea muscipula&nbsp;: caractéristiques et classifications</h2>
+          <div class="dionaea-info__columns">
+            <article class="dionaea-info__card">
+              <h3 class="dionaea-info__title">Types de coloration</h3>
+              <p class="dionaea-info__text">Les Dionaea muscipula présentent une grande variété de colorations selon les cultivars&nbsp;:</p>
+              <ul class="dionaea-info__list">
+                <li><strong>Typiques</strong>: Pièges verts, rouge à l'intérieur</li>
+                <li><strong>Rouges</strong>: Piège entièrement rouge comme 'Red Pirhana', 'Royal Red'</li>
+                <li><strong>Vertes/Jaunes</strong>: Mutations sans anthocyane comme 'Yellow', 'All Green'</li>
+                <li><strong>Blanches</strong>: Marbrures blanches ou zones claires comme 'Ghost', 'GJ White Tiger'</li>
+                <li><strong>Colorations extrêmes</strong>: Cultivars aux couleurs intenses comme 'Akai Ryu', 'Bohemian Garnet'</li>
+              </ul>
+            </article>
+            <article class="dionaea-info__card">
+              <h3 class="dionaea-info__title">Formes de pièges particulières</h3>
+              <p class="dionaea-info__text">Les cultivars peuvent présenter des morphologies très variées&nbsp;:</p>
+              <ul class="dionaea-info__list">
+                <li><strong>Géants</strong>: Pièges de grande taille comme 'B52', 'DC XL', 'Giant Big Mouth'</li>
+                <li><strong>Dentés</strong>: Dentures prononcées comme 'Dentate', 'Saw Tooth'</li>
+                <li><strong>Frisés/Ondulés</strong>: Marges ondulées comme 'Biohazard 2', 'Chinese Dumpling'</li>
+                <li><strong>Crêtés</strong>: Croissances anormales formant des crêtes comme 'Reptile'</li>
+                <li><strong>Modifications ciliaires</strong>: Variations des cils comme 'Cross teeth', 'Extrem Fused Teeth'</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Modal pour afficher les images en grand -->
+      <div id="image-modal" class="dionaea-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+        <div class="dionaea-modal__content">
+          <button class="dionaea-modal__close" type="button" aria-label="Fermer">&times;</button>
+          <img id="modal-image" class="dionaea-modal__image" src="" alt="" />
+          <h3 id="modal-title" class="dionaea-modal__title"></h3>
+        </div>
+      </div>
+
+      <!-- Contact Section -->
+      <section id="collection-contact" class="dionaea-section dionaea-contact" aria-labelledby="dionaea-contact-heading">
+        <div class="dionaea-section__inner">
+          <div class="dionaea-contact__banner">
+            <div class="dionaea-contact__text">
+              <h2 class="dionaea-section__title" id="dionaea-contact-heading">Une variété de Dionaea t'intéresse&nbsp;?</h2>
+              <p class="dionaea-section__subtitle">
+                Ma collection évolue constamment et certaines variétés peuvent
+                être disponibles à la vente ou à l'échange. N'hésite pas à me
+                contacter pour vérifier la disponibilité et obtenir plus
+                d'informations sur une variété spécifique de <strong>Dionaea muscipula</strong>.
+              </p>
+              <div class="dionaea-contact__actions">
+                <a
+                  href="https://wa.me/+32494881487?text=Bonjour, je suis intéressé(e) par une variété de Dionaea de ta collection et j'aimerais savoir si elle est disponible."
+                  class="btn btn-primary whatsapp-link"
+                  rel="noopener"
+                  >Contacter via WhatsApp</a
+                >
+                <a href="contact.html" class="btn btn-outline"
+                  >Prendre rendez-vous</a
+                >
+              </div>
+            </div>
+            <div class="dionaea-contact__media">
+              <img
+                src="../images/collection/collection-dionaea-hero.jpg"
+                alt="Collection de cultivars rares de Dionaea muscipula (plante attrape-mouches) chez Les Gloutonnes"
+                width="400"
+                height="300"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer-component"></div>
+
+    <script src="../js/components.js"></script>
+    <script src="../js/navigation.js"></script>
+    <script src="../js/collection-dionaea.js"></script>
+
+    <!-- Schema.org pour les données structurées -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Collection de Dionaea muscipula des Gloutonnes",
+      "description": "Collection spécialisée de plus de 120 cultivars de Dionaea muscipula (plantes carnivores attrape-mouches) cultivés en Belgique, incluant des variétés rares et des formes uniques.",
+      "mainEntity": {
+        "@type": "Collection",
+        "name": "Collection de Dionaea muscipula (plantes attrape-mouches)",
+        "numberOfItems": "120+",
+        "collectionSize": "120+ cultivars",
+        "itemLocation": {
+          "@type": "Place",
+          "name": "Les Gloutonnes",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Verlaine",
+            "addressRegion": "Liège",
+            "postalCode": "4537",
+            "addressCountry": "BE"
+          }
+        },
+        "maintainer": {
+          "@type": "Person",
+          "name": "Charles Bussers",
+          "jobTitle": "Collectionneur et cultivateur de plantes carnivores",
+          "sameAs": "https://www.lesgloutonnes.be/pages/about.html"
+        }
+      },
+      "specialty": "Plantes carnivores Dionaea muscipula",
+      "offers": {
+        "@type": "Offer",
+        "itemOffered": "Dionaea muscipula (cultivars variés)",
+        "availability": "https://schema.org/LimitedAvailability",
+        "seller": {
+          "@type": "Organization",
+          "name": "Les Gloutonnes",
+          "url": "https://www.lesgloutonnes.be"
+        }
+      },
+      "taxonomicRange": ["Dionaea muscipula (diverses variétés et cultivars)", "Plantes carnivores", "Droseraceae"],
+      "isAccessibleForFree": false,
+      "tourBookingPage": "https://www.lesgloutonnes.be/pages/contact.html"
+    }
+    </script>
+  </body>
+</html>

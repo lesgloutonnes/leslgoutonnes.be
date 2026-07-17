@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <script src="/js/analytics.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Retrouvez les événements des Gloutonnes - Marchés aux plantes carnivores, bourses aux plantes et autres rendez-vous en Belgique. Calendrier des événements."
+    />
+    <meta
+      name="keywords"
+      content="événements plantes carnivores, marché aux plantes, bourse plantes, Belgique, Les Gloutonnes, calendrier"
+    />
+    <meta name="author" content="Charles Bussers" />
+    <title>Mes Événements | Les Gloutonnes</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="/images/favicon/site.webmanifest" />
+  </head>
+
+  <body>
+    <div id="header-component"></div>
+
+    <main id="main-content" class="events-page">
+      <section id="events-hero" class="events-hero events-section" aria-labelledby="events-hero-heading">
+        <div class="events-hero__overlay" aria-hidden="true"></div>
+        <div class="events-hero__content">
+          <h1 class="events-hero__title" id="events-hero-heading">Mes Événements</h1>
+          <p class="events-hero__subtitle">Retrouve-moi lors de bourses aux plantes, expositions et marchés</p>
+        </div>
+      </section>
+
+      <section id="mes-evenements" class="events-section events-upcoming" aria-labelledby="events-upcoming-heading">
+        <div class="events-section__inner">
+          <div class="events-section__header">
+            <h2 class="events-section__title" id="events-upcoming-heading">Mes Prochains Événements</h2>
+            <p class="events-section__subtitle">Tu souhaites me rencontrer et découvrir mes plantes carnivores en personne&nbsp;? Voici où me trouver prochainement.</p>
+          </div>
+
+          <div class="events-sticky-notes" data-events-grid>
+            <div class="events-loading" aria-live="polite">
+              <div class="events-loading__spinner"></div>
+              <p class="events-loading__text">Chargement des événements…</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="partnerships" class="events-section events-partners" aria-labelledby="events-partners-heading">
+        <div class="events-section__inner">
+          <div class="events-section__header">
+            <h2 class="events-section__title" id="events-partners-heading">Les Partenaires</h2>
+            <p class="events-section__subtitle">Je collabore avec ces institutions et organisations pour promouvoir la culture des plantes carnivores.</p>
+          </div>
+          <div class="events-partners__grid" data-events-partners></div>
+        </div>
+      </section>
+
+      <section id="events-contact" class="events-section events-contact" aria-labelledby="events-contact-heading">
+        <div class="events-section__inner">
+          <div class="events-contact__banner">
+            <div class="events-contact__text">
+              <h2 class="events-section__title" id="events-contact-heading">Tu organises un événement&nbsp;?</h2>
+              <p>Tu souhaites inviter Les Gloutonnes à ton marché aux plantes, exposition ou autre événement lié à la botanique&nbsp;? Je serais ravi d'y participer et de partager ma passion pour les plantes carnivores.</p>
+              <p>Contacte-moi pour discuter des possibilités de collaboration et des modalités de ma présence.</p>
+              <div class="events-contact__actions">
+                <a href="https://wa.me/+32494881487?text=Bonjour, j'aimerais discuter des possibilités de collaboration et des modalités de ta présence à mon événement." class="btn btn-primary whatsapp-link">Contacter via WhatsApp</a>
+                <a href="contact.html" class="btn btn-outline">Me contacter</a>
+              </div>
+            </div>
+            <div class="events-contact__media">
+              <img src="../images/events/stand-gloutonnes.jpg" alt="Stand Les Gloutonnes" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer-component"></div>
+
+    <script src="../js/components.js"></script>
+    <script src="../js/navigation.js"></script>
+    <script src="../js/events.js"></script>
+  </body>
+</html>

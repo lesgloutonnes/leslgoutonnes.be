@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <!-- Head optimisé pour le SEO -->
+  <head>
+    <script src="/js/analytics.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Ajout des balises meta SEO -->
+    <meta
+      name="description"
+      content="Itinéraires en Belgique pour chercher plantes carnivores et sphaignes en milieu naturel : Hautes Fagnes, Campine, réserves wallonnes et flamandes. Distances, difficultés, périodes et bonnes pratiques — observations non garanties."
+    />
+    <meta
+      name="keywords"
+      content="randonnées plantes carnivores, tourbières Belgique, Hautes Fagnes, Drosera sauvage, sphaignes, Utricularia, Pinguicula, observation plantes carnivores, sites naturels, promenades"
+    />
+    <meta name="author" content="Charles Bussers" />
+    <title>
+      Randonnées pour Observer Plantes Carnivores en Belgique | Les Gloutonnes
+    </title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+    <!-- Ajout des favicon comme sur l'index -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/images/favicon/site.webmanifest" />
+    <!-- Balise canonique pour éviter le contenu dupliqué -->
+    <link
+      rel="canonical"
+      href="https://www.lesgloutonnes.be/pages/rando.html"
+    />
+  </head>
+
+  <body>
+    <div id="header-component"></div>
+
+    <main id="main-content" class="rando-page">
+      <!-- Contenu invisible pour l'optimisation SEO -->
+      <div class="sr-only">
+        <p>
+          Les Gloutonnes propose une sélection d'itinéraires pour chercher
+          plantes carnivores et sphaignes en Belgique : Hautes Fagnes (Drosera
+          rotundifolia, sphaignes), Campine (Drosera intermedia, utriculaires),
+          et sites de grassette réintroduite ou historiques. Chaque fiche
+          indique localisation, distance, durée, difficulté et période
+          favorable. Les observations restent aléatoires : restez sur les
+          sentiers et caillebotis, respectez les réserves. Balades familiales
+          comme traversées longues pour marcheurs expérimentés.
+        </p>
+      </div>
+
+      <!-- Hero Banner -->
+      <section id="rando-hero" class="rando-section rando-hero" aria-labelledby="rando-hero-heading">
+        <div class="rando-hero__overlay" aria-hidden="true"></div>
+        <div class="rando-hero__content">
+          <h1 class="rando-hero__title" id="rando-hero-heading">Randonnées carnivores</h1>
+          <p class="rando-hero__subtitle">
+            Itinéraires en Belgique pour chercher carnivores et sphaignes —
+            observations possibles, jamais garanties
+          </p>
+        </div>
+      </section>
+
+      <!-- Introduction -->
+      <section id="rando-intro" class="rando-section rando-intro" aria-labelledby="rando-intro-heading">
+        <div class="rando-section__inner">
+          <div class="rando-intro__content">
+            <h2 class="rando-section__title" id="rando-intro-heading">Explore la Belgique sauvage</h2>
+            <p class="rando-section__subtitle">
+              Des Hautes Fagnes à la Campine, ces fiches indiquent où chercher Drosera, Utricularia, sphaignes — et, plus rarement, Pinguicula (souvent réintroduite ou historique). Résumés, périodes et précautions : les observations ne sont jamais garanties ; les sentiers et caillebotis protègent ces milieux fragiles.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Filtres -->
+      <section id="rando-filters" class="rando-section rando-filters" aria-label="Filtrer les randonnées">
+        <div class="rando-section__inner">
+          <div class="rando-filters__wrapper">
+            <div class="rando-filters__group">
+              <label class="rando-filters__label" for="region-filter">Filtrer par région</label>
+              <select id="region-filter" class="rando-filters__select" data-rando-filter="region">
+                <option value="all">Toutes les régions</option>
+                <option value="wallonie">Wallonie</option>
+                <option value="flandre">Flandre</option>
+                <option value="bruxelles">Bruxelles</option>
+              </select>
+            </div>
+
+            <div class="rando-filters__group">
+              <label class="rando-filters__label" for="difficulty-filter">Filtrer par difficulté</label>
+              <select id="difficulty-filter" class="rando-filters__select" data-rando-filter="difficulty">
+                <option value="all">Toutes les difficultés</option>
+                <option value="facile">Facile</option>
+                <option value="moyen">Moyen</option>
+                <option value="difficile">Difficile</option>
+              </select>
+            </div>
+
+            <div class="rando-filters__group">
+              <label class="rando-filters__label" for="plants-filter">Filtrer par plantes</label>
+              <select id="plants-filter" class="rando-filters__select" data-rando-filter="plants">
+                <option value="all">Toutes les plantes</option>
+                <option value="drosera">Drosera</option>
+                <option value="pinguicula">Pinguicula</option>
+                <option value="utricularia">Utricularia</option>
+                <option value="sphaignes">Sphaignes</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Catalogue des randonnées -->
+      <section id="rando-catalogue" class="rando-section rando-catalogue" aria-labelledby="rando-catalogue-heading">
+        <div class="rando-section__inner">
+          <div class="rando-section__header">
+            <h2 class="rando-section__title" id="rando-catalogue-heading">Sélection de randonnées botaniques</h2>
+            <p class="rando-section__subtitle">Fiches indicatives (terrain, guides et retours de marcheurs) : présence des espèces variable selon l'année, la météo et la gestion des réserves.</p>
+          </div>
+
+          <div class="rando-catalogue__grid" data-rando-grid>
+            <div class="rando-catalogue__loading" data-rando-loading>
+              <div class="rando-catalogue__spinner"></div>
+              <p>Chargement des randonnées...</p>
+            </div>
+          </div>
+
+          <div class="rando-catalogue__empty" data-rando-empty hidden>
+            <h3>Aucune randonnée ne correspond à tes filtres</h3>
+            <p>Ajuste les critères ou contacte-moi pour une suggestion personnalisée.</p>
+            <button id="reset-filters" class="btn btn-primary">Réinitialiser les filtres</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Conseils terrain -->
+      <section id="rando-guidelines" class="rando-section rando-guidelines" aria-labelledby="rando-guidelines-heading">
+        <div class="rando-section__inner">
+          <div class="rando-section__header">
+            <h2 class="rando-section__title" id="rando-guidelines-heading">Bonnes pratiques sur le terrain</h2>
+            <p class="rando-section__subtitle">Préserve les tourbières : une trace légère et beaucoup d'observations.</p>
+          </div>
+          <div class="rando-guidelines__grid">
+            <article class="rando-guidelines__card" data-rando-tip>
+              <span class="rando-guidelines__icon">🧭</span>
+              <h3 class="rando-guidelines__title">Planifie ton itinéraire</h3>
+              <p class="rando-guidelines__text">Télécharge la trace, vérifie la météo et emporte une carte hors-ligne. Certains accès nécessitent un retour en transport ou une navette.</p>
+            </article>
+            <article class="rando-guidelines__card" data-rando-tip>
+              <span class="rando-guidelines__icon">🥾</span>
+              <h3 class="rando-guidelines__title">Respecte les caillebotis</h3>
+              <p class="rando-guidelines__text">Ne quitte jamais les sentiers aménagés : un pas hors piste suffit pour abîmer des années de régénération de sphaignes et Drosera.</p>
+            </article>
+            <article class="rando-guidelines__card" data-rando-tip>
+              <span class="rando-guidelines__icon">🧴</span>
+              <h3 class="rando-guidelines__title">Prévois l'équipement adéquat</h3>
+              <p class="rando-guidelines__text">Chaussures imperméables, eau suffisante, répulsif à insectes et jumelles rendent l'expérience plus confortable et sécurisée.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Contact -->
+      <section id="rando-contact" class="rando-section rando-contact" aria-labelledby="rando-contact-heading">
+        <div class="rando-section__inner">
+          <div class="rando-contact__banner">
+            <div class="rando-contact__text">
+              <h2 class="rando-section__title" id="rando-contact-heading">Une balade à proposer&nbsp;?</h2>
+              <p class="rando-section__subtitle">
+                Que vous soyez débutant ou randonneur expérimenté, je serais
+                ravi d’ajouter vos propositions. Plus la diversité sera grande,
+                plus chacun y trouvera son bonheur : aventure palpitante ou
+                balade familiale pour partager un bon moment.
+              </p>
+              <div class="rando-contact__actions">
+                <a
+                  href="https://wa.me/+32494881487?text=Bonjour, j'aimerais proposer une balade ou une randonnée dans le cadre des promenades en zones humides et tourbières."
+                  class="btn btn-primary whatsapp-link"
+                  >Contacter via WhatsApp</a
+                >
+                <a href="contact.html" class="btn btn-outline">Prendre rendez-vous</a>
+              </div>
+            </div>
+            <div class="rando-contact__media" data-rando-zoom>
+              <img
+                src="../images/tourbiere/conseil-personnalise.jpg"
+                alt="Conseils pour préparer une randonnée en zone humide"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer-component"></div>
+
+    <script src="../js/components.js"></script>
+    <script src="../js/navigation.js"></script>
+    <script src="../js/rando.js"></script>
+    <!-- Schema.org pour les données structurées -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Randonnées pour Observer Plantes Carnivores en Belgique",
+        "description": "Découvrez les plus beaux sites naturels de Belgique pour observer plantes carnivores et sphaignes dans leur habitat naturel. Itinéraires en Wallonie, Flandre et Bruxelles.",
+        "mainEntity": {
+          "@type": "ItemList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "item": {
+                "@type": "TouristAttraction",
+                "name": "Traversée Eupen → Botrange",
+                "description": "Immersion totale dans les Hautes Fagnes avec observation de Drosera rotundifolia et des sphaignes rouges (S. medium / S. divinum)",
+                "geo": {
+                  "@type": "GeoCoordinates",
+                  "latitude": "50.573",
+                  "longitude": "6.095"
+                },
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressRegion": "Wallonie",
+                  "addressCountry": "BE"
+                },
+                "touristType": ["Nature", "Hiking", "Botany"]
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "item": {
+                "@type": "TouristAttraction",
+                "name": "Réserve naturelle De Liereman",
+                "description": "Mosaïque de landes et tourbières en Campine avec observation de Drosera intermedia et Utricularia minor",
+                "geo": {
+                  "@type": "GeoCoordinates",
+                  "latitude": "51.335",
+                  "longitude": "5.020"
+                },
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressLocality": "Oud-Turnhout",
+                  "addressRegion": "Flandre",
+                  "addressCountry": "BE"
+                },
+                "touristType": ["Nature", "Hiking", "Botany", "Wildlife"]
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "item": {
+                "@type": "TouristAttraction",
+                "name": "Circuit du Signal de Botrange",
+                "description": "Balade autour du point culminant de Belgique avec observation facile de Drosera rotundifolia et sphaignes sur caillebotis",
+                "geo": {
+                  "@type": "GeoCoordinates",
+                  "latitude": "50.501",
+                  "longitude": "6.088"
+                },
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressLocality": "Waimes",
+                  "addressRegion": "Wallonie",
+                  "addressCountry": "BE"
+                },
+                "touristType": ["Nature", "Hiking", "Botany", "Family"]
+              }
+            }
+          ]
+        },
+        "provider": {
+          "@type": "Organization",
+          "name": "Les Gloutonnes",
+          "url": "https://www.lesgloutonnes.be",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Voie des Jardinets 47B",
+            "addressLocality": "Verlaine",
+            "postalCode": "4537",
+            "addressCountry": "BE"
+          },
+          "telephone": "+32494881487",
+          "email": "infos@lesgloutonnes.be"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Accueil",
+              "item": "https://www.lesgloutonnes.be/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Culture & Conseils",
+              "item": "https://www.lesgloutonnes.be/pages/guides.html"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Randonnées Carnivores",
+              "item": "https://www.lesgloutonnes.be/pages/rando.html"
+            }
+          ]
+        }
+      }
+    </script>
+  </body>
+</html>

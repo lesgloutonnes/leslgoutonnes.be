@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <!-- Head optimisé pour le SEO -->
+  <head>
+    <script src="/js/analytics.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Ajout des balises meta SEO -->
+    <meta
+      name="description"
+      content="Recherchez des informations sur les plantes carnivores, guides de culture, conseils d'entretien, et produits pour Dionaea, Sarracenia, Nepenthes, Drosera et autres plantes carnivores sur le site Les Gloutonnes."
+    />
+    <meta
+      name="keywords"
+      content="recherche plantes carnivores, dionaea, sarracenia, nepenthes, drosera, substrat, arrosage, hivernage, conseils plantes carnivores"
+    />
+    <meta name="author" content="Charles Bussers" />
+    <title>
+      Recherche de Plantes Carnivores et Conseils de Culture | Les Gloutonnes
+    </title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/pages/recherche.css" />
+    <!-- Ajout des favicon comme sur l'index -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/images/favicon/site.webmanifest" />
+    <!-- Balise canonique pour éviter le contenu dupliqué -->
+    <link
+      rel="canonical"
+      href="https://www.lesgloutonnes.be/pages/recherche.html"
+    />
+    <!-- Empêcher l'indexation des résultats de recherche dynamiques -->
+    <meta name="robots" content="noindex,follow" />
+  </head>
+
+  <body>
+    <div id="header-component"></div>
+
+    <main id="main-content" class="search-page">
+      <!-- Contenu invisible pour l'optimisation SEO -->
+      <div class="sr-only">
+        <p>
+          Utilisez la fonction de recherche des Gloutonnes pour trouver
+          rapidement des informations sur les plantes carnivores. Découvrez nos
+          conseils de culture pour Dionaea muscipula (plantes attrape-mouches),
+          Sarracenia, Nepenthes, Drosera, Pinguicula et autres plantes
+          carnivores. Trouvez des informations sur l'arrosage, le substrat,
+          l'hivernage, le rempotage et la multiplication de vos plantes
+          carnivores. Notre moteur de recherche vous aide à naviguer dans notre
+          collection de plus de 120 cultivars de plantes carnivores et nos
+          nombreux guides spécialisés. Consultez également nos recherches
+          populaires pour découvrir les sujets les plus demandés par notre
+          communauté de passionnés.
+        </p>
+      </div>
+
+      <section id="search-hero" class="search-section search-hero" aria-labelledby="search-hero-heading">
+        <div class="search-section__inner">
+          <h1 class="search-section__title" id="search-hero-heading">Résultats de recherche</h1>
+          <p class="search-hero__lead">
+            Recherche pour :
+            <span class="search-hero__query" data-search-query>...</span>
+          </p>
+          <p class="search-hero__hint">
+            Astuce&nbsp;: utilise des mots-clés simples (ex. «&nbsp;substrat&nbsp;», «&nbsp;Dionaea&nbsp;» ou «&nbsp;hivernage&nbsp;»).
+          </p>
+        </div>
+      </section>
+
+      <section id="search-results" class="search-section search-results" aria-live="polite">
+        <div class="search-section__inner">
+          <div class="search-results__container" data-search-results>
+            <div class="search-results__loading" data-search-loading>
+              <div class="search-results__spinner"></div>
+              <p>Recherche en cours...</p>
+            </div>
+          </div>
+          <div class="search-results__empty" data-search-empty hidden>
+            <h3>Aucun résultat trouvé</h3>
+            <p>Essaie d'élargir ta recherche ou explore les suggestions ci-dessous.</p>
+            <ul class="search-results__suggestions">
+              <li>Vérifie l'orthographe des termes de recherche.</li>
+              <li>Essaye un mot-clé plus général.</li>
+              <li>
+                Explore ma
+                <a href="collection-dionaea.html">collection de Dionaea</a> ou mes
+                <a href="guides.html">guides de culture</a>.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="search-popular" class="search-section search-popular" aria-labelledby="search-popular-heading">
+        <div class="search-section__inner">
+          <div class="search-section__header">
+            <h2 class="search-section__title" id="search-popular-heading">Recherches populaires</h2>
+            <p class="search-section__subtitle">
+              Accède rapidement aux sujets qui intéressent le plus la communauté.
+            </p>
+          </div>
+          <div class="search-popular__grid">
+            <a href="?q=dionaea" class="search-popular__item">Dionaea</a>
+            <a href="?q=sarracenia" class="search-popular__item">Sarracenia</a>
+            <a href="?q=nepenthes" class="search-popular__item">Nepenthes</a>
+            <a href="?q=arrosage" class="search-popular__item">Arrosage</a>
+            <a href="?q=substrat" class="search-popular__item">Substrat</a>
+            <a href="?q=hivernage" class="search-popular__item">Hivernage</a>
+            <a href="?q=twitch" class="search-popular__item">Live Twitch</a>
+            <a href="?q=gloutonnes search" class="search-popular__item">Gloutonnes Search</a>
+            <a href="?q=carnevent" class="search-popular__item">CarnEvent</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="search-help" class="search-section search-help" aria-labelledby="search-help-heading">
+        <div class="search-section__inner">
+          <div class="search-help__banner">
+            <div class="search-help__text">
+              <h2 class="search-section__title" id="search-help-heading">Tu n'as pas trouvé ce que tu cherchais&nbsp;?</h2>
+              <p class="search-section__subtitle">
+                Contacte-moi et je t'aiderai à trouver le guide, la plante ou l'astuce qu'il te faut.
+              </p>
+              <div class="search-help__actions">
+                <a href="contact.html" class="btn btn-primary">Me contacter</a>
+                <a href="collection-dionaea.html" class="btn btn-outline">Explorer la collection</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer-component"></div>
+
+    <script src="../js/components.js"></script>
+    <script src="../js/navigation.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/search.js"></script>
+    <!-- Schema.org pour les données structurées -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Recherche de Plantes Carnivores et Conseils de Culture",
+        "description": "Recherchez des informations sur les plantes carnivores, guides de culture, conseils d'entretien, et produits pour Dionaea, Sarracenia, Nepenthes et autres espèces.",
+        "url": "https://www.lesgloutonnes.be/pages/recherche.html",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://www.lesgloutonnes.be/pages/recherche.html?q={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        },
+        "mainEntity": {
+          "@type": "ItemList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Recherche de Dionaea",
+              "url": "https://www.lesgloutonnes.be/pages/recherche.html?q=dionaea"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Recherche de Sarracenia",
+              "url": "https://www.lesgloutonnes.be/pages/recherche.html?q=sarracenia"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Recherche de Nepenthes",
+              "url": "https://www.lesgloutonnes.be/pages/recherche.html?q=nepenthes"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "Conseils d'arrosage",
+              "url": "https://www.lesgloutonnes.be/pages/recherche.html?q=arrosage"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "Conseils de substrat",
+              "url": "https://www.lesgloutonnes.be/pages/recherche.html?q=substrat"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "Hivernage des plantes carnivores",
+              "url": "https://www.lesgloutonnes.be/pages/recherche.html?q=hivernage"
+            }
+          ]
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Les Gloutonnes",
+          "url": "https://www.lesgloutonnes.be",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.lesgloutonnes.be/images/logo/logo.png"
+          }
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Accueil",
+              "item": "https://www.lesgloutonnes.be/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Recherche",
+              "item": "https://www.lesgloutonnes.be/pages/recherche.html"
+            }
+          ]
+        }
+      }
+    </script>
+  </body>
+</html>
